@@ -49,6 +49,8 @@ always @(*) begin
 
         AVERAGE: begin
             // TODO
+            // Average every element of cf_mat to get the price
+            // pull up valid
         end
 
     endcase
@@ -72,7 +74,6 @@ always @(posedge clk or negedge rst_n) begin
         for (integer i = 0; i < N; i = i+1) begin
             cf_mat_r[i] <= cf_mat_w[i];
         end
-
     end
 end
 

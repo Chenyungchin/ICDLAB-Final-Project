@@ -2,12 +2,12 @@ module XTX(
     input         clk,
     input         rst_n, 
     input         start,
-    input  [2:0]  xi,
-    output [12:0] ans0,
-    output [12:0] ans1,
-    output [12:0] ans2,
-    output [12:0] ans3,
-    output [12:0] ans4
+    input  [11:0]  xi, 
+    output [20:0] ans0,
+    output [19:0] ans1,
+    output [31:0] ans2,
+    output [43:0] ans3,
+    output [55:0] ans4
     // output reg [31:0] bx2,
     // output reg [31:0] bx3,
     // output reg [31:0] bx4
@@ -107,3 +107,7 @@ end
 
     
 endmodule
+
+module MAT_INV(
+
+);
