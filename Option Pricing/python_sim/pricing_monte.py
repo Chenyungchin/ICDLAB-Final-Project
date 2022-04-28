@@ -8,8 +8,8 @@ from time import time
 
 N = 1024 # number of Monte-Carlo simulation cases
 DAY = 8 # length of simulation cases
-INI_PRICE = 200 # Initial stock price
-K = 200 # strike price
+INI_PRICE = 500 # Initial stock price
+K = 505 # strike price
 RET = 0.06912 # expected return
 VOL = 0.6501 # volatility
 RF = 0.00379/DAY # risk-free rate
@@ -70,6 +70,9 @@ def cal_cash_flow(path, K, rf=0.05):
             #     print(X[i])
             # print("Y: ", Y)
             # print("b: ", b)
+            # for i in range(3):
+            #     b[i] = math.trunc(b[i])
+            print(b)
             Y = np.matmul(X, b)
             # print("Y after regression: ", Y)
         for n in range(N):

@@ -6,7 +6,8 @@ def regression(X, Y):
     # X, Y are n*1 matrices
     # Output b is 3*1 matrix
     for i in range(len(X)):
-        X[i] = [1, X[i], X[i]**2]
+        # X[i] = [1, X[i], X[i]**2]
+        X[i] = [1, X[i]]
 
     X = np.array(X)
     X_t = np.transpose(X)
