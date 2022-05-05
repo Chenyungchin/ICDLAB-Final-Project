@@ -77,6 +77,7 @@ always @(posedge clk or negedge rst_n) begin
     end
 end
 
+// TODO: consider if we need this module, or directly use matrix multiplications
 Regression regression0(
     .clk(clk),
     .rst_n(rst_n), 
