@@ -86,7 +86,7 @@ MC_CORE mc_core1(
     .valid(core_1_valid), 
     .price(core_1_price)
 );
-MC_CORE mc_core0(
+MC_CORE mc_core2(
     .clk(clk),
     .rst_n(rst_n), 
     .path(path_2),  
@@ -94,7 +94,7 @@ MC_CORE mc_core0(
     .valid(core_2_valid), 
     .price(core_2_price)
 );
-MC_CORE mc_core0(
+MC_CORE mc_core3(
     .clk(clk),
     .rst_n(rst_n), 
     .path(path_3),  
