@@ -76,9 +76,47 @@ always @(*) begin
 end
 // counter 
 always @(*) begin
-    for (i=0; i < 32; i = i+1) begin
-        if (counter[31 - i] == 0) LSZ = 31 - i;
-    end
+
+    // for (i=0; i < 32; i = i+1) begin
+    //     if (counter[31 - i] == 0) LSZ = 31 - i;
+    // end
+
+    ///////LSZ is a latch, modified as below///////
+    casex (counter)
+        32'bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0: LSZ = 5'd0;
+        32'bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx01: LSZ = 5'd1;
+        32'bxxxxxxxxxxxxxxxxxxxxxxxxxxxxx011: LSZ = 5'd2;
+        32'bxxxxxxxxxxxxxxxxxxxxxxxxxxxx0111: LSZ = 5'd3;
+        32'bxxxxxxxxxxxxxxxxxxxxxxxxxxx01111: LSZ = 5'd4;
+        32'bxxxxxxxxxxxxxxxxxxxxxxxxxx011111: LSZ = 5'd5;
+        32'bxxxxxxxxxxxxxxxxxxxxxxxxx0111111: LSZ = 5'd6;
+        32'bxxxxxxxxxxxxxxxxxxxxxxxx01111111: LSZ = 5'd7;
+        32'bxxxxxxxxxxxxxxxxxxxxxxx011111111: LSZ = 5'd8;
+        32'bxxxxxxxxxxxxxxxxxxxxxx0111111111: LSZ = 5'd9;
+        32'bxxxxxxxxxxxxxxxxxxxxx01111111111: LSZ = 5'd10;
+        32'bxxxxxxxxxxxxxxxxxxxx011111111111: LSZ = 5'd11;
+        32'bxxxxxxxxxxxxxxxxxxx0111111111111: LSZ = 5'd12;
+        32'bxxxxxxxxxxxxxxxxxx01111111111111: LSZ = 5'd13;
+        32'bxxxxxxxxxxxxxxxxx011111111111111: LSZ = 5'd14;
+        32'bxxxxxxxxxxxxxxxx0111111111111111: LSZ = 5'd15;
+        32'bxxxxxxxxxxxxxxx01111111111111111: LSZ = 5'd16;
+        32'bxxxxxxxxxxxxxx011111111111111111: LSZ = 5'd17;
+        32'bxxxxxxxxxxxxx0111111111111111111: LSZ = 5'd18;
+        32'bxxxxxxxxxxxx01111111111111111111: LSZ = 5'd19;
+        32'bxxxxxxxxxxx011111111111111111111: LSZ = 5'd20;
+        32'bxxxxxxxxxx0111111111111111111111: LSZ = 5'd21;
+        32'bxxxxxxxxx01111111111111111111111: LSZ = 5'd22;
+        32'bxxxxxxxx011111111111111111111111: LSZ = 5'd23;
+        32'bxxxxxxx0111111111111111111111111: LSZ = 5'd24;
+        32'bxxxxxx01111111111111111111111111: LSZ = 5'd25;
+        32'bxxxxx011111111111111111111111111: LSZ = 5'd26;
+        32'bxxxx0111111111111111111111111111: LSZ = 5'd27;
+        32'bxxx01111111111111111111111111111: LSZ = 5'd28;
+        32'bxx011111111111111111111111111111: LSZ = 5'd29;
+        32'bx0111111111111111111111111111111: LSZ = 5'd30;
+        32'b01111111111111111111111111111111: LSZ = 5'd31;
+        default: LSZ = 5'd0;
+    endcase 
 end
 
 

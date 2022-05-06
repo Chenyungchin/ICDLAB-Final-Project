@@ -25,6 +25,7 @@ always @(*) begin
         price_tmp = core_0_price + core_1_price + core_2_price + core_3_price;
         valid_w = 1;
     end
+    else valid_w = 0;
 end
 
 
