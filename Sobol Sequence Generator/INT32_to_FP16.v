@@ -49,7 +49,8 @@ always @(*) begin
         32'b0000000000000000001xxxxxxxxxxxxx: MSO = 5'd14;
         32'b00000000000000000001xxxxxxxxxxxx: MSO = 5'd13;
         32'b000000000000000000001xxxxxxxxxxx: MSO = 5'd12;
-        default: MSO = 5'd11;
+        32'b0000000000000000000001xxxxxxxxxx: MSO = 5'd11;
+        default: MSO = 5'd10;
     endcase
 end
 
