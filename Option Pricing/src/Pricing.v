@@ -74,6 +74,7 @@ end
 MC_CORE mc_core0(
     .clk(clk),
     .rst_n(rst_n), 
+    .start(), 
     .path(path_0),  
     .K(K), 
     .valid(core_0_valid), 
@@ -82,6 +83,7 @@ MC_CORE mc_core0(
 MC_CORE mc_core1(
     .clk(clk),
     .rst_n(rst_n), 
+    .start(), 
     .path(path_1),  
     .K(K), 
     .valid(core_1_valid), 
@@ -90,6 +92,7 @@ MC_CORE mc_core1(
 MC_CORE mc_core2(
     .clk(clk),
     .rst_n(rst_n), 
+    .start(), 
     .path(path_2),  
     .K(K), 
     .valid(core_2_valid), 
@@ -98,6 +101,7 @@ MC_CORE mc_core2(
 MC_CORE mc_core3(
     .clk(clk),
     .rst_n(rst_n), 
+    .start(), 
     .path(path_3),  
     .K(K), 
     .valid(core_3_valid), 
