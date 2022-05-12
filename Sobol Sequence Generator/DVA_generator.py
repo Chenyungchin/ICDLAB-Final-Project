@@ -58,8 +58,8 @@ def generate_DVA(val=487, num=32):
     # write DVA
     with open('DVA.txt', 'w') as f:
         cnt = 0
-        for val in v_int:
-            f.write("DVA[%d]   <= 32'b" % cnt  + (num - len(bin(val)[2:])) * '0' + bin(val)[2:] + ';')
+        for val in reversed(v_int):
+            f.write("32'b"  + (num - len(bin(val)[2:])) * '0' + bin(val)[2:] + ',')
             f.write('\n')
             cnt += 1
     

@@ -1,7 +1,7 @@
 `timescale 1ns/10ps
 `define CYCLE 10.0
 
-module Sobol_tb;
+module Sobol_to_INT32_tb;
 
 // ============= clk generation ================
 reg clk = 1;
@@ -10,16 +10,16 @@ always #(`CYCLE/2) clk = ~clk;
 
 // ============= dump waveform =================
 // fsdb
-// initial begin
-//     $fsdbDumpfile("Sobol.fsdb");
-//     $fsdbDumpvars(0, "+mda");
-// end
+initial begin
+    $fsdbDumpfile("Sobol_to_INT32.fsdb");
+    $fsdbDumpvars(0, "+mda");
+end
 
 // vcd
-initial begin
-    $dumpfile("Sobol.vcd");
-    $dumpvars(0, sobol0);
-end
+// initial begin
+//     $dumpfile("Sobol_to_INT32.vcd");
+//     $dumpvars(0, sobol_to_int32_0);
+// end
 
 // time out
 initial begin
@@ -33,13 +33,13 @@ end
 // instantiate DUT
 reg          rst_n = 1;
 reg          start = 0;
-wire [15:0]  icdf;
+wire [31:0]  res;
 
-Sobol sobol0(
+Sobol_to_INT32 sobol_to_int32_0(
     .clk(clk),
     .rst_n(rst_n),
     .start(start),
-    .icdf(icdf)
+    .res(res)
 );
 
 // input pattern

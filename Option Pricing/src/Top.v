@@ -26,10 +26,7 @@ module Top(
         .clk(clk),
         .rst_n(rst_n),
         .start(start),
-        .res0(res0),
-        .res1(res1),
-        .res2(res2),
-        .res3(res3)
+        .res_fp16(res_fp16),
     );
 
     Path_Gen path_gen0(
