@@ -117,28 +117,40 @@ module MAT_INV(
     input [31:0] sig2,
     output [31:0] out0,
     output [19:0] out1,
-    output [20:0] out2
+    output [20:0] out2,
+    // output [5:0] p,
+    // output [15:0] det_f,
+    // output [15:0] test,
+    output o_valid
 );
 // ================== reg and wire ======================
 integer i;
 localparam S_DET = 1'd0;
 localparam S_INVMAT = 1'd1;
-reg [52:0] det_r, det_w;
+reg [52:0] det_r, det_w; //41 ,12
+wire [15:0] det_f; //10, 6
 reg [2:0] counter_r,counter_w;
 reg [5:0] location_r, location_w;
-reg [15:0] x0_r, x0_w;
+reg [15:0] x0_r, x0_w; //10, 6
 reg state_r, state_w;
 reg ctrl_r, ctrl_w;
-reg [20:0] sig0_r, sig0_w;
-reg [19:0] sig1_r, sig1_w;
-reg [31:0] sig2_r, sig2_w;
-reg [31:0] out0_r, out0_w;
-reg [19:0] out1_r, out1_w;
-reg [20:0] out2_r, out2_w;
+reg [20:0] sig0_r, sig0_w; //15, 6
+reg [19:0] sig1_r, sig1_w; //14, 6
+reg [31:0] sig2_r, sig2_w; //25, 6
+reg [47:0] out0_r, out0_w; //22, 10
+reg [35:0] out1_r, out1_w; //12, 8
+reg [36:0] out2_r, out2_w; //13, 8
+reg [31:0] temp1_w, temp1_r;
+reg [47:0] temp2_w, temp2_r;
+reg valid_w, valid_r;
 // ================== wire assignments ==================
-assign out0 = out0_r;
-assign out1 = out1_r;
-assign out2 = out2_r;
+assign out0 = out0_r[33:2];
+assign out1 = out1_r[23:4];
+assign out2 = out2_r[24:4];
+// assign test = x0_r;
+// assign p = location_r;
+// assign det_f = det_r[21:6];
+assign o_valid = valid_r;
 // ================== Combinational =====================
 always @(*) begin
     if(start == 1) begin
@@ -150,7 +162,7 @@ always @(*) begin
         ctrl_w = ctrl_r;
         case (state_r)
             S_DET: begin
-                if(counter_r == 3'd0) begin
+                if(counter_r == 4'd0) begin
                     sig0_w = sig0;
                     sig1_w = sig1;
                     sig2_w = sig2;
@@ -158,38 +170,48 @@ always @(*) begin
                     state_w = S_DET;
                     counter_w = counter_r + 1;
                 end
-                else if(counter_r == 3'd1) begin
+                else if(counter_r == 4'd1) begin
                     det_w = det_r;
                     state_w = S_DET;
                     counter_w = counter_r + 1;
                     x0_w = 16'd1;
-                    for (i = 52; i >= 0; i=i-1) begin
+                    for (i = 52; i >= 10; i=i-1) begin
                         if(ctrl_r == 0) begin
                             if (det_r[i] == 1) begin
-                                location_w = i+1;
+                                location_w = i-10;
                                 ctrl_w = 1;
                             end
                         end
                     end
                 end
-                else if(counter_r == 3'd2) begin
+                else if(counter_r == 4'd2) begin
                     det_w = det_r;
                     state_w = S_DET;
                     counter_w = counter_r + 1;
-                    x0_w = (2'b10 << location_r) - det_r;
+                    x0_w = (16'b0000000010000000 << location_r) - det_f;
+                end
+                else if(counter_r == 4'd3) begin
+                    counter_w = counter_r + 1;
+                    temp1_w = (16'b0000000010000000 << location_r)*x0_r;
+                    temp2_w = (det_f*(x0_r*x0_r) >> location_r);
+                    x0_w = x0_r;
+                end
+                else if(counter_r == 4'd4) begin
+                    counter_w = counter_r + 1;
+                    x0_w = temp1_r[21:6] - temp2_r[27:12];
                 end
                 else begin
-                    counter_w = 0
-                    x0_w = (2'b10 << location_r)*x0_r -(det_r*(x0_r*x0_r) >> location_r);
+                    counter_w = 0;
+                    x0_w = x0_r >> (location_r * location_r);
                     state_w = S_INVMAT;
                 end
             end
             S_INVMAT: begin
-                x0_w = 
                 out0_w = x0_r*sig2_r;
                 out1_w = x0_r*sig1_r;
                 out2_w = x0_r*sig0_r;
                 state_w = S_INVMAT;
+                valid_w = 1;
             end 
         endcase
     end
@@ -209,6 +231,9 @@ always @(posedge clk or negedge rst_n) begin
         x0_r <= 0;
         location_r <= 0;
         ctrl_r <= 0;
+        temp1_r <= 0;
+        temp2_r <= 0;
+        valid_r <= 0;
     end
     else begin
         det_r <= det_w;
@@ -221,8 +246,11 @@ always @(posedge clk or negedge rst_n) begin
         out1_r <= out1_w;
         out2_r <= out2_w;
         x0_r <= x0_w;
+        temp1_r <= temp1_w;
+        temp2_r <= temp2_w;
         location_r <= location_w;
         ctrl_r <= ctrl_w;
+        valid_r <= valid_w;
     end
 end
 
