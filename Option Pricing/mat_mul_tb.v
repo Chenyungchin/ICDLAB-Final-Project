@@ -45,6 +45,7 @@ wire [5:0] location;
 wire [15:0] test;
 wire [15:0] det;
 wire o_valid;
+wire sign;
 
 // XTX xtx0(
 //     .clk(clk),
@@ -80,8 +81,9 @@ MAT_INV MI0(
     .out1(out1),
     .out2(out2),
     // .p(location),
-    // .det_f(det),
+    // .det(det),
     // .test(test),
+    // .sign(sign),
     .o_valid(o_valid)
 );
 
@@ -90,18 +92,22 @@ integer i;
 
 initial begin
     // update weight
+    
     @(posedge clk) rst_n = 0;
     @(posedge clk) rst_n = 1;
     //inp <=0;
     start = 1;
-    sig0 = 21'b000000000000011000000;
-    sig1 = 20'b00000000000110000000;
-    sig2 = 32'b00000000000000000000001110000000;
+    sig0 = 9'b000000011;
+    sig1 = 21'b000000000000001100000;
+    sig2 = 33'b000000000000000000000111000000000;
+    // sig0 = 9'b010110110;
+    // sig1 = 21'b00010111001001001;
+    // sig2 = 33'b0000010101101110101110111;
     $display("           Simulation Result      ");
-        //$monitor("xi=%d ans0=%d ans1=%d ans2=%d ans3=%d ans4=%d\n",inp, ans0, ans1,ans2,ans3,ans4);
+    //$monitor("xi=%d ans0=%d ans1=%d ans2=%d ans3=%d ans4=%d\n",inp, ans0, ans1,ans2,ans3,ans4);
     //$monitor("inp=%d inpy=%d ans1=%d ans2=%d ans3=%d\n", inp, ans1,ans2,ans3);
-    // $monitor("sig0=%d, sig1=%d, sig2=%d, out0=%b, ou1=%b, out2=%b, location=%d, x=%b, det=%b, valid=%d",sig0>>6, sig1>>6, sig2>>6, out0, out1, out2, location, test, det, o_valid);
-    $monitor("sig0=%d, sig1=%d, sig2=%d, out0=%b, ou1=%b, out2=%b, valid=%d",sig0>>6, sig1>>6, sig2>>6, out0, out1, out2, location, test, det, o_valid);
+    //$monitor("sig0=%d, sig1=%d, sig2=%d, out0=%b, ou1=%b, out2=%b, location=%d, x=%b, det=%b, valid=%d, sign=%d",sig0, sig1>>4, sig2>>8, out0, out1, out2, location, test, det, o_valid, sign);
+    $monitor("sig0=%d, sig1=%d, sig2=%d, out0=%b, ou1=%b, out2=%b, valid=%d",sig0>>6, sig1>>6, sig2>>6, out0, out1, out2, o_valid);
 
     @(posedge clk);
 end

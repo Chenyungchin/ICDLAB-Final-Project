@@ -6,7 +6,7 @@ module XTX(
     output        XTX_valid, 
     output [20:0] ans0,
     output [19:0] ans1,
-    output [31:0] ans2, 
+    output [31:0] ans2
     // output [43:0] ans3,
     // output [55:0] ans4
     // output reg [31:0] bx2,
@@ -14,9 +14,9 @@ module XTX(
     // output reg [31:0] bx4
 );
 localparam N = 256;
-localparam IDLE = 1'd0
-localparam IN = 1'd1;
-localparam OUT = 1'd2;
+localparam IDLE = 2'd0;
+localparam IN = 2'd1;
+localparam OUT = 2'd2;
 
 // ================== reg and wire ======================
 reg [12:0] out0_r, out0_w;
@@ -45,7 +45,7 @@ always @(*) begin
     state_w = state_r;
     count_w = count_r;
     valid_w = valid_r;
-    case (state_r):
+    case (state_r)
         IDLE: begin
             if (start) begin
                 state_w = IN;
@@ -108,14 +108,14 @@ module XTY (
     input  [15:0]  yi,
     output         XTY_valid, 
     output [32:0]  out1,
-    output [32:0]  out2,
+    output [32:0]  out2
     // output [32:0]  out3
 );
 
 localparam N = 256;
-localparam IDLE = 1'd0;
-localparam IN = 1'd1;
-localparam OUT = 1'd2;
+localparam IDLE = 2'd0;
+localparam IN = 2'd1;
+localparam OUT = 2'd2;
 
 // ================== reg and wire ======================
 reg [32:0] out1_r, out1_w;
@@ -137,7 +137,7 @@ always @(*) begin
     count_w = count_r;
     state_w = state_r;
     valid_w = valid_r;
-    case (state_r):
+    case (state_r)
         IDLE: begin
             if (start) begin
                 state_w = IN;
@@ -185,50 +185,54 @@ end
 
     
 endmodule
-
+//sign+integer, fraction
 module MAT_INV(
     input         clk,
     input         rst_n, 
     input         start,
-    input [20:0] sig0,
-    input [19:0] sig1,
-    input [31:0] sig2,
-    output [31:0] out0,
-    output [19:0] out1,
-    output [20:0] out2,
+    input [8:0] sig0, //9, 0
+    input [20:0] sig1,//17, 4
+    input [32:0] sig2,//25, 8 
+    output signed[31:0] out0,//22, 10
+    output signed[19:0] out1,//12, 8
+    output signed[20:0] out2,//15, 6
     // output [5:0] p,
-    // output [15:0] det_f,
-    // output [15:0] test,
+    // output signed [15:0] det,
+    // output signed[15:0] test,
     output o_valid
+    //output sign
 );
 // ================== reg and wire ======================
 integer i;
 localparam S_DET = 1'd0;
 localparam S_INVMAT = 1'd1;
-reg [52:0] det_r, det_w; //41 ,12
-wire [15:0] det_f; //10, 6
+reg signed [41:0] det_r, det_w; //34 ,8
+wire signed [15:0] det_f; //10, 6
 reg [2:0] counter_r,counter_w;
 reg [5:0] location_r, location_w;
-reg [15:0] x0_r, x0_w; //10, 6
+reg signed[15:0] x0_r, x0_w; //10, 6
 reg state_r, state_w;
 reg ctrl_r, ctrl_w;
-reg [20:0] sig0_r, sig0_w; //15, 6
-reg [19:0] sig1_r, sig1_w; //14, 6
-reg [31:0] sig2_r, sig2_w; //25, 6
-reg [47:0] out0_r, out0_w; //22, 10
-reg [35:0] out1_r, out1_w; //12, 8
-reg [36:0] out2_r, out2_w; //13, 8
+reg [8:0] sig0_r, sig0_w; //9, 0
+reg [20:0] sig1_r, sig1_w; //17, 4
+reg [32:0] sig2_r, sig2_w; //25, 8
+reg signed[48:0] out0_r, out0_w; //22, 10  //35,14
+reg signed[36:0] out1_r, out1_w; //12, 8   //27,10
+reg signed[24:0] out2_r, out2_w; //15, 6   //19,6
 reg [31:0] temp1_w, temp1_r;
 reg [47:0] temp2_w, temp2_r;
 reg valid_w, valid_r;
+reg sign_w, sign_r;
 // ================== wire assignments ==================
-assign out0 = out0_r[33:2];
-assign out1 = out1_r[23:4];
-assign out2 = out2_r[24:4];
+assign out0 = out0_r[35:4];
+assign out1 = out1_r[21:2];
+assign out2 = out2_r[20:0];
 // assign test = x0_r;
 // assign p = location_r;
-// assign det_f = det_r[21:6];
+assign det_f = det_r[17:2];
+// assign det = det_r[17:2];
 assign o_valid = valid_r;
+// assign sign = sign_r;
 // ================== Combinational =====================
 always @(*) begin
     if(start == 1) begin
@@ -238,6 +242,7 @@ always @(*) begin
         sig1_w = sig1_r;
         sig2_w = sig2_r;
         ctrl_w = ctrl_r;
+        sign_w = sign_r;
         case (state_r)
             S_DET: begin
                 if(counter_r == 4'd0) begin
@@ -251,13 +256,18 @@ always @(*) begin
                 else if(counter_r == 4'd1) begin
                     det_w = det_r;
                     state_w = S_DET;
-                    counter_w = counter_r + 1;
                     x0_w = 16'd1;
-                    for (i = 52; i >= 10; i=i-1) begin
+                    for (i = 40; i >= 10; i=i-1) begin
                         if(ctrl_r == 0) begin
-                            if (det_r[i] == 1) begin
-                                location_w = i-10;
+                            if(det_r[41] == 1) begin
+                                det_w = ~det_r +1'b1;
+                                sign_w = 1;
+                                counter_w = counter_r;
+                            end
+                            else if (det_r[i] == 1) begin
+                                location_w = i-7;
                                 ctrl_w = 1;
+                                counter_w = counter_r + 1;
                             end
                         end
                     end
@@ -285,11 +295,18 @@ always @(*) begin
                 end
             end
             S_INVMAT: begin
-                out0_w = x0_r*sig2_r;
-                out1_w = x0_r*sig1_r;
-                out2_w = x0_r*sig0_r;
                 state_w = S_INVMAT;
                 valid_w = 1;
+                if(sign_r == 0) begin
+                    out0_w = x0_r*sig2_r;
+                    out1_w = x0_r*(~sig1_r+1'b1);
+                    out2_w = x0_r*sig0_r; 
+                end
+                else begin
+                    out0_w = x0_r*(~sig2_r+1'b1);
+                    out1_w = x0_r*sig1_r;
+                    out2_w = x0_r*(~sig0_r+1'b1); 
+                end
             end 
         endcase
     end
@@ -312,6 +329,7 @@ always @(posedge clk or negedge rst_n) begin
         temp1_r <= 0;
         temp2_r <= 0;
         valid_r <= 0;
+        sign_r <= 0;
     end
     else begin
         det_r <= det_w;
@@ -329,6 +347,7 @@ always @(posedge clk or negedge rst_n) begin
         location_r <= location_w;
         ctrl_r <= ctrl_w;
         valid_r <= valid_w;
+        sign_r <= sign_w;
     end
 end
 
