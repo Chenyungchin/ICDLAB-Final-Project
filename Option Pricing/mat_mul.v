@@ -126,7 +126,7 @@ localparam S_INVMAT = 1'd1;
 reg [52:0] det_r, det_w;
 reg [2:0] counter_r,counter_w;
 reg [5:0] location_r, location_w;
-reg [52:0] x0_r, x0_w;
+reg [15:0] x0_r, x0_w;
 reg state_r, state_w;
 reg ctrl_r, ctrl_w;
 reg [20:0] sig0_r, sig0_w;
@@ -162,7 +162,7 @@ always @(*) begin
                     det_w = det_r;
                     state_w = S_DET;
                     counter_w = counter_r + 1;
-                    x0_w = 53'd0;
+                    x0_w = 16'd1;
                     for (i = 52; i >= 0; i=i-1) begin
                         if(ctrl_r == 0) begin
                             if (det_r[i] == 1) begin
@@ -175,20 +175,17 @@ always @(*) begin
                 else if(counter_r == 3'd2) begin
                     det_w = det_r;
                     state_w = S_DET;
-                    x0_w[location_r+1] = 1'b1;
                     counter_w = counter_r + 1;
-                end
-                else if(counter_r > 3'd2 && counter_r < 3'd5) begin
-                    counter_w = counter_r + 1;
-                    x0_w = x0_r * (2-det_r*x0_r);
-                    state_w = S_DET;
+                    x0_w = (2'b10 << location_r) - det_r;
                 end
                 else begin
-                    counter_w = 0;
+                    counter_w = 0
+                    x0_w = (2'b10 << location_r)*x0_r -(det_r*(x0_r*x0_r) >> location_r);
                     state_w = S_INVMAT;
                 end
             end
             S_INVMAT: begin
+                x0_w = 
                 out0_w = x0_r*sig2_r;
                 out1_w = x0_r*sig1_r;
                 out2_w = x0_r*sig0_r;
