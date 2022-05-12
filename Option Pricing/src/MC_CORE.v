@@ -29,7 +29,7 @@ reg        valid_w, valid_r;
 
 
 assign valid = valid_r;
-assign average = sum_r[19 -: 12];
+assign average = sum_r[19 -: 12]; // this should be modified when N change. sum_r[19 -: 19-log(2)N]
 
 always @(*) begin
     count_w = count_r;

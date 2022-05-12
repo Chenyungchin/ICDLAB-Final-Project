@@ -33,13 +33,13 @@ end
 // instantiate DUT
 reg          rst_n = 1;
 reg          start = 0;
-wire [15:0]  res;
+wire [15:0]  icdf;
 
 Sobol sobol0(
     .clk(clk),
     .rst_n(rst_n),
     .start(start),
-    .res_fp16(res)
+    .icdf(icdf)
 );
 
 // input pattern
