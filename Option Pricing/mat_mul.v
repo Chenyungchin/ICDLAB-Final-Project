@@ -2,7 +2,7 @@ module XTX(
     input         clk,
     input         rst_n, 
     input         start,
-    input  [11:0] xi, 
+    input  [11:0] xi, //8, 4
     output        XTX_valid, 
     output [20:0] ans0,
     output [19:0] ans1,
