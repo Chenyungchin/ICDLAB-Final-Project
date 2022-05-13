@@ -214,7 +214,7 @@ reg state_r, state_w;
 reg ctrl_r, ctrl_w;
 reg [20:0] sig0_r, sig0_w; //15, 6
 reg [19:0] sig1_r, sig1_w; //14, 6
-reg [31:0] sig2_r, sig2_w; //25, 6
+reg [31:0] sig2_r, sig2_w; //26, 6
 reg [47:0] out0_r, out0_w; //22, 10
 reg [35:0] out1_r, out1_w; //12, 8
 reg [36:0] out2_r, out2_w; //13, 8
