@@ -71,6 +71,10 @@ always @(*) begin
             valid_w = 1'b1;
             state_w = IDLE;
         end
+        2'd3: begin
+            valid_w = valid_r;
+            state_w = state_r;
+        end
     endcase
 end
 // ================== Sequential ========================
@@ -161,6 +165,10 @@ always @(*) begin
             valid_w = 1'b1;
             state_w = IDLE;
         end
+        2'd3: begin
+            valid_w = valid_r;
+            state_w = state_r;
+        end
     endcase
 end
 // ================== Sequential ========================
@@ -248,6 +256,11 @@ always @(*) begin
         out0_w = out0_r;
         out1_w = out1_r;
         out2_w = out2_r;
+        temp1_w = temp1_r;
+        temp2_w = temp2_r;
+        counter_w = counter_r;
+        state_w = state_r;
+        det_w = det_r;
         case (state_r)
             S_DET: begin
                 if(counter_r == 4'd0) begin
@@ -267,10 +280,12 @@ always @(*) begin
                             if(det_r[41] == 1) begin
                                 det_w = ~det_r +1'b1;
                                 sign_w = 1;
+                                ctrl_w = 0;
                                 counter_w = counter_r;
                             end
                             else if (det_r[i] == 1) begin
                                 location_w = i-7;
+                                sign_w = 0;
                                 ctrl_w = 1;
                                 counter_w = counter_r + 1;
                             end
@@ -314,6 +329,24 @@ always @(*) begin
                 end
             end 
         endcase
+    end
+    else begin
+        location_w = location_r;
+        x0_w = x0_r;
+        sig0_w = sig0_r;
+        sig1_w = sig1_r;
+        sig2_w = sig2_r;
+        ctrl_w = ctrl_r;
+        sign_w = sign_r;
+        valid_w = valid_r;
+        out0_w = out0_r;
+        out1_w = out1_r;
+        out2_w = out2_r;
+        state_w = state_r;
+        temp1_w = temp1_r;
+        temp2_w = temp2_r;
+        counter_w = counter_r;
+        det_w = det_r;
     end
 end
 // ================== Sequential ========================
