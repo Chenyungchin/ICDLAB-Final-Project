@@ -4,9 +4,9 @@ module XTX(
     input         start,
     input  [11:0] xi, 
     output        XTX_valid, 
-    output [20:0] ans0,
-    output [19:0] ans1,
-    output [31:0] ans2
+    output [9:0]  ans0, // 9, 0
+    output [20:0] ans1, // 17, 4
+    output [32:0] ans2  // 25, 8
     // output [43:0] ans3,
     // output [55:0] ans4
     // output reg [31:0] bx2,
@@ -19,9 +19,9 @@ localparam IN = 2'd1;
 localparam OUT = 2'd2;
 
 // ================== reg and wire ======================
-reg [12:0] out0_r, out0_w;
-reg [12:0] out1_r, out1_w;
-reg [12:0] out2_r, out2_w;
+reg [9:0]  out0_r, out0_w; // 9, 0
+reg [20:0] out1_r, out1_w; // 17, 4;
+reg [32:0] out2_r, out2_w; // 25, 8;
 reg [9:0]  count_r, count_w;
 reg [1:0]  state_r, state_w;
 reg        valid_r, valid_w;
@@ -183,23 +183,24 @@ always @(posedge clk or negedge rst_n) begin
     end
 end
 
-    
 endmodule
+
+
 //sign+integer, fraction
 module MAT_INV(
     input         clk,
     input         rst_n, 
     input         start,
-    input [8:0] sig0, //9, 0
+    input [8:0]  sig0,//9, 0
     input [20:0] sig1,//17, 4
     input [32:0] sig2,//25, 8 
-    output signed[31:0] out0,//22, 10
-    output signed[19:0] out1,//12, 8
-    output signed[20:0] out2,//15, 6
+    output o_valid,
+    output [31:0] out0,//22, 10
+    output [19:0] out1,//12, 8
+    output [20:0] out2//15, 6
     // output [5:0] p,
     // output signed [15:0] det,
     // output signed[15:0] test,
-    output o_valid
     //output sign
 );
 // ================== reg and wire ======================
@@ -243,6 +244,10 @@ always @(*) begin
         sig2_w = sig2_r;
         ctrl_w = ctrl_r;
         sign_w = sign_r;
+        valid_w = valid_r;
+        out0_w = out0_r;
+        out1_w = out1_r;
+        out2_w = out2_r;
         case (state_r)
             S_DET: begin
                 if(counter_r == 4'd0) begin

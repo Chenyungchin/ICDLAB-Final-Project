@@ -77,6 +77,7 @@ MC_CORE mc_core0(
     .start(), 
     .path(path_0),  
     .K(K), 
+    .resend(), 
     .valid(core_0_valid), 
     .price(core_0_price)
 );
@@ -86,6 +87,7 @@ MC_CORE mc_core1(
     .start(), 
     .path(path_1),  
     .K(K), 
+    .resend(), 
     .valid(core_1_valid), 
     .price(core_1_price)
 );
@@ -95,6 +97,7 @@ MC_CORE mc_core2(
     .start(), 
     .path(path_2),  
     .K(K), 
+    .resend(), 
     .valid(core_2_valid), 
     .price(core_2_price)
 );
@@ -104,6 +107,7 @@ MC_CORE mc_core3(
     .start(), 
     .path(path_3),  
     .K(K), 
+    .resend(), 
     .valid(core_3_valid), 
     .price(core_3_price)
 );
