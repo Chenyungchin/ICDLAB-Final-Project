@@ -6,34 +6,47 @@ module Top(
     output [15:0] out
 );
 
-    always @(*) begin
+// ========== wire and reg ====================
+// Sobol
+wire  [12:0] icdf;
+// ========== Combinational ===================
+always @(*) begin
 
+
+end
+
+// ========== Sequential ======================
+always @(posedge clk or negedge rst_n) begin
+    if(!rst_n) begin
 
     end
-
-
-    always @(posedge clk or negedge rst_n) begin
-        if(!rst_n) begin
-
-        end
-        else begin
-        
-        end
+    else begin
+    
     end
+end
 
+// ========== Module Instantiation ============
+Sobol sobol0(
+    .clk(clk),
+    .rst_n(rst_n),
+    .start(start),
+    .icdf(icdf)
+);
 
-    Sobol sobol0(
-        .clk(clk),
-        .rst_n(rst_n),
-        .start(start),
-        .res_fp16(res_fp16),
-    );
+Path_Gen path_gen0(
+    // input
+    .clk(clk),
+    .rst_n(rst_n),
+    .w(),
+    .q(),
+    .epsilon(icdf),
+    .S0(),
+    // output
+    .valid(),
+    .path()
+);
 
-    Path_Gen path_gen0(
+Pricing pricing0(
 
-    );
-
-    Pricing pricing0(
-
-    );
+);
 endmodule

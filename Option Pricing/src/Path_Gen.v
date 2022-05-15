@@ -3,7 +3,7 @@ module Path_Gen(
     input         rst_n, 
     input  [11:0] w, 
     input  [11:0] q, 
-    input  [11:0] epsilon, 
+    input  [12:0] epsilon, 
     input  [11:0] S0, 
     output        valid, 
     output [11:0] path
@@ -15,23 +15,25 @@ reg [11:0] out2_r;
 reg [11:0] out3_r;
 
 wire [11:0] out0_w, out1_w, out2_w, out3_w;
-reg day1;
+wire        day1;
+
+wire        epsilon_is_neg_ns;
+reg         epsilon_is_neg;
 
 assign path = out3_r;
 assign valid = out3_r != 12'b0;
+assign day1 = (out2_r == 12'b0) ? 1 : 0;
+// sign bit of epsilon
+assign epsilon_is_neg_ns = epsilon[12];
 
-// always @(*) begin
-//     // TODO: Change the multiplier to fp12 multiplier
-//     // out0_w = w * epsilon;
-//     // out1_w = out0_r * q;
-//     // out2_w = out1_r * (day1 ? S0 : out2_r);
-//     // day1 = (out2_r == 12'b0)? 1 : 0;
-
-//     // TODO: fp12 to int function for out3_w
-
-// end
+// ============ Combinational ====================
+always @(*) begin
+    if (epsilon_is_neg) out1_w = q - out0_r;
+    else                out1_w = q + out0_r;
+end
 
 
+// ============ Sequential =======================
 always @(posedge clk or negedge rst_n) begin
     if(!rst_n) begin
         out0_r <= 12'b0;
@@ -46,42 +48,25 @@ always @(posedge clk or negedge rst_n) begin
         out3_r <= out3_w;
     end
 end
+// epsilon sign
+always @(posedge clk or negedge rst_n) begin
+    if (!rst_n) epsilon_is_neg <= 1'b0;
+    else        epsilon_is_neg <= epsilon_is_neg_ns;
+end
 
 // ========== module instantiation ==============
 // out0_w = w x epsilon
 FP12_MULT #( 
-    .IN1_POINT(8),
-    .IN2_POINT(8),
-    .OUT_POINT(8),
-    .IN1_BIAS (7),
-    .IN2_BIAS (7),
-    .OUT_BIAS (7)
+    .INT_LEN(8)
 ) fp12_mult_w_x_epsilon(
     .in1(w),
-    .in2(epsilon),
+    .in2(epsilon[11:0]),
     .out(out0_w)
 );
-// out1_w = out0_r x q
-FP12_MULT #( 
-    .IN1_POINT(8),
-    .IN2_POINT(8),
-    .OUT_POINT(8),
-    .IN1_BIAS (7),
-    .IN2_BIAS (7),
-    .OUT_BIAS (7)
-) fp12_mult_out0_r_x_q(
-    .in1(out0_r),
-    .in2(q),
-    .out(out1_w)
-);
+
 // out2_w = out1_r * (day1 ? S0 : out2_r)
 FP12_MULT #( 
-    .IN1_POINT(8),
-    .IN2_POINT(8),
-    .OUT_POINT(8),
-    .IN1_BIAS (7),
-    .IN2_BIAS (7),
-    .OUT_BIAS (7)
+    .INT_LEN(8)
 ) fp12_mult_out1_r_x_mux(
     .in1(out1_r),
     .in2(day1 ? S0 : out2_r),
