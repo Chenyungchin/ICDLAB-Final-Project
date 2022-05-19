@@ -1,15 +1,14 @@
 // function: multiplication of unsigned 12 bit fixed point, output is also 12 bit fixed point
 // the higher 8 bits represent the integer part, the lower 4 bits represent the decimal part
 // ex: 00000011_1000 = 3.5
-module FP12_MULT #(
-    parameter INT_LEN = 8
-)(
+module FP12_MULT (
     input  [11:0] in1, 
     input  [11:0] in2,
     output [11:0] out
 );
 
 // =========== parameter ==============
+parameter INT_LEN     = 8;
 parameter N           = 12;
 parameter FIXED_POINT = (N - INT_LEN) * 2;
 // =========== wire and reg ===========
