@@ -37,6 +37,7 @@ Path_Gen path_gen0(
     // input
     .clk(clk),
     .rst_n(rst_n),
+    .start(),
     .w(),
     .q(),
     .epsilon(icdf),
