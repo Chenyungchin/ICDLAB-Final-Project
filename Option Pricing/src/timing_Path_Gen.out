@@ -1,0 +1,80 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Path_Gen
+Version: R-2020.09-SP5
+Date   : Fri May 20 00:00:09 2022
+****************************************
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out2_r_reg[11]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Path_Gen           G200K                 fsa0m_a_generic_core_tt1p8v25c
+  FP12_MULT_0_DW_mult_uns_0_DW_mult_uns_1
+                     enG5K                 fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  state_reg[0]/CK (QDFFRBN)                               0.00       0.50 r
+  state_reg[0]/Q (QDFFRBN)                                0.38       0.88 r
+  U91/O (INV1S)                                           0.19       1.07 f
+  U61/O (ND2)                                             0.31       1.38 r
+  U60/O (AN3B2S)                                          0.41       1.79 f
+  U69/O (BUF1CK)                                          0.28       2.07 f
+  U67/O (BUF1CK)                                          0.28       2.35 f
+  U62/O (MOAI1S)                                          0.63       2.99 r
+  fp12_mult_out1_r_x_mux/in2[4] (FP12_MULT_0)             0.00       2.99 r
+  fp12_mult_out1_r_x_mux/mult_19/b[4] (FP12_MULT_0_DW_mult_uns_0_DW_mult_uns_1)
+                                                          0.00       2.99 r
+  fp12_mult_out1_r_x_mux/mult_19/U270/O (INV1S)           0.45       3.44 f
+  fp12_mult_out1_r_x_mux/mult_19/U311/O (NR2)             0.26       3.70 r
+  fp12_mult_out1_r_x_mux/mult_19/U101/S (FA1S)            0.42       4.12 f
+  fp12_mult_out1_r_x_mux/mult_19/U100/S (FA1S)            0.39       4.52 f
+  fp12_mult_out1_r_x_mux/mult_19/U13/CO (FA1S)            0.42       4.94 f
+  fp12_mult_out1_r_x_mux/mult_19/U269/CO (FA1S)           0.40       5.34 f
+  fp12_mult_out1_r_x_mux/mult_19/U248/CO (FA1S)           0.40       5.74 f
+  fp12_mult_out1_r_x_mux/mult_19/U10/CO (FA1S)            0.40       6.13 f
+  fp12_mult_out1_r_x_mux/mult_19/U9/CO (FA1S)             0.40       6.53 f
+  fp12_mult_out1_r_x_mux/mult_19/U8/CO (FA1S)             0.40       6.93 f
+  fp12_mult_out1_r_x_mux/mult_19/U7/CO (FA1S)             0.40       7.33 f
+  fp12_mult_out1_r_x_mux/mult_19/U6/CO (FA1S)             0.40       7.73 f
+  fp12_mult_out1_r_x_mux/mult_19/U5/CO (FA1S)             0.40       8.13 f
+  fp12_mult_out1_r_x_mux/mult_19/U4/CO (FA1S)             0.40       8.52 f
+  fp12_mult_out1_r_x_mux/mult_19/U3/CO (FA1S)             0.38       8.90 f
+  fp12_mult_out1_r_x_mux/mult_19/U271/O (XOR4S)           0.43       9.33 f
+  fp12_mult_out1_r_x_mux/mult_19/U298/O (XOR4)            0.54       9.87 f
+  fp12_mult_out1_r_x_mux/mult_19/U296/O (XOR4)            0.39      10.26 f
+  fp12_mult_out1_r_x_mux/mult_19/product[15] (FP12_MULT_0_DW_mult_uns_0_DW_mult_uns_1)
+                                                          0.00      10.26 f
+  fp12_mult_out1_r_x_mux/out[11] (FP12_MULT_0)            0.00      10.26 f
+  out2_r_reg[11]/D (QDFFRBT)                              0.00      10.26 f
+  data arrival time                                                 10.26
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.50      10.50
+  clock uncertainty                                      -0.10      10.40
+  out2_r_reg[11]/CK (QDFFRBT)                             0.00      10.40 r
+  library setup time                                     -0.07      10.33
+  data required time                                                10.33
+  --------------------------------------------------------------------------
+  data required time                                                10.33
+  data arrival time                                                -10.26
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+1

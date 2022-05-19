@@ -2,95 +2,95 @@ module ICDF_LUT(
     input               clk,
     input               rst_n,
     input       [31:0]  cdf,
-    output reg  [15:0]  icdf
+    output reg  [12:0]  icdf
 );
 // =========== parameter ===============
-parameter [16*64-1: 0] LUT = {
-    16'ha103,
-    16'ha785,
-    16'haa45,
-    16'hac64,
-    16'hada6,
-    16'haee8,
-    16'hb016,
-    16'hb0b8,
-    16'hb15a,
-    16'hb1fd,
-    16'hb2a1,
-    16'hb345,
-    16'hb3ea,
-    16'hb448,
-    16'hb49b,
-    16'hb4ef,
-    16'hb543,
-    16'hb598,
-    16'hb5ee,
-    16'hb644,
-    16'hb69b,
-    16'hb6f3,
-    16'hb74c,
-    16'hb7a5,
-    16'hb7ff,
-    16'hb82d,
-    16'hb85c,
-    16'hb88a,
-    16'hb8ba,
-    16'hb8ea,
-    16'hb91b,
-    16'hb94c,
-    16'hb97f,
-    16'hb9b2,
-    16'hb9e6,
-    16'hba1b,
-    16'hba51,
-    16'hba89,
-    16'hbac1,
-    16'hbafb,
-    16'hbb37,
-    16'hbb74,
-    16'hbbb3,
-    16'hbbf3,
-    16'hbc1b,
-    16'hbc3e,
-    16'hbc61,
-    16'hbc87,
-    16'hbcae,
-    16'hbcd6,
-    16'hbd01,
-    16'hbd2e,
-    16'hbd5e,
-    16'hbd91,
-    16'hbdc8,
-    16'hbe03,
-    16'hbe44,
-    16'hbe8d,
-    16'hbede,
-    16'hbf3d,
-    16'hbfaf,
-    16'hc021,
-    16'hc088,
-    16'hc152
+parameter [13*64-1: 0] LUT = {
+    13'h1000,
+    13'h1000,
+    13'h1000,
+    13'h1001,
+    13'h1001,
+    13'h1001,
+    13'h1002,
+    13'h1002,
+    13'h1002,
+    13'h1002,
+    13'h1003,
+    13'h1003,
+    13'h1003,
+    13'h1004,
+    13'h1004,
+    13'h1004,
+    13'h1005,
+    13'h1005,
+    13'h1005,
+    13'h1006,
+    13'h1006,
+    13'h1006,
+    13'h1007,
+    13'h1007,
+    13'h1007,
+    13'h1008,
+    13'h1008,
+    13'h1009,
+    13'h1009,
+    13'h1009,
+    13'h100a,
+    13'h100a,
+    13'h100a,
+    13'h100b,
+    13'h100b,
+    13'h100c,
+    13'h100c,
+    13'h100d,
+    13'h100d,
+    13'h100d,
+    13'h100e,
+    13'h100e,
+    13'h100f,
+    13'h100f,
+    13'h1010,
+    13'h1010,
+    13'h1011,
+    13'h1012,
+    13'h1012,
+    13'h1013,
+    13'h1014,
+    13'h1014,
+    13'h1015,
+    13'h1016,
+    13'h1017,
+    13'h1018,
+    13'h1019,
+    13'h101a,
+    13'h101b,
+    13'h101c,
+    13'h101e,
+    13'h1021,
+    13'h1024,
+    13'h102a
 };
 // ================ wire and reg ==================
 // whether cdf is greater than 0.5
 wire GT05;
 wire [5:0] index;
-reg [16:0] icdf_w;
+reg [13:0] icdf_w;
 // ================ assignment ====================
 assign GT05 = cdf[31];
 assign index = cdf[30 -: 6];
 // ================ Combinational =================
 always@(*) begin
     if (!GT05) begin
-        icdf_w = LUT[16*(index+1)-1 -: 16];    
+        icdf_w = LUT[13*(index+1)-1 -: 13];    
     end
     else begin
-        icdf_w = {1'b0, LUT[16*((63-index)+1)-2 -: 15]};
+        icdf_w = {1'b0, LUT[13*((63-index)+1)-2 -: 12]};
     end 
 end
 // ================ Sequential ====================
 always @(posedge clk or negedge rst_n) begin
-    if (!rst_n) icdf <= 16'b0;
+    if (!rst_n) icdf <= 13'b0;
     else        icdf <= icdf_w;
 end
 

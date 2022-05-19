@@ -46,8 +46,8 @@ FP12_MULT fp12_mult0(
 initial begin
     // update weight
     @(posedge clk) 
-    in1 = 12'b001101010101;
-    in2 = 12'b010101110101;
+    in1 = 12'b00000011_1000;
+    in2 = 12'b00000011_1000;
     @(posedge clk) 
     in1 = 12'b001100001010;
     in2 = 12'b111011000000;
