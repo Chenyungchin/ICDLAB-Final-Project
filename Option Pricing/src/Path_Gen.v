@@ -14,7 +14,8 @@ reg [11:0] out1_r;
 reg [11:0] out2_r;
 reg [11:0] out3_r;
 
-wire [11:0] out0_w, out1_w, out2_w, out3_w;
+wire [11:0] out0_w, out2_w, out3_w;
+reg [11:0] out1_w;
 wire        day1;
 
 wire        epsilon_is_neg_ns;
