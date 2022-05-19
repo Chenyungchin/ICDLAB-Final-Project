@@ -9,7 +9,8 @@
 module MC_CORE_tb;
 
 parameter DATA_LENGTH   = 256;
-parameter OUT_LENGTH    = 256;
+parameter TOTAL_LENGTH  = 2048;
+parameter DAY           = 8;
 
 reg           clk;
 reg           reset;
@@ -21,13 +22,15 @@ wire  [11:0]  price;
 
 // reg   [2:0]   cmd_mem   [0:DATA_LENGTH-1];
 // reg   [15:0]  out_mem   [0:OUT_LENGTH-1];
-reg   [11:0]   path_mem  [0:DATA_LENGTH-1];
+reg   [11:0]   path_mem  [0:TOTAL_LENGTH-1];
 // reg   [7:0]   image2_mem  [0:DATA_LENGTH-1];
 reg   [15:0]  out_temp;
 
 reg           stop;
 integer       i, out_f, err, pattern_num;
 reg           over;
+integer       day;
+reg           res;
 
 MC_CORE mc_core0(
 .clk(clk),
@@ -57,6 +60,8 @@ initial begin
     pattern_num = 0;
     err         = 0;
     i           = 0;   
+    day         = 0;
+    res         = 1'b0; // 0 when begin a new day; 1 when resend after regression
     #2.5 reset=1'b0;                            // system reset
     #2.5 reset=1'b1;
     #2.5 start=1'b1;
@@ -67,8 +72,8 @@ end
 always begin #(`CYCLE/2) clk = ~clk; end
 
 initial begin
-	$dumpfile("mc_core.fsdb");
-	$dumpvars;
+	$fsdbDumpfile("mc_core.fsdb");
+	$fsdbDumpvars(0, "+mda");
 
    out_f = $fopen("out.dat");
    if (out_f == 0) begin
@@ -79,15 +84,24 @@ end
 
 
 always @(negedge clk)begin
-    if (i < OUT_LENGTH) begin
-		 if(i < DATA_LENGTH && i > 1)begin
+	if(i < DATA_LENGTH*(day+1) + 2 && i > DATA_LENGTH*day+1)begin
           path  = path_mem[i-2];
-	    end
+	end
 		//  out_temp = out_mem[i];
-	    i = i+1;      
+	i = i+1;      
+    if (resend && ~res) begin
+        path = path_mem[DATA_LENGTH*day];
+        i = DATA_LENGTH*day + 3;
+        res = 1'b1;
     end
-    else                                       
-       stop = 1 ;      
+    else if (resend && res) begin
+        day = day + 1;
+        path = path_mem[DATA_LENGTH * day];
+        i = DATA_LENGTH * day;
+        res = 1'b0;
+    end
+    // else                                       
+    //    stop = 1 ;      
 end
 
 // always @(posedge clk)begin
