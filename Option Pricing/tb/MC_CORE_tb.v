@@ -32,7 +32,19 @@ reg           over;
 integer       day;
 reg           res;
 
-MC_CORE mc_core0(
+// MC_CORE mc_core0(
+// .clk(clk),
+// .rst_n(reset), 
+// .start(start), 
+// .path(path),  
+// .K(K), 
+// .resend(resend), 
+// .valid(valid), 
+// .price(price)
+// );
+
+
+Pricing pricing0(
 .clk(clk),
 .rst_n(reset), 
 .start(start), 
@@ -141,7 +153,7 @@ end
 // end
    
 initial begin
-    # (5000 * `CYCLE);
+    # (50000 * `CYCLE);
     $display("\n\033[1;31m=============================================");
 	$display("           Simulation Time Out!      ");
 	$display("=============================================\033[0m");
