@@ -46,7 +46,8 @@ wire [15:0] test;
 wire [15:0] det;
 wire o_valid;
 wire sign;
-
+wire [41:0] dett;
+wire [2:0] counter;
 // XTX xtx0(
 //     .clk(clk),
 //     .rst_n(rst_n),
@@ -80,8 +81,10 @@ MAT_INV MI0(
     .out0(out0),
     .out1(out1),
     .out2(out2),
-    // .p(location),
-    // .det(det),
+    .p(location),
+    .det(det),
+    .dett(dett),
+    .counter(counter),
     // .test(test),
     // .sign(sign),
     .o_valid(o_valid)
@@ -106,8 +109,8 @@ initial begin
     $display("           Simulation Result      ");
     //$monitor("xi=%d ans0=%d ans1=%d ans2=%d ans3=%d ans4=%d\n",inp, ans0, ans1,ans2,ans3,ans4);
     //$monitor("inp=%d inpy=%d ans1=%d ans2=%d ans3=%d\n", inp, ans1,ans2,ans3);
-    //$monitor("sig0=%d, sig1=%d, sig2=%d, out0=%b, ou1=%b, out2=%b, location=%d, x=%b, det=%b, valid=%d, sign=%d",sig0, sig1>>4, sig2>>8, out0, out1, out2, location, test, det, o_valid, sign);
-    $monitor("sig0=%d, sig1=%d, sig2=%d, out0=%b, ou1=%b, out2=%b, valid=%d",sig0>>6, sig1>>6, sig2>>6, out0, out1, out2, o_valid);
+    $monitor("sig0=%d, sig1=%d, sig2=%d, out0=%b, ou1=%b, out2=%b, location=%d, dett=%b, det=%b, valid=%d, sign=%d, counter=%b",sig0, sig1>>4, sig2>>8, out0, out1, out2, location, dett, det, o_valid, sign, counter);
+    //$monitor("sig0=%d, sig1=%d, sig2=%d, out0=%b, ou1=%b, out2=%b, valid=%d, location=%d ",sig0, sig1>>4, sig2>>8, out0, out1, out2, o_valid, location);
 
     @(posedge clk);
 end
