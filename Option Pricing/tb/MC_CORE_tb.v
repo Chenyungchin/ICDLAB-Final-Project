@@ -32,19 +32,7 @@ reg           over;
 integer       day;
 reg           res;
 
-// MC_CORE mc_core0(
-// .clk(clk),
-// .rst_n(reset), 
-// .start(start), 
-// .path(path),  
-// .K(K), 
-// .resend(resend), 
-// .valid(valid), 
-// .price(price)
-// );
-
-
-Pricing pricing0(
+MC_CORE mc_core0(
 .clk(clk),
 .rst_n(reset), 
 .start(start), 
@@ -54,6 +42,18 @@ Pricing pricing0(
 .valid(valid), 
 .price(price)
 );
+
+
+// Pricing pricing0(
+// .clk(clk),
+// .rst_n(reset), 
+// .start(start), 
+// .path(path),  
+// .K(K), 
+// .resend(resend), 
+// .valid(valid), 
+// .price(price)
+// );
 
 
 
