@@ -48,6 +48,13 @@ Path_Gen path_gen0(
 );
 
 Pricing pricing0(
-
+    .clk(clk),
+    .rst_n(rst_n),
+    .start(),
+    .path(), 
+    .K(), 
+    .resend(), 
+    .price(),
+    .valid()
 );
 endmodule
