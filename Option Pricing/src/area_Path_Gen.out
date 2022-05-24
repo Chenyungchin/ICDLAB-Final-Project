@@ -3,7 +3,7 @@
 Report : area
 Design : Path_Gen
 Version: R-2020.09-SP5
-Date   : Thu May 19 21:24:16 2022
+Date   : Fri May 20 00:00:08 2022
 ****************************************
 
 Information: Updating design information... (UID-85)
@@ -12,20 +12,20 @@ Library(s) Used:
     fsa0m_a_generic_core_tt1p8v25c (File: /home/raid7_2/userb08/b08061/ICD_Lab/Final_Project/fsa0m_a_generic_core_tt1p8v25c.db)
 
 Number of ports:                          309
-Number of nets:                          1165
-Number of cells:                          697
-Number of combinational cells:            647
-Number of sequential cells:                44
+Number of nets:                          1150
+Number of cells:                          681
+Number of combinational cells:            632
+Number of sequential cells:                43
 Number of macros/black boxes:               0
-Number of buf/inv:                        147
-Number of references:                      18
+Number of buf/inv:                        133
+Number of references:                      20
 
-Combinational area:              16820.798500
-Buf/Inv area:                     1018.684789
-Noncombinational area:            2734.199989
+Combinational area:              16780.176095
+Buf/Inv area:                      906.191990
+Noncombinational area:            2681.078384
 Macro/Black Box area:                0.000000
 Net Interconnect area:      undefined  (Wire load has zero net area)
 
-Total cell area:                 19554.998489
+Total cell area:                 19461.254479
 Total area:                 undefined
 1

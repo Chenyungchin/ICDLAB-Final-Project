@@ -21,7 +21,6 @@ parameter COMP = 2'b10;
 reg  [1:0] state, state_next;
 reg  [2:0] day_curr, day_next;
 
-reg        buff_jump_w, buff_jump_r;
 
 reg [11:0] out0_r;
 reg [11:0] out1_r;
@@ -52,18 +51,13 @@ assign valid_w = (state == COMP);
 always @(*) begin
     state_next        = state;
     day_next          = day_curr;
-    buff_jump_w       = 1'b0;
     case (state)
         IDLE: begin
             if (start) state_next = BUFF;
             else       state_next = state;
         end
         BUFF: begin
-            if (buff_jump_r) begin
-                buff_jump_w = 1'b0;
-                state_next  = COMP;
-            end
-            else buff_jump_w = 1'b1;
+            state_next = COMP;
         end
         COMP: begin
             if (day_curr == NUM_OF_DAYS-1) begin
@@ -108,11 +102,6 @@ end
 always @(posedge clk or negedge rst_n) begin
     if (!rst_n) epsilon_is_neg <= 1'b0;
     else        epsilon_is_neg <= epsilon_is_neg_ns;
-end
-// buff jump
-always @(posedge clk or negedge rst_n) begin
-    if (!rst_n) buff_jump_r <= 1'b0;
-    else        buff_jump_r <= buff_jump_w;
 end
 // valid
 always @(posedge clk or negedge rst_n) begin

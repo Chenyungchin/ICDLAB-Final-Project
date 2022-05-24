@@ -6,13 +6,13 @@ Report : timing
         -max_paths 1
 Design : Path_Gen
 Version: R-2020.09-SP5
-Date   : Thu May 19 21:24:17 2022
+Date   : Fri May 20 00:00:09 2022
 ****************************************
 
 Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
 Wire Load Model Mode: enclosed
 
-  Startpoint: state_reg[1]
+  Startpoint: state_reg[0]
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out2_r_reg[11]
             (rising edge-triggered flip-flop clocked by clk)
@@ -29,39 +29,40 @@ Wire Load Model Mode: enclosed
   --------------------------------------------------------------------------
   clock clk (rise edge)                                   0.00       0.00
   clock network delay (ideal)                             0.50       0.50
-  state_reg[1]/CK (QDFFRBN)                               0.00       0.50 r
-  state_reg[1]/Q (QDFFRBN)                                0.34       0.84 r
-  U130/O (INV1S)                                          0.27       1.11 f
-  U129/O (NR2)                                            0.50       1.62 r
-  U127/O (ND3)                                            0.32       1.94 f
-  U77/O (BUF1CK)                                          0.32       2.26 f
-  U115/O (MOAI1S)                                         0.63       2.89 r
-  fp12_mult_out1_r_x_mux/in2[4] (FP12_MULT_0)             0.00       2.89 r
+  state_reg[0]/CK (QDFFRBN)                               0.00       0.50 r
+  state_reg[0]/Q (QDFFRBN)                                0.38       0.88 r
+  U91/O (INV1S)                                           0.19       1.07 f
+  U61/O (ND2)                                             0.31       1.38 r
+  U60/O (AN3B2S)                                          0.41       1.79 f
+  U69/O (BUF1CK)                                          0.28       2.07 f
+  U67/O (BUF1CK)                                          0.28       2.35 f
+  U62/O (MOAI1S)                                          0.63       2.99 r
+  fp12_mult_out1_r_x_mux/in2[4] (FP12_MULT_0)             0.00       2.99 r
   fp12_mult_out1_r_x_mux/mult_19/b[4] (FP12_MULT_0_DW_mult_uns_0_DW_mult_uns_1)
-                                                          0.00       2.89 r
-  fp12_mult_out1_r_x_mux/mult_19/U265/O (INV1S)           0.45       3.35 f
-  fp12_mult_out1_r_x_mux/mult_19/U308/O (NR2)             0.26       3.61 r
-  fp12_mult_out1_r_x_mux/mult_19/U101/S (FA1S)            0.42       4.03 f
-  fp12_mult_out1_r_x_mux/mult_19/U100/S (FA1S)            0.39       4.42 f
-  fp12_mult_out1_r_x_mux/mult_19/U13/CO (FA1S)            0.42       4.84 f
-  fp12_mult_out1_r_x_mux/mult_19/U12/CO (FA1S)            0.40       5.24 f
-  fp12_mult_out1_r_x_mux/mult_19/U11/CO (FA1S)            0.40       5.64 f
-  fp12_mult_out1_r_x_mux/mult_19/U10/CO (FA1S)            0.40       6.04 f
-  fp12_mult_out1_r_x_mux/mult_19/U9/CO (FA1S)             0.40       6.44 f
-  fp12_mult_out1_r_x_mux/mult_19/U8/CO (FA1S)             0.40       6.84 f
-  fp12_mult_out1_r_x_mux/mult_19/U7/CO (FA1S)             0.40       7.23 f
-  fp12_mult_out1_r_x_mux/mult_19/U6/CO (FA1S)             0.40       7.63 f
-  fp12_mult_out1_r_x_mux/mult_19/U5/CO (FA1S)             0.40       8.03 f
-  fp12_mult_out1_r_x_mux/mult_19/U4/CO (FA1S)             0.40       8.43 f
-  fp12_mult_out1_r_x_mux/mult_19/U3/CO (FA1S)             0.38       8.81 f
-  fp12_mult_out1_r_x_mux/mult_19/U296/O (XOR4)            0.46       9.27 f
-  fp12_mult_out1_r_x_mux/mult_19/U294/O (XOR4)            0.54       9.80 f
-  fp12_mult_out1_r_x_mux/mult_19/U292/O (XOR4)            0.39      10.20 f
+                                                          0.00       2.99 r
+  fp12_mult_out1_r_x_mux/mult_19/U270/O (INV1S)           0.45       3.44 f
+  fp12_mult_out1_r_x_mux/mult_19/U311/O (NR2)             0.26       3.70 r
+  fp12_mult_out1_r_x_mux/mult_19/U101/S (FA1S)            0.42       4.12 f
+  fp12_mult_out1_r_x_mux/mult_19/U100/S (FA1S)            0.39       4.52 f
+  fp12_mult_out1_r_x_mux/mult_19/U13/CO (FA1S)            0.42       4.94 f
+  fp12_mult_out1_r_x_mux/mult_19/U269/CO (FA1S)           0.40       5.34 f
+  fp12_mult_out1_r_x_mux/mult_19/U248/CO (FA1S)           0.40       5.74 f
+  fp12_mult_out1_r_x_mux/mult_19/U10/CO (FA1S)            0.40       6.13 f
+  fp12_mult_out1_r_x_mux/mult_19/U9/CO (FA1S)             0.40       6.53 f
+  fp12_mult_out1_r_x_mux/mult_19/U8/CO (FA1S)             0.40       6.93 f
+  fp12_mult_out1_r_x_mux/mult_19/U7/CO (FA1S)             0.40       7.33 f
+  fp12_mult_out1_r_x_mux/mult_19/U6/CO (FA1S)             0.40       7.73 f
+  fp12_mult_out1_r_x_mux/mult_19/U5/CO (FA1S)             0.40       8.13 f
+  fp12_mult_out1_r_x_mux/mult_19/U4/CO (FA1S)             0.40       8.52 f
+  fp12_mult_out1_r_x_mux/mult_19/U3/CO (FA1S)             0.38       8.90 f
+  fp12_mult_out1_r_x_mux/mult_19/U271/O (XOR4S)           0.43       9.33 f
+  fp12_mult_out1_r_x_mux/mult_19/U298/O (XOR4)            0.54       9.87 f
+  fp12_mult_out1_r_x_mux/mult_19/U296/O (XOR4)            0.39      10.26 f
   fp12_mult_out1_r_x_mux/mult_19/product[15] (FP12_MULT_0_DW_mult_uns_0_DW_mult_uns_1)
-                                                          0.00      10.20 f
-  fp12_mult_out1_r_x_mux/out[11] (FP12_MULT_0)            0.00      10.20 f
-  out2_r_reg[11]/D (QDFFRBT)                              0.00      10.20 f
-  data arrival time                                                 10.20
+                                                          0.00      10.26 f
+  fp12_mult_out1_r_x_mux/out[11] (FP12_MULT_0)            0.00      10.26 f
+  out2_r_reg[11]/D (QDFFRBT)                              0.00      10.26 f
+  data arrival time                                                 10.26
 
   clock clk (rise edge)                                  10.00      10.00
   clock network delay (ideal)                             0.50      10.50
@@ -71,9 +72,9 @@ Wire Load Model Mode: enclosed
   data required time                                                10.33
   --------------------------------------------------------------------------
   data required time                                                10.33
-  data arrival time                                                -10.20
+  data arrival time                                                -10.26
   --------------------------------------------------------------------------
-  slack (MET)                                                        0.13
+  slack (MET)                                                        0.07
 
 
 1

@@ -4,7 +4,7 @@ module XTX(
     input         start,
     input  [11:0] xi, //8, 4
     output        XTX_valid, 
-    output [9:0]  ans0, // 9, 0
+    output [8:0]  ans0, // 9, 0
     output [20:0] ans1, // 17, 4
     output [32:0] ans2  // 25, 8
     // output [43:0] ans3,
@@ -19,7 +19,7 @@ localparam IN = 2'd1;
 localparam OUT = 2'd2;
 
 // ================== reg and wire ======================
-reg [9:0]  out0_r, out0_w; // 9, 0
+reg [8:0]  out0_r, out0_w; // 9, 0
 reg [20:0] out1_r, out1_w; // 17, 4;
 reg [32:0] out2_r, out2_w; // 25, 8;
 reg [9:0]  count_r, count_w;
@@ -47,15 +47,19 @@ always @(*) begin
     valid_w = valid_r;
     case (state_r)
         IDLE: begin
+            valid_w = 1'b0;
             if (start) begin
                 state_w = IN;
+                out0_w = 0;
+                out1_w = 0;
+                out2_w = 0;
             end
         end
 
         IN: begin
-            valid_w = 1'b0;
             if (count_r == N) begin
                 state_w = OUT;
+                count_w = 0;
             end
             else begin
                 out0_w = out0_r + 1;
@@ -107,12 +111,12 @@ module XTY (
     input         clk,
     input         rst_n, 
     input         start,
-    input  [15:0]  xi,
+    input  [11:0]  xi, // 8, 4
     // input  [16:0]  xi2,
-    input  [15:0]  yi,
+    input  [11:0]  yi, // 8, 4
     output         XTY_valid, 
-    output [32:0]  out1,
-    output [32:0]  out2
+    output [32:0]  out1, // 25, 8
+    output [32:0]  out2  // 25, 8
     // output [32:0]  out3
 );
 
@@ -143,15 +147,18 @@ always @(*) begin
     valid_w = valid_r;
     case (state_r)
         IDLE: begin
+            valid_w = 1'b0;
             if (start) begin
                 state_w = IN;
+                out1_w = 0;
+                out2_w = 0;
             end
         end
 
         IN: begin
-            valid_w = 1'b0;
             if (count_r == N) begin
                 state_w = OUT;
+                count_w = 0;
             end
             else begin
                 out1_w = out1_r + yi;
@@ -206,21 +213,24 @@ module MAT_INV(
     output [31:0] out0,//22, 10
     output [19:0] out1,//12, 8
     output [20:0] out2//15, 6
-    // output [5:0] p,
-    // output signed [15:0] det,
+    //output [5:0] p,
+    //output signed [15:0] det,
+    //output [2:0] counter,
+    //output [41:0] dett
     // output signed[15:0] test,
     //output sign
 );
 // ================== reg and wire ======================
 integer i;
-localparam S_DET = 1'd0;
-localparam S_INVMAT = 1'd1;
+localparam S_IDLE = 2'd0;
+localparam S_DET = 2'd1;
+localparam S_INVMAT = 2'd2;
 reg signed [41:0] det_r, det_w; //34 ,8
 wire signed [15:0] det_f; //10, 6
 reg [2:0] counter_r,counter_w;
 reg [5:0] location_r, location_w;
 reg signed[15:0] x0_r, x0_w; //10, 6
-reg state_r, state_w;
+reg [1:0] state_r, state_w;
 reg ctrl_r, ctrl_w;
 reg [8:0] sig0_r, sig0_w; //9, 0
 reg [20:0] sig1_r, sig1_w; //17, 4
@@ -237,124 +247,153 @@ assign out0 = out0_r[35:4];
 assign out1 = out1_r[21:2];
 assign out2 = out2_r[20:0];
 // assign test = x0_r;
-// assign p = location_r;
+//assign p = location_r;
 assign det_f = det_r[17:2];
-// assign det = det_r[17:2];
+//assign det = det_r[17:2];
 assign o_valid = valid_r;
+//assign dett = det_r;
+//assign counter = counter_r;
 // assign sign = sign_r;
 // ================== Combinational =====================
 always @(*) begin
-    if(start == 1) begin
-        location_w = location_r;
-        x0_w = x0_r;
-        sig0_w = sig0_r;
-        sig1_w = sig1_r;
-        sig2_w = sig2_r;
-        ctrl_w = ctrl_r;
-        sign_w = sign_r;
-        valid_w = valid_r;
-        out0_w = out0_r;
-        out1_w = out1_r;
-        out2_w = out2_r;
-        temp1_w = temp1_r;
-        temp2_w = temp2_r;
-        counter_w = counter_r;
-        state_w = state_r;
-        det_w = det_r;
-        case (state_r)
-            S_DET: begin
-                if(counter_r == 4'd0) begin
-                    sig0_w = sig0;
-                    sig1_w = sig1;
-                    sig2_w = sig2;
-                    det_w = (sig0 * sig2) - (sig1 * sig1);
-                    state_w = S_DET;
-                    counter_w = counter_r + 1;
-                end
-                else if(counter_r == 4'd1) begin
-                    det_w = det_r;
-                    state_w = S_DET;
-                    x0_w = 16'd1;
-                    for (i = 40; i >= 10; i=i-1) begin
-                        if(ctrl_r == 0) begin
-                            if(det_r[41] == 1) begin
-                                det_w = ~det_r +1'b1;
-                                sign_w = 1;
-                                ctrl_w = 0;
-                                counter_w = counter_r;
-                            end
-                            else if (det_r[i] == 1) begin
-                                location_w = i-7;
-                                sign_w = 0;
-                                ctrl_w = 1;
-                                counter_w = counter_r + 1;
-                            end
-                        end
-                    end
-                end
-                else if(counter_r == 4'd2) begin
-                    det_w = det_r;
-                    state_w = S_DET;
-                    counter_w = counter_r + 1;
-                    x0_w = (16'b0000000010000000 << location_r) - det_f;
-                end
-                else if(counter_r == 4'd3) begin
-                    counter_w = counter_r + 1;
-                    temp1_w = (16'b0000000010000000 << location_r)*x0_r;
-                    temp2_w = (det_f*(x0_r*x0_r) >> location_r);
-                    x0_w = x0_r;
-                end
-                else if(counter_r == 4'd4) begin
-                    counter_w = counter_r + 1;
-                    x0_w = temp1_r[21:6] - temp2_r[27:12];
+    location_w = location_r;
+    x0_w = x0_r;
+    sig0_w = sig0_r;
+    sig1_w = sig1_r;
+    sig2_w = sig2_r;
+    ctrl_w = ctrl_r;
+    sign_w = sign_r;
+    valid_w = valid_r;
+    out0_w = out0_r;
+    out1_w = out1_r;
+    out2_w = out2_r;
+    temp1_w = temp1_r;
+    temp2_w = temp2_r;
+    counter_w = counter_r;
+    state_w = state_r;
+    det_w = det_r;
+    case (state_r)
+        S_IDLE: begin
+            valid_w = 1'b0;
+            if (start) begin
+                state_w = S_DET;
+                out0_w = 0;
+                out1_w = 0;
+                out2_w = 0;
+                ctrl_w = 0;
+            end
+        end
+        S_DET: begin
+            if(counter_r == 4'd0) begin
+                sig0_w = sig0;
+                sig1_w = sig1;
+                sig2_w = sig2;
+                det_w = (sig0 * sig2) - (sig1 * sig1);
+                state_w = S_DET;
+                counter_w = counter_r + 1;
+            end
+            else if(counter_r == 4'd1) begin
+                det_w = det_r;
+                state_w = S_DET;
+                x0_w = 16'd1;
+                if(det_r[41] == 1) begin
+                    det_w = ~det_r +1'b1;
+                    sign_w = 1;
+                    counter_w = counter_r;
                 end
                 else begin
-                    counter_w = 0;
-                    x0_w = x0_r >> (location_r * location_r);
-                    state_w = S_INVMAT;
+                    casex (det_r) //34,8
+                        42'b01xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx: begin location_w = 6'd33; end
+                        42'b001xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx: begin location_w = 6'd32; end
+                        42'b0001xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx: begin location_w = 6'd31; end
+                        42'b00001xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx: begin location_w = 6'd30; end
+                        42'b000001xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx: begin location_w = 6'd29; end
+                        42'b0000001xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx: begin location_w = 6'd28; end
+                        42'b00000001xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx: begin location_w = 6'd27; end
+                        42'b000000001xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx: begin location_w = 6'd26; end
+                        42'b0000000001xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx: begin location_w = 6'd25; end
+                        42'b00000000001xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx: begin location_w = 6'd24; end
+                        42'b000000000001xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx: begin location_w = 6'd23; end
+                        42'b0000000000001xxxxxxxxxxxxxxxxxxxxxxxxxxxxx: begin location_w = 6'd22; end
+                        42'b00000000000001xxxxxxxxxxxxxxxxxxxxxxxxxxxx: begin location_w = 6'd21; end
+                        42'b000000000000001xxxxxxxxxxxxxxxxxxxxxxxxxxx: begin location_w = 6'd20; end
+                        42'b0000000000000001xxxxxxxxxxxxxxxxxxxxxxxxxx: begin location_w = 6'd19; end
+                        42'b00000000000000001xxxxxxxxxxxxxxxxxxxxxxxxx: begin location_w = 6'd18; end
+                        42'b000000000000000001xxxxxxxxxxxxxxxxxxxxxxxx: begin location_w = 6'd17; end
+                        42'b0000000000000000001xxxxxxxxxxxxxxxxxxxxxxx: begin location_w = 6'd16; end
+                        42'b00000000000000000001xxxxxxxxxxxxxxxxxxxxxx: begin location_w = 6'd15; end
+                        42'b000000000000000000001xxxxxxxxxxxxxxxxxxxxx: begin location_w = 6'd14; end
+                        42'b0000000000000000000001xxxxxxxxxxxxxxxxxxxx: begin location_w = 6'd13; end
+                        42'b00000000000000000000001xxxxxxxxxxxxxxxxxxx: begin location_w = 6'd12; end
+                        42'b000000000000000000000001xxxxxxxxxxxxxxxxxx: begin location_w = 6'd11; end
+                        42'b0000000000000000000000001xxxxxxxxxxxxxxxxx: begin location_w = 6'd10; end
+                        42'b00000000000000000000000001xxxxxxxxxxxxxxxx: begin location_w = 6'd9; end
+                        42'b000000000000000000000000001xxxxxxxxxxxxxxx: begin location_w = 6'd8; end
+                        42'b0000000000000000000000000001xxxxxxxxxxxxxx: begin location_w = 6'd7; end
+                        42'b00000000000000000000000000001xxxxxxxxxxxxx: begin location_w = 6'd6; end
+                        42'b000000000000000000000000000001xxxxxxxxxxxx: begin location_w = 6'd5; end
+                        42'b0000000000000000000000000000001xxxxxxxxxxx: begin location_w = 6'd4; end
+                        42'b00000000000000000000000000000001xxxxxxxxxx: begin location_w = 6'd3; end
+                        42'b000000000000000000000000000000001xxxxxxxxx: begin location_w = 6'd2; end
+                        42'b0000000000000000000000000000000001xxxxxxxx: begin location_w = 6'd1; end
+                        // 42'b00000000000000000000000000000000001xxxxxxx: begin location_w = 8; end
+                        // 42'b000000000000000000000000000000000001xxxxxx: begin location_w = 7; end
+                        // 42'b0000000000000000000000000000000000001xxxxx: begin location_w = 6; end
+                        // 42'b00000000000000000000000000000000000001xxxx: begin location_w = 5; end
+                        // 42'b000000000000000000000000000000000000001xxx: begin location_w = 4; end
+                        // 42'b0000000000000000000000000000000000000001xx: begin location_w = 3; end
+                        // 42'b00000000000000000000000000000000000000001x: begin location_w = 2; end
+                        // 42'b000000000000000000000000000000000000000001: begin location_w = 1; end
+                    endcase
+                    counter_w = counter_r+1;
                 end
             end
-            S_INVMAT: begin
+            else if(counter_r == 4'd2) begin
+                det_w = det_r;
+                state_w = S_DET;
+                counter_w = counter_r + 1;
+                x0_w = (16'b0000000010000000 << location_r) - det_f;
+                //x0_w = (16'b0000000000000010 << location_r) - det_f;
+            end
+            else if(counter_r == 4'd3) begin
+                counter_w = counter_r + 1;
+                temp1_w = (16'b0000000010000000 << location_r)*x0_r;
+                //temp1_w = (16'b0000000000000010 << location_r)*x0_r;
+                temp2_w = (det_f*(x0_r*x0_r) >> location_r);
+                x0_w = x0_r;
+            end
+            else if(counter_r == 4'd4) begin
+                counter_w = counter_r + 1;
+                x0_w = temp1_r[21:6] - temp2_r[27:12];
+            end
+            else begin
+                counter_w = 0;
+                x0_w = x0_r >> (location_r * location_r);
                 state_w = S_INVMAT;
-                valid_w = 1;
-                if(sign_r == 0) begin
-                    out0_w = x0_r*sig2_r;
-                    out1_w = x0_r*(~sig1_r+1'b1);
-                    out2_w = x0_r*sig0_r; 
-                end
-                else begin
-                    out0_w = x0_r*(~sig2_r+1'b1);
-                    out1_w = x0_r*sig1_r;
-                    out2_w = x0_r*(~sig0_r+1'b1); 
-                end
-            end 
-        endcase
-    end
-    else begin
-        location_w = location_r;
-        x0_w = x0_r;
-        sig0_w = sig0_r;
-        sig1_w = sig1_r;
-        sig2_w = sig2_r;
-        ctrl_w = ctrl_r;
-        sign_w = sign_r;
-        valid_w = valid_r;
-        out0_w = out0_r;
-        out1_w = out1_r;
-        out2_w = out2_r;
-        state_w = state_r;
-        temp1_w = temp1_r;
-        temp2_w = temp2_r;
-        counter_w = counter_r;
-        det_w = det_r;
-    end
+            end
+        end
+        S_INVMAT: begin
+            state_w = S_IDLE;
+            valid_w = 1;
+            if(sign_r == 0) begin
+                out0_w = x0_r*sig2_r;
+                out1_w = x0_r*(~sig1_r+1'b1);
+                out2_w = x0_r*sig0_r; 
+            end
+            else begin
+                out0_w = x0_r*(~sig2_r+1'b1);
+                out1_w = x0_r*sig1_r;
+                out2_w = x0_r*(~sig0_r+1'b1); 
+            end
+        end 
+    endcase
 end
 // ================== Sequential ========================
 always @(posedge clk or negedge rst_n) begin
     if(!rst_n) begin
         det_r <= 0;
         counter_r <= 0;
-        state_r <= S_DET;
+        state_r <= S_IDLE;
         sig0_r <= 0;
         sig1_r <= 0;
         sig2_r <= 0;

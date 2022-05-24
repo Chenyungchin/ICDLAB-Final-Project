@@ -83,20 +83,16 @@ initial begin
         @(posedge clk);
     end
     for (i=0; i<`PATTERN; i=i+1) begin
-        @(negedge clk) begin
-            start = 1;
-        end
-        @(posedge clk);
-        w = INPUT_INIT_PAR_MEM[i][35:24];
-        q = INPUT_INIT_PAR_MEM[i][23:12];
-        S0 = INPUT_INIT_PAR_MEM[i][11:0];
+        w <= INPUT_INIT_PAR_MEM[i][35:24];
+        q <= INPUT_INIT_PAR_MEM[i][23:12];
+        S0 <= INPUT_INIT_PAR_MEM[i][11:0];
         for (ii=0; ii<8; ii=ii+1) begin
             epsilon = INPUT_EPSILON_MEM[8*i+ii];
-            @(negedge clk)begin
-                start = 0;
-            end
+            if (ii == 0) start <= 1;
+            else         start <= 0;
             @(posedge clk);
         end
+        @(posedge clk);
         @(posedge clk);
         @(posedge clk);
     end
