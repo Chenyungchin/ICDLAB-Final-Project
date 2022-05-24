@@ -8,7 +8,7 @@ module Top(
     output        resend // In the pricing mode, when resend, send the path again
 );
 
-localparam CYCLE = 8;
+localparam DAY = 8;
 localparam N = 256;
 localparam S_IDLE = 3'd0;
 localparam S_PARAM = 3'd1; // w -> q -> S -> K
@@ -35,17 +35,17 @@ reg   [4:0] count_day_r, count_day_w;
 
 assign sobol_start = sobol_start_r;
 assign gen_start = gen_start_r;
-assign pricing_start = pricing_start_r
+assign pricing_start = pricing_start_r;
 assign w = w_r;
 assign q = q_r;
 assign S = S_r;
 assign K = K_r;
 assign valid = gen_valid || pricing_valid;
-assign out = (gen_valid?) path : ((pricing_valid?) price : 12'bx);
+assign out = (gen_valid)? path : (pricing_valid)? price : 12'bx;
 assign pricing_path = in;
 // ========== Combinational ===================
 always @(*) begin
-    sobol_state_w = sobol_start_r;
+    sobol_start_w = sobol_start_r;
     gen_start_w = gen_start_r;
     pricing_start_w = pricing_start_r;
     w_w = w_r;
@@ -155,7 +155,7 @@ always @(posedge clk or negedge rst_n) begin
         K_r <= K_w;
         state_r <= state_w;
         count_r <= count_w;
-        count_day_r <= count_day_w
+        count_day_r <= count_day_w;
     end
 end
 

@@ -14,11 +14,12 @@ parameter DAY           = 8;
 
 reg           clk;
 reg           reset;
-reg   [11:0]  path, K;
-reg           start;
+reg   [11:0]  path, K, w, q, S, in;
+reg   [1:0]   state;
 wire          resend;
 wire          valid;
-wire  [11:0]  price;
+wire  [11:0]  out;
+
 
 // reg   [2:0]   cmd_mem   [0:DATA_LENGTH-1];
 // reg   [15:0]  out_mem   [0:OUT_LENGTH-1];
@@ -32,28 +33,15 @@ reg           over;
 integer       day;
 reg           res;
 
-MC_CORE mc_core0(
+TOP top0(
 .clk(clk),
 .rst_n(reset), 
-.start(start), 
-.path(path),  
-.K(K), 
-.resend(resend), 
+.state(state), 
+.in(in),  
 .valid(valid), 
-.price(price)
+.out(out), 
+.resend(resend) 
 );
-
-
-// Pricing pricing0(
-// .clk(clk),
-// .rst_n(reset), 
-// .start(start), 
-// .path(path),  
-// .K(K), 
-// .resend(resend), 
-// .valid(valid), 
-// .price(price)
-// );
 
 
 
@@ -66,8 +54,12 @@ initial	$readmemh (`PATH,  path_mem);
 initial begin
     clk         = 1'b1;
     reset       = 1'b1;
-    start       = 1'b0;
+    state       = 2'b0;
     K           = 12'b001100000000;  
+    w           = 12'b010101010101;
+    q           = 12'b010110110001;
+    S           = 12'b000111101011;
+    in          = 12'b000000000000;
     over        = 1'b0;
     pattern_num = 0;
     err         = 0;
