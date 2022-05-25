@@ -6,7 +6,8 @@ module Pricing(
     input  [11:0] K, 
     output        resend,
     output [11:0] price,
-    output        valid);
+    output        valid
+);
 
 localparam CORE_NUM = 1;
 localparam CYCLE = 8;

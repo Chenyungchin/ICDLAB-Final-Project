@@ -2,7 +2,7 @@ module Sobol(
     input             clk,
     input             rst_n,
     input             start,
-    output     [13:0] icdf
+    output     [12:0] icdf
 );
 
 // ========== wire and reg ===================
