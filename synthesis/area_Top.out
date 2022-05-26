@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : area
+Design : Top
+Version: R-2020.09-SP5
+Date   : Thu May 26 13:46:14 2022
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'Top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    fsa0m_a_generic_core_tt1p8v25c (File: /home/raid7_2/userb08/b08061/ICD_Lab/Final_Project/fsa0m_a_generic_core_tt1p8v25c.db)
+
+Number of ports:                         3399
+Number of nets:                         35794
+Number of cells:                        30156
+Number of combinational cells:          26339
+Number of sequential cells:              3761
+Number of macros/black boxes:               0
+Number of buf/inv:                       9554
+Number of references:                      32
+
+Combinational area:             495102.686955
+Buf/Inv area:                    79826.139983
+Noncombinational area:          223426.326851
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                718529.013806
+Total area:                 undefined
+1
