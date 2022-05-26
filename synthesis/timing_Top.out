@@ -1,0 +1,124 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Top
+Version: R-2020.09-SP5
+Date   : Thu May 26 15:47:49 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: pricing0/mc_core0/inv0/x0_r_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pricing0/mc_core0/inv0/temp2_r_reg[24]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Top                G200K                 fsa0m_a_generic_core_tt1p8v25c
+  MAT_INV            enG30K                fsa0m_a_generic_core_tt1p8v25c
+  MAT_INV_DW_mult_tc_1
+                     enG5K                 fsa0m_a_generic_core_tt1p8v25c
+  MAT_INV_DW_mult_tc_0
+                     enG5K                 fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  pricing0/mc_core0/inv0/x0_r_reg[2]/CK (QDFFRBN)         0.00 #     0.50 r
+  pricing0/mc_core0/inv0/x0_r_reg[2]/Q (QDFFRBN)          0.38       0.88 r
+  pricing0/mc_core0/inv0/U9/O (BUF1)                      0.16       1.04 r
+  pricing0/mc_core0/inv0/U7/O (INV2)                      0.06       1.10 f
+  pricing0/mc_core0/inv0/U8/O (INV3)                      0.15       1.25 r
+  pricing0/mc_core0/inv0/mult_362/a[2] (MAT_INV_DW_mult_tc_1)
+                                                          0.00       1.25 r
+  pricing0/mc_core0/inv0/mult_362/U339/S (HA1)            0.27       1.52 f
+  pricing0/mc_core0/inv0/mult_362/U371/CO (FA1)           0.36       1.88 f
+  pricing0/mc_core0/inv0/mult_362/U335/O (XOR3)           0.26       2.14 f
+  pricing0/mc_core0/inv0/mult_362/product[5] (MAT_INV_DW_mult_tc_1)
+                                                          0.00       2.14 f
+  pricing0/mc_core0/inv0/U13/O (BUF2)                     0.24       2.39 f
+  pricing0/mc_core0/inv0/mult_362_2/b[5] (MAT_INV_DW_mult_tc_0)
+                                                          0.00       2.39 f
+  pricing0/mc_core0/inv0/mult_362_2/U1010/O (XNR2H)       0.19       2.58 f
+  pricing0/mc_core0/inv0/mult_362_2/U1059/O (OAI22S)      0.24       2.82 r
+  pricing0/mc_core0/inv0/mult_362_2/U337/S (HA1)          0.28       3.10 f
+  pricing0/mc_core0/inv0/mult_362_2/U1007/S (FA1)         0.25       3.35 f
+  pricing0/mc_core0/inv0/mult_362_2/U1754/O (AO222)       0.40       3.75 f
+  pricing0/mc_core0/inv0/mult_362_2/U1753/O (AO222)       0.41       4.16 f
+  pricing0/mc_core0/inv0/mult_362_2/U1752/O (AO222)       0.41       4.57 f
+  pricing0/mc_core0/inv0/mult_362_2/U1751/O (AO222)       0.41       4.98 f
+  pricing0/mc_core0/inv0/mult_362_2/U1750/O (AO222)       0.41       5.38 f
+  pricing0/mc_core0/inv0/mult_362_2/U1749/O (AO222)       0.41       5.79 f
+  pricing0/mc_core0/inv0/mult_362_2/U1748/O (AO222)       0.40       6.19 f
+  pricing0/mc_core0/inv0/mult_362_2/U110/CO (FA1S)        0.38       6.57 f
+  pricing0/mc_core0/inv0/mult_362_2/U109/CO (FA1S)        0.40       6.97 f
+  pricing0/mc_core0/inv0/mult_362_2/U1073/CO (FA1S)       0.40       7.36 f
+  pricing0/mc_core0/inv0/mult_362_2/U1057/CO (FA1S)       0.40       7.76 f
+  pricing0/mc_core0/inv0/mult_362_2/U106/CO (FA1S)        0.40       8.16 f
+  pricing0/mc_core0/inv0/mult_362_2/U105/CO (FA1S)        0.40       8.56 f
+  pricing0/mc_core0/inv0/mult_362_2/U104/CO (FA1S)        0.40       8.96 f
+  pricing0/mc_core0/inv0/mult_362_2/U103/CO (FA1S)        0.40       9.36 f
+  pricing0/mc_core0/inv0/mult_362_2/U1030/CO (FA1S)       0.40       9.75 f
+  pricing0/mc_core0/inv0/mult_362_2/U1028/CO (FA1S)       0.40      10.15 f
+  pricing0/mc_core0/inv0/mult_362_2/U1029/CO (FA1S)       0.40      10.55 f
+  pricing0/mc_core0/inv0/mult_362_2/U1024/CO (FA1S)       0.40      10.95 f
+  pricing0/mc_core0/inv0/mult_362_2/U1025/CO (FA1S)       0.40      11.35 f
+  pricing0/mc_core0/inv0/mult_362_2/U1026/CO (FA1S)       0.40      11.75 f
+  pricing0/mc_core0/inv0/mult_362_2/U1027/CO (FA1S)       0.40      12.14 f
+  pricing0/mc_core0/inv0/mult_362_2/U1022/CO (FA1S)       0.40      12.54 f
+  pricing0/mc_core0/inv0/mult_362_2/U1023/CO (FA1S)       0.40      12.94 f
+  pricing0/mc_core0/inv0/mult_362_2/U1020/CO (FA1S)       0.40      13.34 f
+  pricing0/mc_core0/inv0/mult_362_2/U1021/CO (FA1S)       0.40      13.74 f
+  pricing0/mc_core0/inv0/mult_362_2/U1018/CO (FA1S)       0.40      14.14 f
+  pricing0/mc_core0/inv0/mult_362_2/U1019/CO (FA1S)       0.40      14.53 f
+  pricing0/mc_core0/inv0/mult_362_2/U1037/CO (FA1S)       0.41      14.95 f
+  pricing0/mc_core0/inv0/mult_362_2/U988/CO (FA1)         0.32      15.26 f
+  pricing0/mc_core0/inv0/mult_362_2/U987/CO (FA1)         0.30      15.56 f
+  pricing0/mc_core0/inv0/mult_362_2/U990/CO (FA1)         0.30      15.86 f
+  pricing0/mc_core0/inv0/mult_362_2/U989/CO (FA1)         0.30      16.15 f
+  pricing0/mc_core0/inv0/mult_362_2/U992/CO (FA1)         0.30      16.45 f
+  pricing0/mc_core0/inv0/mult_362_2/U991/CO (FA1)         0.30      16.74 f
+  pricing0/mc_core0/inv0/mult_362_2/U994/CO (FA1)         0.30      17.04 f
+  pricing0/mc_core0/inv0/mult_362_2/U993/CO (FA1)         0.30      17.33 f
+  pricing0/mc_core0/inv0/mult_362_2/U997/CO (FA1)         0.30      17.63 f
+  pricing0/mc_core0/inv0/mult_362_2/U996/CO (FA1)         0.30      17.92 f
+  pricing0/mc_core0/inv0/mult_362_2/U1000/CO (FA1)        0.30      18.22 f
+  pricing0/mc_core0/inv0/mult_362_2/U999/CO (FA1)         0.30      18.52 f
+  pricing0/mc_core0/inv0/mult_362_2/U1233/CO (FA1)        0.30      18.81 f
+  pricing0/mc_core0/inv0/mult_362_2/U1011/O (INV2CK)      0.08      18.90 r
+  pricing0/mc_core0/inv0/mult_362_2/product[47] (MAT_INV_DW_mult_tc_0)
+                                                          0.00      18.90 r
+  pricing0/mc_core0/inv0/U134/OB (MXL2HS)                 0.12      19.01 f
+  pricing0/mc_core0/inv0/U443/O (MUX2)                    0.29      19.30 f
+  pricing0/mc_core0/inv0/U328/O (MUX2)                    0.28      19.58 f
+  pricing0/mc_core0/inv0/U329/O (OR2)                     0.20      19.77 f
+  pricing0/mc_core0/inv0/U1019/O (MUX3)                   0.25      20.03 f
+  pricing0/mc_core0/inv0/U58/O (NR2T)                     0.11      20.14 r
+  pricing0/mc_core0/inv0/U57/O (MOAI1HP)                  0.16      20.30 r
+  pricing0/mc_core0/inv0/temp2_r_reg[24]/D (QDFFRBN)      0.00      20.30 r
+  data arrival time                                                 20.30
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.50      20.50
+  clock uncertainty                                      -0.10      20.40
+  pricing0/mc_core0/inv0/temp2_r_reg[24]/CK (QDFFRBN)     0.00      20.40 r
+  library setup time                                     -0.10      20.30
+  data required time                                                20.30
+  --------------------------------------------------------------------------
+  data required time                                                20.30
+  data arrival time                                                -20.30
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
