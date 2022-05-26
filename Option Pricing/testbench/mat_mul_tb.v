@@ -81,11 +81,11 @@ MAT_INV MI0(
     .out0(out0),
     .out1(out1),
     .out2(out2),
-    // .p(location),
+    .p(location),
     // .det(det),
-    // .dett(dett),
-    // .counter(counter),
-    // .test(test),
+    //.dett(dett),
+    .counter(counter),
+    .test(test),
     // .sign(sign),
     .o_valid(o_valid)
 );
@@ -100,18 +100,23 @@ initial begin
     @(posedge clk) rst_n = 1;
     //inp <=0;
     start = 1;
-    sig0 = 9'b000000011;
-    sig1 = 21'b000000000000001100000;
-    sig2 = 33'b000000000000000000000111000000000;
+    // sig0 = 9'b000000001;
+    // sig1 = 21'b000000000000001010000;
+    // sig2 = 33'b000000000000000000000100100000000;
+    sig0 = 9'b000000001;
+    sig1 = 21'b000000000000001000000;
+    sig2 = 33'b000000000000000000010000000000000;
     // sig0 = 9'b010110110;
     // sig1 = 21'b00010111001001001;
     // sig2 = 33'b0000010101101110101110111;
     $display("           Simulation Result      ");
     //$monitor("xi=%d ans0=%d ans1=%d ans2=%d ans3=%d ans4=%d\n",inp, ans0, ans1,ans2,ans3,ans4);
     //$monitor("inp=%d inpy=%d ans1=%d ans2=%d ans3=%d\n", inp, ans1,ans2,ans3);
-    $monitor("sig0=%d, sig1=%d, sig2=%d, out0=%b, ou1=%b, out2=%b, location=%d, dett=%b, det=%b, valid=%d, sign=%d, counter=%b",sig0, sig1>>4, sig2>>8, out0, out1, out2, location, dett, det, o_valid, sign, counter);
+    $monitor("sig0=%d, sig1=%d, sig2=%d, out0=%b, ou1=%b, out2=%b, test=%b, counter=%d,locat=%d",sig0, sig1>>4, sig2>>8, out0, out1, out2, test,counter,location);
     //$monitor("sig0=%d, sig1=%d, sig2=%d, out0=%b, ou1=%b, out2=%b, valid=%d, location=%d ",sig0, sig1>>4, sig2>>8, out0, out1, out2, o_valid, location);
-
+    if(o_valid == 1) begin
+        $finish;
+    end
     @(posedge clk);
 end
 
