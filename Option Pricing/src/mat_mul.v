@@ -212,12 +212,12 @@ module MAT_INV(
     output o_valid,
     output [31:0] out0,//22, 10
     output [19:0] out1,//12, 8
-    output [20:0] out2//15, 6
-    //output [5:0] p,
+    output [20:0] out2,//15, 6
+    output [5:0] p,
     //output signed [15:0] det,
-    //output [2:0] counter,
+    output [2:0] counter,
     //output [41:0] dett
-    // output signed[15:0] test,
+    output signed[15:0] test
     //output sign
 );
 // ================== reg and wire ======================
@@ -238,21 +238,21 @@ reg [32:0] sig2_r, sig2_w; //25, 8
 reg signed[48:0] out0_r, out0_w; //22, 10  //35,14
 reg signed[36:0] out1_r, out1_w; //12, 8   //27,10
 reg signed[24:0] out2_r, out2_w; //15, 6   //19,6
-reg [31:0] temp1_w, temp1_r;
-reg [47:0] temp2_w, temp2_r;
+reg [31:0] temp1_w, temp1_r; //20,12
+reg [47:0] temp2_w, temp2_r; //30,18
 reg valid_w, valid_r;
 reg sign_w, sign_r;
 // ================== wire assignments ==================
 assign out0 = out0_r[35:4];
 assign out1 = out1_r[21:2];
 assign out2 = out2_r[20:0];
-// assign test = x0_r;
-//assign p = location_r;
-assign det_f = det_r[17:2];
+assign test = x0_r;
+assign p = location_r;
+assign det_f = det_r[17:2];//10,6
 //assign det = det_r[17:2];
 assign o_valid = valid_r;
 //assign dett = det_r;
-//assign counter = counter_r;
+assign counter = counter_r;
 // assign sign = sign_r;
 // ================== Combinational =====================
 always @(*) begin
@@ -368,7 +368,7 @@ always @(*) begin
             end
             else begin
                 counter_w = 0;
-                x0_w = x0_r >> (location_r * location_r);
+                x0_w = x0_r >> (3 * location_r);
                 state_w = S_INVMAT;
             end
         end
