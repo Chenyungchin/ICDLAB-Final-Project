@@ -1,0 +1,7 @@
+setStreamOutMode -specifyViaName default -SEvianames false -virtualConnection false -uniquifyCellNamesPrefix false -snapToMGrid false -textSize 1 -version 3
+
+streamOut CHIP.gds -mapFile streamOut.map \
+      -merge { ../Phantom/fsa0m_a_generic_core_cic.gds \
+               ../Phantom/fsa0m_a_t33_generic_io_cic.gds ../Phantom/BONDPAD.gds} 
+      -stripes 1 -units 1000 -mode ALL
+

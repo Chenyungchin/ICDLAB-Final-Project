@@ -1,0 +1,143 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Sat May 28 11:49:33 2022                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v20.10-p004_1 (64bit) 05/07/2020 20:02 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.10-p004_1 NR200413-0234/20_10-UB (database version 18.20.505) {superthreading v1.69}
+#@(#)CDS: AAE 20.10-p005 (64bit) 05/07/2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.10-p005_1 () Apr 14 2020 09:14:28 ( )
+#@(#)CDS: SYNTECH 20.10-b004_1 () Mar 12 2020 22:18:21 ( )
+#@(#)CDS: CPE v20.10-p006
+#@(#)CDS: IQuantus/TQuantus 19.1.3-s155 (64bit) Sun Nov 3 18:26:52 PST 2019 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+set init_gnd_net GND
+set init_lef_file {lef/header6_V55_20ka_cic.lef lef/fsa0m_a_generic_core.lef lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef lef/fsa0m_a_t33_generic_io.lef lef/FSA0M_A_T33_GENERIC_IO_ANT_V55.lef lef/BONDPAD.lef}
+set init_verilog design/CHIP_syn.v
+set init_mmmc_file mmmc.view
+set init_io_file design/CHIP.ioc
+set init_top_cell CHIP
+set init_pwr_net VCC
+init_design
+clearGlobalNets
+globalNetConnect VCC -type pgpin -pin VCC -instanceBasename *
+globalNetConnect GND -type pgpin -pin GND -instanceBasename *
+clearGlobalNets
+globalNetConnect VCC -type pgpin -pin VCC -instanceBasename *
+globalNetConnect GND -type pgpin -pin GND -instanceBasename *
+clearGlobalNets
+globalNetConnect VCC -type pgpin -pin VCC -instanceBasename *
+globalNetConnect GND -type pgpin -pin GND -instanceBasename *
+clearGlobalNets
+globalNetConnect VCC -type pgpin -pin VCC -instanceBasename *
+globalNetConnect GND -type pgpin -pin GND -instanceBasename *
+clearGlobalNets
+globalNetConnect VCC -type pgpin -pin VCC -instanceBasename *
+globalNetConnect GND -type pgpin -pin GND -instanceBasename *
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site core_5040 -d 1350 1350 80 80 80 80
+uiSetTool select
+getIoFlowFlag
+fit
+zoomBox -57.67700 143.18000 1045.84700 1216.22000
+zoomBox -139.40400 -62.10700 1387.96500 1423.06900
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {VCC GND} -type core_rings -follow core -layer {top metal5 bottom metal5 left metal4 right metal4} -width {top 2 bottom 2 left 2 right 2} -spacing {top 0.28 bottom 0.28 left 0.28 right 0.28} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None -use_wire_group 1 -use_wire_group_bits 15
+setSrouteMode -viaConnectToShape { noshape }
+sroute -connect { padPin } -layerChangeRange { metal1(1) metal6(6) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -allowJogging 1 -crossoverViaLayerRange { metal1(1) metal6(6) } -nets { VCC GND } -allowLayerChange 1 -targetViaLayerRange { metal1(1) metal6(6) }
+zoomBox -13.80300 334.67300 663.90100 993.65600
+zoomBox -52.15400 211.95500 885.84700 1124.04400
+zoomBox -832.07500 -750.24000 2093.90400 2094.91100
+zoomBox -534.62700 -586.15900 1952.45500 1832.21900
+zoomBox -281.79700 -446.69100 1832.22300 1608.93100
+zoomBox -137.55400 -312.37500 1659.36400 1434.90400
+zoomBox 86.73800 -103.27300 1385.01200 1159.13700
+zoomBox -11.99300 -198.20700 1515.38800 1286.98100
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {VCC GND} -layer metal4 -direction vertical -width 1 -spacing 2.8 -set_to_set_distance 400 -start_from left -start_offset 250 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit metal6 -padcore_ring_bottom_layer_limit metal1 -block_ring_top_layer_limit metal6 -block_ring_bottom_layer_limit metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+setSrouteMode -viaConnectToShape { ring stripe }
+sroute -connect { corePin } -layerChangeRange { metal1(1) metal6(6) } -blockPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -allowJogging 1 -crossoverViaLayerRange { metal1(1) metal6(6) } -nets { GND VCC } -allowLayerChange 1 -targetViaLayerRange { metal1(1) metal6(6) }
+addIoFiller -cell EMPTY16D -prefix IOFILLER
+addIoFiller -cell EMPTY8D -prefix IOFILLER
+addIoFiller -cell EMPTY4D -prefix IOFILLER
+addIoFiller -cell EMPTY2D -prefix IOFILLER
+addIoFiller -cell EMPTY1D -prefix IOFILLER -fillAnyGap
+getMultiCpuUsage -localCpu
+get_verify_drc_mode -disable_rules -quiet
+get_verify_drc_mode -quiet -area
+get_verify_drc_mode -quiet -layer_range
+get_verify_drc_mode -check_ndr_spacing -quiet
+get_verify_drc_mode -check_only -quiet
+get_verify_drc_mode -check_same_via_cell -quiet
+get_verify_drc_mode -exclude_pg_net -quiet
+get_verify_drc_mode -ignore_trial_route -quiet
+get_verify_drc_mode -max_wrong_way_halo -quiet
+get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+get_verify_drc_mode -limit -quiet
+set_verify_drc_mode -disable_rules {} -check_ndr_spacing auto -check_only default -check_same_via_cell false -exclude_pg_net false -ignore_trial_route false -ignore_cell_blockage false -use_min_spacing_on_block_obs auto -report CHIP.drc.rpt -limit 1000
+verify_drc
+set_verify_drc_mode -area {0 0 0 0}
+verifyConnectivity -net {VCC GND} -type special -noUnroutedNet -error 1000 -warning 50
+saveDesign DBS/ultra/powerroute
+setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+setEndCapMode -reset
+setEndCapMode -boundary_tap false
+setNanoRouteMode -quiet -droutePostRouteSpreadWire 1
+setNanoRouteMode -quiet -timingEngine {}
+setUsefulSkewMode -maxSkew false -noBoundary false -useCells {DELC DELB DELA BUF8CK BUF8 BUF6CK BUF6 BUF4CK BUF4 BUF3CK BUF3 BUF2CK BUF2 BUF1S BUF1CK BUF12CK BUF1 INV8CK INV8 INV6CK INV6 INV4CK INV4 INV3CK INV3 INV2CK INV2 INV1S INV1CK INV12CK INV12 INV1} -maxAllowedDelay 1
+setOptMode -effort high -powerEffort none -leakageToDynamicRatio 1 -reclaimArea true -simplifyNetlist true -allEndPoints false -setupTargetSlack 0 -holdTargetSlack 0 -maxDensity 0.8 -drcMargin 0 -usefulSkew true
+setPlaceMode -reset
+setPlaceMode -congEffort auto -timingDriven 1 -clkGateAware 1 -powerDriven 0 -ignoreScan 1 -reorderScan 1 -ignoreSpare 0 -placeIOPins 0 -moduleAwareSpare 0 -maxDensity 0.7 -preserveRouting 1 -rmAffectedRouting 0 -checkRoute 0 -swapEEQ 0
+setPlaceMode -fp false
+place_design
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -preCTS -pathReports -drvReports -slackReports -numPaths 50 -prefix CHIP_preCTS -outDir timingReports
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -preCTS
+setOptMode -fixCap true -fixTran true -fixFanoutLoad true
+optDesign -preCTS
+setOptMode -fixCap true -fixTran true -fixFanoutLoad true
+optDesign -preCTS
+saveDesign DBS/ultra/placement

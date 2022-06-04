@@ -1,0 +1,6 @@
+define VIEW_MAP ( $VIEW_MAP \
+, .src => src \
+)
+define LIB_MAP ( $LIB_MAP \
+, ../../../Verilog/fsa0m_a_generic_core_21.lib.src => fsa0m_a_generic_core_21 \
+)

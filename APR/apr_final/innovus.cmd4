@@ -1,0 +1,115 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Fri May 27 08:32:04 2022                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v20.10-p004_1 (64bit) 05/07/2020 20:02 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.10-p004_1 NR200413-0234/20_10-UB (database version 18.20.505) {superthreading v1.69}
+#@(#)CDS: AAE 20.10-p005 (64bit) 05/07/2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.10-p005_1 () Apr 14 2020 09:14:28 ( )
+#@(#)CDS: SYNTECH 20.10-b004_1 () Mar 12 2020 22:18:21 ( )
+#@(#)CDS: CPE v20.10-p006
+#@(#)CDS: IQuantus/TQuantus 19.1.3-s155 (64bit) Sun Nov 3 18:26:52 PST 2019 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+is_common_ui_mode
+restoreDesign /home/raid7_2/userb08/b08189/final/apr/apr_final/DBS/powerroute.dat CHIP
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+zoomBox -1398.04300 -731.43100 3713.49400 1686.93100
+zoomBox -1398.04400 -731.43100 3713.49400 1686.93100
+selectObject Module top_in
+zoomBox -1199.42900 -674.47000 3145.37900 1381.13800
+setDrawView place
+zoomBox -971.35900 -468.69700 2721.72800 1278.57000
+zoomBox -612.71900 -145.11900 2055.53800 1117.28200
+setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+setEndCapMode -reset
+setEndCapMode -boundary_tap false
+setNanoRouteMode -quiet -droutePostRouteSpreadWire 1
+setNanoRouteMode -quiet -timingEngine {}
+setUsefulSkewMode -maxSkew false -noBoundary false -useCells {DELC DELB DELA BUF8CK BUF8 BUF6CK BUF6 BUF4CK BUF4 BUF3CK BUF3 BUF2CK BUF2 BUF1S BUF1CK BUF12CK BUF1 INV8CK INV8 INV6CK INV6 INV4CK INV4 INV3CK INV3 INV2CK INV2 INV1S INV1CK INV12CK INV12 INV1} -maxAllowedDelay 1
+setPlaceMode -reset
+setPlaceMode -congEffort auto -timingDriven 1 -clkGateAware 1 -powerDriven 0 -ignoreScan 1 -reorderScan 1 -ignoreSpare 0 -placeIOPins 0 -moduleAwareSpare 0 -maxDensity 0.76 -preserveRouting 1 -rmAffectedRouting 0 -checkRoute 0 -swapEEQ 0
+setPlaceMode -fp false
+place_design
+setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+setEndCapMode -reset
+setEndCapMode -boundary_tap false
+setUsefulSkewMode -maxSkew false -noBoundary false -useCells {BUF1 BUF12CK BUF1CK BUF1S BUF2 BUF2CK BUF3 BUF3CK BUF4 BUF4CK BUF6 BUF6CK BUF8 BUF8CK DELA DELB DELC INV1 INV12 INV12CK INV1CK INV1S INV2 INV2CK INV3 INV3CK INV4 INV4CK INV6 INV6CK INV8 INV8CK} -maxAllowedDelay 1
+setPlaceMode -reset
+setPlaceMode -congEffort auto -timingDriven 1 -clkGateAware 1 -powerDriven 0 -ignoreScan 1 -reorderScan 1 -ignoreSpare 0 -placeIOPins 0 -moduleAwareSpare 0 -maxDensity 0.78 -preserveRouting 1 -rmAffectedRouting 0 -checkRoute 0 -swapEEQ 0
+setPlaceMode -fp false
+place_design
+pan 15.65000 574.53900
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -preCTS -pathReports -drvReports -slackReports -numPaths 50 -prefix CHIP_preCTS -outDir timingReports
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -preCTS
+getCTSMode -engine -quiet
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -preCTS
+zoomBox -1423.92700 -285.29800 2269.16400 1461.97100
+setPlaceMode
+setPlaceMode -place_global_max_density 0.85
+getCTSMode -engine -quiet
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -preCTS
+setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+setEndCapMode -reset
+setEndCapMode -boundary_tap false
+setUsefulSkewMode -maxSkew false -noBoundary false -useCells {DELC DELB DELA BUF8CK BUF8 BUF6CK BUF6 BUF4CK BUF4 BUF3CK BUF3 BUF2CK BUF2 BUF1S BUF1CK BUF12CK BUF1 INV8CK INV8 INV6CK INV6 INV4CK INV4 INV3CK INV3 INV2CK INV2 INV1S INV1CK INV12CK INV12 INV1} -maxAllowedDelay 1
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -preCTS
+zoomBox -826.86000 -47.87400 1841.39900 1214.52800
+zoomBox -228.01400 190.65800 1410.63200 965.93100
+zoomBox 302.17500 401.84200 1029.25300 745.83600
+zoomBox 565.56600 506.75600 839.78500 636.49400
+zoomBox 688.11500 555.56800 751.63100 585.61900
+zoomBox 701.62700 560.28800 740.63400 578.74300
+zoomBox 704.85200 561.41500 738.00900 577.10200
+zoomBox 707.58900 562.37800 735.77300 575.71200
+zoomBox 704.85200 561.41500 738.00900 577.10200
+zoomBox 693.38700 557.38300 747.37600 582.92600
+zoomBox 666.17600 547.81300 769.60700 596.74800
+zoomBox 656.13000 544.28000 777.81400 601.85100
+zoomBox 644.31200 540.12300 787.47000 607.85400
+zoomBox 71.45100 338.65300 1255.52500 898.86000
+zoomBox -43.54500 298.21000 1349.48300 957.27700
+zoomBox -744.30100 52.57000 1924.30200 1315.13500
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -preCTS -pathReports -drvReports -slackReports -numPaths 50 -prefix CHIP_preCTS -outDir timingReports
+getCTSMode -engine -quiet
+setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+setEndCapMode -reset
+setEndCapMode -boundary_tap false
+setUsefulSkewMode -maxSkew false -noBoundary false -useCells {BUF1 BUF12CK BUF1CK BUF1S BUF2 BUF2CK BUF3 BUF3CK BUF4 BUF4CK BUF6 BUF6CK BUF8 BUF8CK DELA DELB DELC INV1 INV12 INV12CK INV1CK INV1S INV2 INV2CK INV3 INV3CK INV4 INV4CK INV6 INV6CK INV8 INV8CK} -maxAllowedDelay 1
+setPlaceMode -reset
+setPlaceMode -congEffort auto -timingDriven 1 -clkGateAware 1 -powerDriven 0 -ignoreScan 1 -reorderScan 1 -ignoreSpare 0 -placeIOPins 0 -moduleAwareSpare 0 -maxDensity 0.95 -preserveRouting 1 -rmAffectedRouting 0 -checkRoute 0 -swapEEQ 0
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -preCTS
+zoomBox -1644.15300 -294.91300 2701.22200 1760.96300
+zoomBox -958.13200 -70.95500 2181.40200 1414.41600
+zoomBox 35.48000 253.41900 1428.51000 912.48700
+zoomBox 131.88900 301.41900 1315.96500 861.62700
+zoomBox 131.88700 302.46000 1315.96500 862.66900
+zoomBox -211.38400 135.91400 1716.69100 1048.12200
+zoomBox -770.34600 -135.27600 2369.20500 1350.10300
+zoomBox -1025.97300 -259.29900 2667.61700 1488.20600
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+is_common_ui_mode
+restoreDesign /home/raid7_2/userb08/b08189/final/apr/apr_final/DBS/powerroute.dat CHIP
+encMessage warning 1
+encMessage debug 0
+encMessage info 1

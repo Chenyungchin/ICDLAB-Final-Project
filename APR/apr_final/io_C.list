@@ -1,0 +1,139 @@
+#
+#   For addbonding_v3.7C.pl 
+#   Faraday UMC  0.18um core limit (D end) IO pad list 
+#
+Inner_Bond_Name         BONDPADCNU_m
+Outer_Bond_Name         BONDPADCGU_m
+Linear_Bond_Name        BONDPADCGU_m
+
+####                    Stagger/Linear
+North_Pad_Use           Stagger 
+South_Pad_Use           Stagger 
+West_Pad_Use            Stagger
+East_Pad_Use            Stagger
+#North_Pad_Use           Linear 
+#South_Pad_Use           Linear 
+#West_Pad_Use            Linear
+#East_Pad_Use            Linear
+
+##### This session is used only for stagger pad 
+#####                   Inner/Outer
+South_Start        Inner     #south left
+North_Start        Inner     #north right
+West_Start         Inner     #west up
+East_Start         Inner     #east down
+
+Route_Blockage_layer M6
+
+
+##############################################
+# Do not modify the lines below
+##############################################
+#                                                           core side
+#                                              Inner_Bond             Pad   
+#                                        __________________________ ___________
+#                                        |                       |^ |  |_|  ^ |
+#                                        |    |--------------|   |l |       I |
+#                                        |    |              |   |e |       O |
+#                                        |    |              |   |n |       P |
+#                                        |    |      +       |   |g |       a |
+#                                        |    |              |   |t |       d |
+#                                        |    |              |   |h |       _ |
+#        Outer_Bond                      |    |--------------|   |  |       L |
+#                                        |                       |  |       e |
+#                                        -------|         |-------  |       n |
+#                                               |         |         |       g |
+# cntr_offset |<       lin_pitch        >|      |         |         |       t |
+#        |<  >|                                 |   ___   |         |   ___ h |
+#_       ___________                ___________ |___|_|___|         |   | |   |
+#^       |   |_|   |                |   |_|   |                     |   |_|   |
+#l       |         |                |         |                     |         |
+#e       |         |                |    |<stg_pitch>|              |<  >|    |
+#n_______|         |_______  _______|         |_______              |pin x    |
+#g|                       |  |                       |              |         |
+#t|    |--------------|   |  |    |---^----------|   |              |         |
+#h|    |< passwidth  >|   |  |    | passwidth    |   |              |         |
+# |    |              |   |  |    |              |   |              |         |
+# |    |      +       |   |  |    |      +       |   |              |         |
+# |    | (passx,passy)|   |  |    |              |   |              |         |
+# |    |              |   |  |    |              |   |              |         |
+# |    |--------------|   |  |    |---v----------|   |              |         |
+# |                       |  |                       |              |         |
+#v|_______________________|  |_______________________|            v |_______v_|
+#        +(0,0)                     |< width >|                     +(0,0)
+#       (prboundary orgin)      (prboundary width)         
+#
+# for CUP bond, overlap = length
+# for non CUP bond, overlap = 0
+                                       
+#bonding cell informatiion
+#bond_name   length  widch  lin     stg_     ovlap cntr_   passx  passy pass
+#                           _pitch  pitch          offset               width
+BONDPADCGU_m 66000   34100  68200  34100     0    17050   17050  28000   52000 
+BONDPADCNU_m 170000  34100  68200  34100     0    17050   17050  28000   52000
+
+VERSION 3.6
+#Stagger_IOPad_Length           210000
+Stagger_IOPad_Length           235600
+#Linear_IOPad_Length           360000
+Linear_IOPad_Length            235600
+
+
+# Secend_Pin_location is needed when adding bonding pads for a double width 
+# IO Pad,It defines where to place the secned bonding Pad. This value is 
+# usually the half of the width of a double width IO Pad.
+#
+#     First   Second
+#     pin     pin
+#      !       !
+#      |--===--+--===--|
+#      |  pin1    pin2 |
+#      |               |
+#      |               |
+#      |               |
+
+# pin location descrption
+# offset:  offset of IO pad and bound pad
+# nil:     pin not exist
+# skip:    skip current location, do not place a bound at current location
+#
+# compared to the "nil" setting, the "skip" setting effect the order stagger pad
+# example1: the second pin is defined as second_pin_offset
+#       P   P
+#     P l P l P 
+#    +=+=-=+=+=+
+#    | |   | | |
+# example2: the second pin is defined nil
+#       P     P
+#     P l   P l
+#    +=+=--+=+=+
+#    | |   | | |
+# example3: the second pin is defined as skip
+#       P   P
+#     P l   l P 
+#    +=+=-=+=+=+
+#    | |   | | |
+
+
+#Name       Slot        X           X           Width     Type
+#                   coordiante  coordinate                I/O/B
+#                       of          of                    CPwr
+#                   First_Pin   Second_Pin                IOPwr
+#                    center        center                 CGnd
+#                                                         IOGnd
+#           1/2     offset/nil/skip                       Other
+
+GNDIOC        1         17050        nil        34100     IOGnd
+GNDIOD        1         31310        nil        62620     IOGnd
+GNDKC         1         17050        nil        34100     CGnd 
+GNDKD         1         31310        nil        62620     CGnd
+VCC3IOC       1         17050        nil        34100     IOPwr
+VCC3IOD       1         31310        nil        62620     IOPwr
+VCCKC         1         17050        nil        34100     CPwr
+VCCKD         1         31310        nil        62620     CPwr
+XMC           1         17050        nil        34100     I 
+XMD           1         31310        nil        62620     I
+YA2GSC        1         17050        nil        34100     O
+YA2GSD        1         31310        nil        62620     O 
+ZMA2GSC       1         17050        nil        34100     B
+ZMA2GSD       1         31310        nil        62620     B

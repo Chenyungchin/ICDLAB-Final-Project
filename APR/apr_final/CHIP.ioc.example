@@ -1,0 +1,55 @@
+Version: 1
+Orient: R90
+Pad: cornerUL                            NW    CORNERD
+Pad: io_vdd3                             N     VCC3IOD
+Pad: ipad_CODEWORD                       N      
+Pad: ipad_CLK                            N     
+Pad: ipad_RESET                          N     
+Pad: core_vss1                           N     GNDKD
+Pad: io_vss3                             N     GNDIOD
+Pad: core_vdd1                           N     VCCKD
+Pad: io_vdd4                             N     VCC3IOD
+Pad: io_vss4                             N     GNDIOD
+Pad: opad_QULLR6                         N
+
+Orient: R0
+Pad: cornerUR                            NE    CORNERD
+Pad: opad_QULLR7                         E      
+Pad: io_vdd5                             E     VCC3IOD      
+Pad: opad_QULLR8                         E      
+Pad: io_vss5                             E     GNDIOD
+Pad: opad_QULLR9                         E
+Pad: opad_QULLR10                        E
+Pad: core_vss2                           E     GNDKD
+Pad: opad_QULLR11                        E
+Pad: core_vdd2                           E     VCCKD 
+Pad: opad_QULLR12                        E 
+
+Orient: R270
+Pad: cornerLR                            SE    CORNERD
+Pad: io_vdd6                             S     VCC3IOD
+Pad: opad_QULLR13                        S    
+Pad: opad_QULLR14                        S
+Pad: opad_QULLR15                        S
+Pad: io_vss6                             S     GNDIOD
+Pad: core_vdd3                           S     VCCKD
+Pad: core_vss3                           S     GNDKD
+Pad: ipad_DB0                            S
+Pad: ipad_DB1                            S    
+Pad: ipad_DB2                            S   
+
+Orient: R180
+Pad: cornerLL                            SW    CORNERD
+Pad: opad_QULLR0 	                     W    
+Pad: io_vss1 			                 W     GNDIOD
+Pad: opad_QULLR1 	                     W     
+Pad: opad_QULLR2 	                     W
+Pad: io_vdd1                             W     VCC3IOD 
+Pad: opad_QULLR3 	                     W     
+Pad: io_vdd2			                 W     VCC3IOD  
+Pad: opad_QULLR4 	                     W     
+Pad: opad_QULLR5 	                     W     
+Pad: io_vss2			                 W     GNDIOD
+
+   
+ 

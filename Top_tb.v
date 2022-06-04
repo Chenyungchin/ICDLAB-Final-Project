@@ -33,7 +33,7 @@ reg           over;
 integer       day;
 reg           res;
 
-TOP top0(
+CHIP top0(
 .clk(clk),
 .rst_n(reset), 
 .state(state), 

@@ -1,0 +1,2 @@
+setAnalysisMode -analysisType bcwc
+write_sdf -max_view av_func_mode_max -min_view av_func_mode_min -edges noedge  -splitsetuphold -remashold -splitrecrem -min_period_edges none  CHIP.sdf

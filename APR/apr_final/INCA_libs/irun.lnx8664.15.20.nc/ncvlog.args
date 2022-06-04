@@ -1,0 +1,23 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+-XLMODE
+./INCA_libs/irun.lnx8664.15.20.nc
+-RUNMODE
+Top_tb.v
+CHIP.v
+-VFILE
+Verilog/fsa0m_a_generic_core_21.lib.src
+Verilog/fsa0m_a_t33_generic_io_21.lib.src
+-DEFINE
+SDF
+-CDSLIB
+./INCA_libs/irun.lnx8664.15.20.nc/cdsrun.lib
+-HDLVAR
+./INCA_libs/irun.lnx8664.15.20.nc/hdlrun.var
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./INCA_libs/irun.lnx8664.15.20.nc/xllibs
+-ALLOWUNBOUND

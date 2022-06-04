@@ -1,0 +1,6 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(04Jun2022:10:26:22):( ncverilog Top_tb.v CHIP.v -v Verilog/fsa0m_a_generic_core_21.lib.src Verilog/fsa0m_a_t33_generic_io_21.lib.src +define+SDF )
+s2::(04Jun2022:10:27:37):( ncverilog Top_tb.v CHIP.v -v Verilog/fsa0m_a_generic_core_21.lib.src Verilog/fsa0m_a_t33_generic_io_21.lib.src +define+SDF )

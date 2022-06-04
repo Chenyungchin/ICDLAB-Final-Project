@@ -1,0 +1,870 @@
+ncverilog(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s084: Started on Jun 04, 2022 at 10:27:37 CST
+ncverilog
+	Top_tb.v
+	CHIP.v
+	-v
+	Verilog/fsa0m_a_generic_core_21.lib.src
+	Verilog/fsa0m_a_t33_generic_io_21.lib.src
+	+define+SDF
+file: Top_tb.v
+	module worklib.MC_CORE_tb:v
+		errors: 0, warnings: 0
+file: Verilog/fsa0m_a_generic_core_21.lib.src
+	module fsa0m_a_generic_core_21.AN2:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.AN2B1S:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.AN2S:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.AN2T:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.AN3:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.AN3B2S:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.AN3S:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.AN4:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.AN4B1:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.AN4B1S:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.AN4S:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.ANTENNA:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.AO112:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.AO12:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.AO13:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.AO13S:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.AO22:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.AO222:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.AOI12H:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.AOI12HP:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.AOI12HS:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.AOI13HS:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.AOI22H:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.AOI22HP:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.AOI22HT:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.AOI22S:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.BUF1:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.BUF1CK:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.BUF1S:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.BUF2:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.BUF2CK:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.BUF3:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.BUF3CK:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.BUF4CK:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.BUF6:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.BUF6CK:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.BUF8CK:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.DELA:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.DELB:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.DELC:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.FA1:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.FA1S:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.HA1:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.HA1P:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.INV12CK:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.INV1S:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.INV2:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.INV2CK:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.INV3:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.INV3CK:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.INV4:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.INV4CK:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.INV6CK:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.INV8CK:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.MAO222:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.MAO222P:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.MAOI1:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.MOAI1:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.MOAI1H:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.MOAI1HP:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.MOAI1HT:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.MOAI1S:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.MUX2:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.MUX2P:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.MUX2S:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.MUX3:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.MXL2HS:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.ND2:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.ND2F:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.ND2P:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.ND2S:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.ND2T:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.ND3:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.ND3HT:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.ND3P:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.NR2:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.NR2P:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.NR2T:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.NR3:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.NR3H:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.NR3HT:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.OA112:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.OA12:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.OA13S:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.OA22:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.OA222S:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.OAI112HS:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.OAI12H:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.OAI12HP:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.OAI12HS:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.OAI12HT:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.OAI222S:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.OAI22H:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.OAI22S:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.OR2:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.OR2B1:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.OR2B1S:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.OR2P:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.OR2S:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.OR2T:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.OR3:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.OR3B2:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.OR3B2S:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.QDFFRBN:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.QDFFRBP:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.QDFFRBS:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.TIE0:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.TIE1:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.XNR2H:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.XNR2HS:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.XNR3:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.XOR2HS:src
+		errors: 0, warnings: 0
+	module fsa0m_a_generic_core_21.XOR3:src
+		errors: 0, warnings: 0
+		Caching library 'fsa0m_a_generic_core_21' ....... Done
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+   XTY xty0 (.rst_n(rst_n),
+          |
+ncelab: *W,CUVWSP (./CHIP.v,70759|10): 45 output ports were not connected:
+ncelab: (./CHIP.v,7926): XTY_valid
+ncelab: (./CHIP.v,7927): out1[32]
+ncelab: (./CHIP.v,7928): out1[31]
+ncelab: (./CHIP.v,7929): out1[30]
+ncelab: (./CHIP.v,7930): out1[29]
+ncelab: (./CHIP.v,7931): out1[28]
+ncelab: (./CHIP.v,7932): out1[27]
+ncelab: (./CHIP.v,7933): out1[26]
+ncelab: (./CHIP.v,7934): out1[25]
+ncelab: (./CHIP.v,7935): out1[24]
+ncelab: (./CHIP.v,7936): out1[23]
+ncelab: (./CHIP.v,7937): out1[22]
+ncelab: (./CHIP.v,7938): out1[21]
+ncelab: (./CHIP.v,7939): out1[20]
+ncelab: (./CHIP.v,7940): out1[19]
+ncelab: (./CHIP.v,7941): out1[18]
+ncelab: (./CHIP.v,7942): out1[17]
+ncelab: (./CHIP.v,7943): out1[16]
+ncelab: (./CHIP.v,7944): out1[15]
+ncelab: (./CHIP.v,7945): out1[14]
+ncelab: (./CHIP.v,7946): out1[13]
+ncelab: (./CHIP.v,7947): out1[12]
+ncelab: (./CHIP.v,7959): out1[0]
+ncelab: (./CHIP.v,7960): out2[32]
+ncelab: (./CHIP.v,7961): out2[31]
+ncelab: (./CHIP.v,7962): out2[30]
+ncelab: (./CHIP.v,7963): out2[29]
+ncelab: (./CHIP.v,7964): out2[28]
+ncelab: (./CHIP.v,7965): out2[27]
+ncelab: (./CHIP.v,7966): out2[26]
+ncelab: (./CHIP.v,7967): out2[25]
+ncelab: (./CHIP.v,7968): out2[24]
+ncelab: (./CHIP.v,7969): out2[23]
+ncelab: (./CHIP.v,7970): out2[22]
+ncelab: (./CHIP.v,7971): out2[21]
+ncelab: (./CHIP.v,7972): out2[20]
+ncelab: (./CHIP.v,7973): out2[19]
+ncelab: (./CHIP.v,7974): out2[18]
+ncelab: (./CHIP.v,7975): out2[17]
+ncelab: (./CHIP.v,7976): out2[16]
+ncelab: (./CHIP.v,7977): out2[15]
+ncelab: (./CHIP.v,7978): out2[14]
+ncelab: (./CHIP.v,7979): out2[13]
+ncelab: (./CHIP.v,7980): out2[12]
+ncelab: (./CHIP.v,8029): FE_OFN91_XTY_0_0
+
+   FA1S U334 (.S(n343),
+           |
+ncelab: *W,CUVWSP (./CHIP.v,9961|11): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S U337 (.S(n402),
+           |
+ncelab: *W,CUVWSP (./CHIP.v,9975|11): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S U343 (.S(n362),
+           |
+ncelab: *W,CUVWSP (./CHIP.v,9993|11): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S U345 (.S(n399),
+           |
+ncelab: *W,CUVWSP (./CHIP.v,10002|11): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S U349 (.S(n393),
+           |
+ncelab: *W,CUVWSP (./CHIP.v,10015|11): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   HA1 U355 (.S(n377),
+          |
+ncelab: *W,CUVWSP (./CHIP.v,10028|10): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,7037): C
+
+   FA1S U356 (.S(n392),
+           |
+ncelab: *W,CUVWSP (./CHIP.v,10031|11): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S U360 (.S(n391),
+           |
+ncelab: *W,CUVWSP (./CHIP.v,10048|11): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S U361 (.S(n398),
+           |
+ncelab: *W,CUVWSP (./CHIP.v,10052|11): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S U363 (.S(n400),
+           |
+ncelab: *W,CUVWSP (./CHIP.v,10061|11): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S U364 (.S(n404),
+           |
+ncelab: *W,CUVWSP (./CHIP.v,10065|11): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S \DP_OP_61J2_126_2996/U168  (.S(\DP_OP_61J2_126_2996/n278 ),
+                                 |
+ncelab: *W,CUVWSP (./CHIP.v,20795|33): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S \DP_OP_61J2_126_2996/U167  (.S(\DP_OP_61J2_126_2996/n276 ),
+                                 |
+ncelab: *W,CUVWSP (./CHIP.v,20799|33): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S \DP_OP_61J2_126_2996/U166  (.S(\DP_OP_61J2_126_2996/n274 ),
+                                 |
+ncelab: *W,CUVWSP (./CHIP.v,20803|33): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S \DP_OP_61J2_126_2996/U165  (.S(\DP_OP_61J2_126_2996/n272 ),
+                                 |
+ncelab: *W,CUVWSP (./CHIP.v,20807|33): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S \DP_OP_61J2_126_2996/U164  (.S(\DP_OP_61J2_126_2996/n270 ),
+                                 |
+ncelab: *W,CUVWSP (./CHIP.v,20811|33): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S \DP_OP_61J2_126_2996/U163  (.S(\DP_OP_61J2_126_2996/n268 ),
+                                 |
+ncelab: *W,CUVWSP (./CHIP.v,20815|33): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S \DP_OP_61J2_126_2996/U162  (.S(\DP_OP_61J2_126_2996/n266 ),
+                                 |
+ncelab: *W,CUVWSP (./CHIP.v,20819|33): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S \DP_OP_61J2_126_2996/U161  (.S(\DP_OP_61J2_126_2996/n264 ),
+                                 |
+ncelab: *W,CUVWSP (./CHIP.v,20823|33): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S \DP_OP_61J2_126_2996/U160  (.S(\DP_OP_61J2_126_2996/n262 ),
+                                 |
+ncelab: *W,CUVWSP (./CHIP.v,20827|33): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S \DP_OP_61J2_126_2996/U159  (.S(\DP_OP_61J2_126_2996/n260 ),
+                                 |
+ncelab: *W,CUVWSP (./CHIP.v,20831|33): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S \DP_OP_61J2_126_2996/U158  (.S(\DP_OP_61J2_126_2996/n258 ),
+                                 |
+ncelab: *W,CUVWSP (./CHIP.v,20835|33): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S \DP_OP_61J2_126_2996/U34  (.S(N1499),
+                                |
+ncelab: *W,CUVWSP (./CHIP.v,20894|32): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S \DP_OP_41J2_129_9186/U174  (.S(\DP_OP_41J2_129_9186/n291 ),
+                                 |
+ncelab: *W,CUVWSP (./CHIP.v,21078|33): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S \DP_OP_41J2_129_9186/U173  (.S(\DP_OP_41J2_129_9186/n289 ),
+                                 |
+ncelab: *W,CUVWSP (./CHIP.v,21082|33): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S \DP_OP_41J2_129_9186/U172  (.S(\DP_OP_41J2_129_9186/n287 ),
+                                 |
+ncelab: *W,CUVWSP (./CHIP.v,21086|33): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S \DP_OP_41J2_129_9186/U171  (.S(\DP_OP_41J2_129_9186/n285 ),
+                                 |
+ncelab: *W,CUVWSP (./CHIP.v,21090|33): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S \DP_OP_41J2_129_9186/U170  (.S(\DP_OP_41J2_129_9186/n283 ),
+                                 |
+ncelab: *W,CUVWSP (./CHIP.v,21094|33): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S \DP_OP_41J2_129_9186/U169  (.S(\DP_OP_41J2_129_9186/n281 ),
+                                 |
+ncelab: *W,CUVWSP (./CHIP.v,21098|33): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S \DP_OP_41J2_129_9186/U168  (.S(\DP_OP_41J2_129_9186/n279 ),
+                                 |
+ncelab: *W,CUVWSP (./CHIP.v,21102|33): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S \DP_OP_41J2_129_9186/U167  (.S(\DP_OP_41J2_129_9186/n277 ),
+                                 |
+ncelab: *W,CUVWSP (./CHIP.v,21106|33): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S \DP_OP_41J2_129_9186/U166  (.S(\DP_OP_41J2_129_9186/n275 ),
+                                 |
+ncelab: *W,CUVWSP (./CHIP.v,21110|33): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S \DP_OP_41J2_129_9186/U35  (.S(N1519),
+                                |
+ncelab: *W,CUVWSP (./CHIP.v,21159|32): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   HA1 \DP_OP_61J2_126_2996/U536  (.S(\DP_OP_61J2_126_2996/n739 ),
+                                |
+ncelab: *W,CUVWSP (./CHIP.v,21311|32): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,7037): C
+
+   HA1 \DP_OP_61J2_126_2996/U169  (.S(\DP_OP_61J2_126_2996/n280 ),
+                                |
+ncelab: *W,CUVWSP (./CHIP.v,21314|32): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,7037): C
+
+   HA1 \DP_OP_61J2_126_2996/U46  (.C(\DP_OP_61J2_126_2996/n48 ),
+                               |
+ncelab: *W,CUVWSP (./CHIP.v,21333|31): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,7037): S
+
+   HA1 \DP_OP_41J2_129_9186/U175  (.S(\DP_OP_41J2_129_9186/n293 ),
+                                |
+ncelab: *W,CUVWSP (./CHIP.v,21392|32): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,7037): C
+
+   HA1 U1644 (.C(n965),
+           |
+ncelab: *W,CUVWSP (./CHIP.v,24960|11): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,7037): S
+
+   FA1S U1645 (.CO(n968),
+            |
+ncelab: *W,CUVWSP (./CHIP.v,24963|12): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): S
+
+   FA1S U1646 (.CO(n2756),
+            |
+ncelab: *W,CUVWSP (./CHIP.v,24967|12): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): S
+
+   FA1S U2954 (.S(n3035),
+            |
+ncelab: *W,CUVWSP (./CHIP.v,29465|12): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   HA1 U2970 (.S(n3007),
+           |
+ncelab: *W,CUVWSP (./CHIP.v,29528|11): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,7037): C
+
+   FA1S U2974 (.S(n3008),
+            |
+ncelab: *W,CUVWSP (./CHIP.v,29544|12): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S U2975 (.S(n3011),
+            |
+ncelab: *W,CUVWSP (./CHIP.v,29548|12): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S U2976 (.S(n3032),
+            |
+ncelab: *W,CUVWSP (./CHIP.v,29552|12): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   HA1 U2980 (.S(n3022),
+           |
+ncelab: *W,CUVWSP (./CHIP.v,29567|11): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,7037): C
+
+   FA1S U2984 (.S(n3033),
+            |
+ncelab: *W,CUVWSP (./CHIP.v,29583|12): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S U2985 (.S(n3040),
+            |
+ncelab: *W,CUVWSP (./CHIP.v,29587|12): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1 U2987 (.S(n3042),
+           |
+ncelab: *W,CUVWSP (./CHIP.v,29596|11): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5812): CO
+
+   FA1S U5139 (.S(n5623),
+            |
+ncelab: *W,CUVWSP (./CHIP.v,36904|12): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S U5146 (.S(n5622),
+            |
+ncelab: *W,CUVWSP (./CHIP.v,36917|12): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S U5160 (.S(n5641),
+            |
+ncelab: *W,CUVWSP (./CHIP.v,36942|12): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S U5169 (.S(n5639),
+            |
+ncelab: *W,CUVWSP (./CHIP.v,36960|12): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S U5170 (.S(n5642),
+            |
+ncelab: *W,CUVWSP (./CHIP.v,36964|12): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S U5174 (.S(n5651),
+            |
+ncelab: *W,CUVWSP (./CHIP.v,36977|12): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S U5178 (.S(n5650),
+            |
+ncelab: *W,CUVWSP (./CHIP.v,36990|12): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S U5183 (.S(n5662),
+            |
+ncelab: *W,CUVWSP (./CHIP.v,37006|12): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S U5187 (.S(n5661),
+            |
+ncelab: *W,CUVWSP (./CHIP.v,37019|12): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S U5192 (.S(n5673),
+            |
+ncelab: *W,CUVWSP (./CHIP.v,37035|12): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S U5196 (.S(n5672),
+            |
+ncelab: *W,CUVWSP (./CHIP.v,37048|12): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S U5201 (.S(n5681),
+            |
+ncelab: *W,CUVWSP (./CHIP.v,37064|12): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S U5224 (.S(n5703),
+            |
+ncelab: *W,CUVWSP (./CHIP.v,37141|12): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S U5229 (.S(n5712),
+            |
+ncelab: *W,CUVWSP (./CHIP.v,37157|12): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S U5240 (.S(n5735),
+            |
+ncelab: *W,CUVWSP (./CHIP.v,37193|12): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S U5246 (.S(n5730),
+            |
+ncelab: *W,CUVWSP (./CHIP.v,37212|12): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S U5250 (.S(n5732),
+            |
+ncelab: *W,CUVWSP (./CHIP.v,37225|12): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S U5257 (.S(n5747),
+            |
+ncelab: *W,CUVWSP (./CHIP.v,37249|12): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S U5282 (.S(n5772),
+            |
+ncelab: *W,CUVWSP (./CHIP.v,37327|12): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S U5289 (.S(n5789),
+            |
+ncelab: *W,CUVWSP (./CHIP.v,37351|12): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): CO
+
+   FA1S U274 (.CO(n7520),
+           |
+ncelab: *W,CUVWSP (./CHIP.v,84403|11): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): S
+
+   FA1S U5825 (.CO(n7507),
+            |
+ncelab: *W,CUVWSP (./CHIP.v,97337|12): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): S
+
+   FA1S U5826 (.CO(n7509),
+            |
+ncelab: *W,CUVWSP (./CHIP.v,97341|12): 1 output port was not connected:
+ncelab: (./Verilog/fsa0m_a_generic_core_21.lib.src,5900): S
+
+	$fsdbDumpfile("mc_core.fsdb");
+	            |
+ncelab: *W,MISSYST (./Top_tb.v,79|13): Unrecognized system task or function: $fsdbDumpfile (did not match built-in or user-defined names) [2.7.4(IEEE Std 1364-2001)].
+If item was defined in a shared-object library, the problem could be:
+libvpi.so: cannot open shared object file: No such file or directory or file is not valid ELFCLASS64 library.
+libpli.so: wrong ELF class: ELFCLASS32.
+	$fsdbDumpvars(0, "+mda");
+	            |
+ncelab: *W,MISSYST (./Top_tb.v,80|13): Unrecognized system task or function: $fsdbDumpvars (did not match built-in or user-defined names) [2.7.4(IEEE Std 1364-2001)].
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		fsa0m_a_generic_core_21.AO112:src <0x3da0c1bf>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.AO12:src <0x78779289>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.AO13:src <0x5f20eb90>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.AO13S:src <0x1b56a701>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.AO222:src <0x67724311>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.AO22:src <0x58011cb5>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.AOI12H:src <0x6a4fdd9f>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.AOI12HP:src <0x513d98d1>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.AOI12HS:src <0x7b8e8d27>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.AOI13HS:src <0x37976e4a>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.AOI22H:src <0x7d04c247>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.AOI22HP:src <0x1a175aa9>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.AOI22HT:src <0x521616ec>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.AOI22S:src <0x2592eb7b>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.DELA:src <0x67dcf0ba>
+			streams:   2, words:   356
+		fsa0m_a_generic_core_21.DELB:src <0x2679b527>
+			streams:   2, words:   356
+		fsa0m_a_generic_core_21.DELC:src <0x0dc651a4>
+			streams:   2, words:   356
+		fsa0m_a_generic_core_21.FA1:src <0x1de6485f>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.FA1:src <0x70d923c1>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.FA1S:src <0x1fe4a65c>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.FA1S:src <0x3dfcd5cd>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.FA1S:src <0x50c3be53>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.HA1:src <0x02d2d1fb>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.HA1:src <0x18e20cba>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.HA1:src <0x756b29da>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.HA1P:src <0x3a1440ae>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.MAO222:src <0x3aec723d>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.MAO222P:src <0x13bb229e>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.MAOI1:src <0x2c9198fb>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.MOAI1:src <0x1d606b54>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.MOAI1H:src <0x02d9bd50>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.MOAI1HP:src <0x4714b452>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.MOAI1HT:src <0x089cedac>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.MOAI1HT:src <0x11bca564>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.MOAI1HT:src <0x241c3279>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.MOAI1HT:src <0x3d3c7ab1>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.MOAI1S:src <0x5a4f946c>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.MUX2:src <0x3c3b0249>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.MUX2P:src <0x619417d9>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.MUX2S:src <0x1820843d>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.MUX3:src <0x4ae3ba13>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.MXL2HS:src <0x4f085695>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.OA112:src <0x7b2daf1d>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.OA12:src <0x20ae4ce4>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.OA13S:src <0x322fcddf>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.OA222S:src <0x1afd4d0f>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.OA22:src <0x7be2c026>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.OAI112HS:src <0x3b206030>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.OAI12H:src <0x35e962ba>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.OAI12HP:src <0x0456fef1>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.OAI12HS:src <0x2ee5eb07>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.OAI12HT:src <0x583fdd27>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.OAI222S:src <0x76db0cc0>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.OAI22H:src <0x5a42a1bc>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.OAI22S:src <0x02d48880>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.QDFFRBN:src <0x34cda948>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.QDFFRBP:src <0x0bf4278c>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.QDFFRBS:src <0x3ec76693>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.XNR2H:src <0x3743eb0c>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.XNR2HS:src <0x462c8af8>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.XNR3:src <0x436d024b>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.XOR2HS:src <0x591ac846>
+			streams:   0, words:     0
+		fsa0m_a_generic_core_21.XOR3:src <0x14c22af3>
+			streams:   0, words:     0
+		worklib.MAT_INV:v <0x1964e305>
+			streams:   0, words:     0
+		worklib.MC_CORE:v <0x5dac9a61>
+			streams:   0, words:     0
+		worklib.MC_CORE_tb:v <0x0ddaa5ee>
+			streams:   6, words:  5143
+		worklib.Pricing:v <0x5fef1d9a>
+			streams:   0, words:     0
+		worklib.Top:v <0x3efd2e56>
+			streams:   0, words:     0
+		worklib.XMC:src <0x6b24fd1a>
+			streams:   0, words:     0
+		worklib.XMD:src <0x53cb87a2>
+			streams:   0, words:     0
+		worklib.XTX:v <0x2a0ef6e0>
+			streams:   0, words:     0
+		worklib.XTY:v <0x7cd59343>
+			streams:   0, words:     0
+		worklib.YA2GSC:src <0x6c983a8c>
+			streams:   0, words:     0
+		worklib.YA2GSD:src <0x2223be1f>
+			streams:   0, words:     0
+		worklib.YA2GSD:src <0x60478181>
+			streams:   0, words:     0
+		worklib.YA2GSD:src <0x6f21198a>
+			streams:   0, words:     0
+		worklib.ZMA2GSC:src <0x13aaddf6>
+			streams:   0, words:     0
+		worklib.ZMA2GSD:src <0x61ec4f73>
+			streams:   0, words:     0
+		worklib.pulldown_IO:src <0x44825f98>
+			streams:   4, words:  2426
+		worklib.pullup2_down_IO:src <0x2b0bce28>
+			streams:   9, words:  5915
+		worklib.pullup_IO:src <0x3c875dad>
+			streams:   4, words:  2466
+		worklib.pullup_down_IO:src <0x546b62e2>
+			streams:   9, words:  5915
+		worklib.pullup_down_IO_IEO:src <0x5b4eaa93>
+			streams:  16, words:  9646
+		worklib.pullup_down_IO_PSCN:src <0x74488a6b>
+			streams:   6, words:  7060
+		worklib.pullup_down_ene_IO:src <0x01f15e79>
+			streams:   9, words:  5915
+		worklib.pullup_down_keep_IO:src <0x106880b5>
+			streams:  10, words:  7040
+		worklib.pullup_down_keep_IO_03us:src <0x3b8c612a>
+			streams:  10, words:  7032
+		worklib.pullup_down_keep_IO_IE:src <0x1d82ffe8>
+			streams:  10, words:  7178
+		worklib.pullup_down_keep_IO_IG:src <0x5ad5b9ee>
+			streams:  10, words:  7178
+		worklib.pullup_inv_IO:src <0x3e0d8a50>
+			streams:   4, words:  2466
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                     Instances  Unique
+		Modules:                 26553     143
+		UDPs:                     5970      11
+		Primitives:              38594      14
+		Timing outputs:          27898      67
+		Registers:               32639      78
+		Scalar wires:            31608       -
+		Expanded wires:             14       2
+		Named events:               41      37
+		Always blocks:              71      65
+		Initial blocks:           3218       7
+		Cont. assignments:           0      29
+		Pseudo assignments:          1       1
+		Timing checks:           32670    3927
+		Delayed tcheck signals:  10890    3688
+		Simulation timescale:      1ps
+	Writing initial simulation snapshot: worklib.MC_CORE_tb:v
+Loading snapshot worklib.MC_CORE_tb:v .................... Done
+	$fsdbDumpfile("mc_core.fsdb");
+	            |
+ncsim: *E,MSSYSTF (./Top_tb.v,79|13): User Defined system task or function ($fsdbDumpfile) registered during elaboration and used within the simulation has not been registered during simulation.
+	$fsdbDumpvars(0, "+mda");
+	            |
+ncsim: *E,MSSYSTF (./Top_tb.v,80|13): User Defined system task or function ($fsdbDumpvars) registered during elaboration and used within the simulation has not been registered during simulation.
+TOOL:	ncverilog	15.20-s084: Exiting on Jun 04, 2022 at 10:27:45 CST  (total: 00:00:08)

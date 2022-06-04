@@ -1,0 +1,2213 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.10-p004_1, built Thu May 7 20:02:41 PDT 2020
+Options:	
+Date:		Fri May 27 11:23:06 2022
+Host:		cad16 (x86_64 w/Linux 3.10.0-1160.59.1.el7.x86_64) (6cores*24cpus*Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz 15360KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+**WARN: (IMPOPT-801):	Genus executable not found in PATH. Install Genus, add the path to the genus executable in the PATH variable and rerun Innovus.
+Change the soft stacksize limit to 0.2%RAM (80 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+RC_typ RC_best RC_worst
+**WARN: (IMPLF-119):	LAYER 'metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal4' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal5' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal6' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2B1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2B1P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2B1S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2B1T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B1P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B1S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B1T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B2P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B2S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B2T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (EMS-27):	Message (IMPLF-58) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPLF-119):	LAYER 'metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal4' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal5' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal6' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-61):	392 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data, and certain properties, have been ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-200):	Pin 'IO' in macro 'ZMA2GSD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'IO' in macro 'ZMA2GSC' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'I' in macro 'XMD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'I' in macro 'XMC' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'GNDO' in macro 'GNDIOD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'GNDO' in macro 'GNDIOC' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Loading view definition file from /home/raid7_2/userb08/b08189/final/apr/apr_final/DBS/powerroute.dat/viewDefinition.tcl
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/raid7_2/userb08/b08189/final/apr/apr_final/lib/fsa0m_a_generic_core_ss1p62v125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/raid7_2/userb08/b08189/final/apr/apr_final/lib/fsa0m_a_generic_core_ff1p98vm40c.lib)
+*** End library_loading (cpu=0.05min, real=0.05min, mem=22.9M, fe_cpu=0.43min, fe_real=1.30min, fe_mem=833.2M) ***
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4T' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4T' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4S' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4S' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4P' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4P' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3T' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3T' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3S' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3S' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3P' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3P' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR2HT' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR2HT' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR2HS' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR2HS' is defined in LEF but not in the timing library.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+*** Netlist is unique.
+**WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Loading preference file /home/raid7_2/userb08/b08189/final/apr/apr_final/DBS/powerroute.dat/gui.pref.tcl ...
+**WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Loading place ...
+**WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for preRoute and postRoute (effort level medium/high/signoff) extraction engines.
+DC_typ DC_min DC_max
+**WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.10-p004_1. They will be removed in the next release. 
+timing_enable_default_delay_arc
+<CMD> setDrawView place
+<CMD> setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+<CMD> setEndCapMode -reset
+<CMD> setEndCapMode -boundary_tap false
+<CMD> setNanoRouteMode -quiet -droutePostRouteSpreadWire 1
+<CMD> setNanoRouteMode -quiet -timingEngine {}
+<CMD> setUsefulSkewMode -maxSkew false -noBoundary false -useCells {DELC DELB DELA BUF8CK BUF8 BUF6CK BUF6 BUF4CK BUF4 BUF3CK BUF3 BUF2CK BUF2 BUF1S BUF1CK BUF12CK BUF1 INV8CK INV8 INV6CK INV6 INV4CK INV4 INV3CK INV3 INV2CK INV2 INV1S INV1CK INV12CK INV12 INV1} -maxAllowedDelay 1
+<CMD> setPlaceMode -reset
+<CMD> setPlaceMode -congEffort auto -timingDriven 1 -clkGateAware 1 -powerDriven 0 -ignoreScan 1 -reorderScan 1 -ignoreSpare 0 -placeIOPins 0 -moduleAwareSpare 0 -maxDensity 0.85 -preserveRouting 1 -rmAffectedRouting 0 -checkRoute 0 -swapEEQ 0
+<CMD> setPlaceMode -fp false
+<CMD> place_design
+*** Starting placeDesign default flow ***
+*** Start deleteBufferTree ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+Updating netlist
+AAE DB initialization (MEM=1206.2 CPU=0:00:00.0 REAL=0:00:01.0) 
+AAE_INFO: Cdb files are: 
+ 	/home/raid7_2/userb08/b08189/final/apr/apr_final/DBS/powerroute.dat/libs/mmmc/u18_ss.cdb
+	/home/raid7_2/userb08/b08189/final/apr/apr_final/DBS/powerroute.dat/libs/mmmc/u18_ff.cdb
+ 
+
+*summary: 5568 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:05.7) ***
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+**INFO: Analyzing IO path groups for slack adjustment
+Effort level <high> specified for reg2reg_tmp.12103 path_group
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: CHIP
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in BcWc mode...
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (1 T). (MEM=1315.54)
+**WARN: (IMPESI-3086):	The cell 'XMD' does not have characterized noise model(s) for 'fsa0m_a_t33_generic_io_ss1p62v125c, fsa0m_a_t33_generic_io_ff1p98vm40c' lib(s). Missing noise information could compromise the accuracy of analysis.
+Type 'man IMPESI-3086' for more detail.
+**WARN: (IMPESI-3086):	The cell 'YA2GSD' does not have characterized noise model(s) for 'fsa0m_a_t33_generic_io_ss1p62v125c, fsa0m_a_t33_generic_io_ff1p98vm40c' lib(s). Missing noise information could compromise the accuracy of analysis.
+Type 'man IMPESI-3086' for more detail.
+Total number of fetched objects 23726
+End delay calculation. (MEM=1416.48 CPU=0:00:08.4 REAL=0:00:09.0)
+End delay calculation (fullDC). (MEM=1389.41 CPU=0:00:10.1 REAL=0:00:10.0)
+**INFO: Disable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+**INFO: Pre-place timing setting for timing analysis already disabled
+Deleted 0 physical inst  (cell - / prefix -).
+INFO: #ExclusiveGroups=0
+INFO: There are no Exclusive Groups.
+*** Starting "NanoPlace(TM) placement v#2 (mem=1374.8M)" ...
+*** Build Buffered Sizing Timing Model
+(cpu=0:00:08.0 mem=1382.8M) ***
+**WARN: (IMPTS-141):	Cell (PDI) is marked as dont_touch, but is not marked as dont_use.
+**WARN: (IMPTS-141):	Cell (PDIX) is marked as dont_touch, but is not marked as dont_use.
+**WARN: (IMPTS-141):	Cell (PUI) is marked as dont_touch, but is not marked as dont_use.
+**WARN: (IMPTS-141):	Cell (BHD1) is marked as dont_touch, but is not marked as dont_use.
+*** Build Virtual Sizing Timing Model
+(cpu=0:00:08.6 mem=1383.8M) ***
+No user-set net weight.
+Net fanout histogram:
+2		: 16883 (71.2%) nets
+3		: 4894 (20.6%) nets
+4     -	14	: 1604 (6.8%) nets
+15    -	39	: 268 (1.1%) nets
+40    -	79	: 21 (0.1%) nets
+80    -	159	: 16 (0.1%) nets
+160   -	319	: 21 (0.1%) nets
+320   -	639	: 0 (0.0%) nets
+640   -	1279	: 0 (0.0%) nets
+1280  -	2559	: 0 (0.0%) nets
+2560  -	5119	: 2 (0.0%) nets
+5120+		: 0 (0.0%) nets
+Options: timingDriven clkGateAware ignoreScan pinGuide congEffort=auto gpeffort=medium 
+**WARN: (IMPSP-9042):	Scan chains were not defined, -place_global_ignore_scan option will be ignored.
+Define the scan chains before using this option.
+Type 'man IMPSP-9042' for more detail.
+#std cell=20585 (0 fixed + 20585 movable) #buf cell=0 #inv cell=1446 #block=0 (0 floating + 0 preplaced)
+#ioInst=303 #net=23709 #term=85111 #term/net=3.59, #fixedIo=303, #floatIo=0, #fixedPin=30, #floatPin=0
+stdCell: 20585 single + 0 double + 0 multi
+Total standard cell length = 125.4849 (mm), area = 0.6324 (mm^2)
+Estimated cell power/ground rail width = 0.866 um
+Average module density = 0.902.
+Density for the design = 0.902.
+       = stdcell_area 202395 sites (632444 um^2) / alloc_area 224451 sites (701364 um^2).
+Pin Density = 0.3223.
+            = total # of pins 85111 / total area 264060.
+Identified 7 spare or floating instances, with no clusters.
+=== lastAutoLevel = 9 
+Clock gating cells determined by native netlist tracing.
+Iteration  1: Total net bbox = 6.199e+04 (3.20e+04 3.00e+04)
+              Est.  stn bbox = 7.804e+04 (3.97e+04 3.84e+04)
+              cpu = 0:00:00.2 real = 0:00:00.0 mem = 1488.2M
+Iteration  2: Total net bbox = 6.199e+04 (3.20e+04 3.00e+04)
+              Est.  stn bbox = 7.804e+04 (3.97e+04 3.84e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1488.2M
+Iteration  3: Total net bbox = 6.607e+04 (3.36e+04 3.25e+04)
+              Est.  stn bbox = 8.837e+04 (4.49e+04 4.34e+04)
+              cpu = 0:00:06.2 real = 0:00:06.0 mem = 1522.1M
+Active setup views:
+    av_scan_mode_max
+Iteration  4: Total net bbox = 3.561e+05 (2.54e+05 1.03e+05)
+              Est.  stn bbox = 4.851e+05 (3.50e+05 1.35e+05)
+              cpu = 0:00:27.4 real = 0:00:28.0 mem = 1589.9M
+Active setup views:
+    av_scan_mode_max
+Iteration  5: Total net bbox = 4.266e+05 (2.52e+05 1.74e+05)
+              Est.  stn bbox = 5.979e+05 (3.63e+05 2.34e+05)
+              cpu = 0:00:10.2 real = 0:00:10.0 mem = 1589.9M
+Active setup views:
+    av_scan_mode_max
+Iteration  6: Total net bbox = 5.067e+05 (2.84e+05 2.23e+05)
+              Est.  stn bbox = 7.004e+05 (4.03e+05 2.97e+05)
+              cpu = 0:00:11.6 real = 0:00:12.0 mem = 1593.1M
+Active setup views:
+    av_scan_mode_max
+Iteration  7: Total net bbox = 5.719e+05 (3.43e+05 2.29e+05)
+              Est.  stn bbox = 7.667e+05 (4.63e+05 3.04e+05)
+              cpu = 0:00:00.6 real = 0:00:00.0 mem = 1623.2M
+Iteration  8: Total net bbox = 5.722e+05 (3.44e+05 2.28e+05)
+              Est.  stn bbox = 7.671e+05 (4.64e+05 3.03e+05)
+              cpu = 0:00:10.3 real = 0:00:11.0 mem = 1623.2M
+Active setup views:
+    av_scan_mode_max
+Active setup views:
+    av_scan_mode_max
+Iteration  9: Total net bbox = 7.501e+05 (4.55e+05 2.95e+05)
+              Est.  stn bbox = 9.731e+05 (5.95e+05 3.78e+05)
+              cpu = 0:00:18.2 real = 0:00:18.0 mem = 1623.2M
+Iteration 10: Total net bbox = 7.516e+05 (4.56e+05 2.95e+05)
+              Est.  stn bbox = 9.747e+05 (5.96e+05 3.78e+05)
+              cpu = 0:00:10.3 real = 0:00:11.0 mem = 1623.2M
+Active setup views:
+    av_scan_mode_max
+Active setup views:
+    av_scan_mode_max
+Active setup views:
+    av_scan_mode_max
+Active setup views:
+    av_scan_mode_max
+Iteration 11: Total net bbox = 7.959e+05 (4.44e+05 3.52e+05)
+              Est.  stn bbox = 1.021e+06 (5.84e+05 4.37e+05)
+              cpu = 0:00:06.7 real = 0:00:07.0 mem = 1590.2M
+Iteration 12: Total net bbox = 8.341e+05 (4.81e+05 3.53e+05)
+              Est.  stn bbox = 1.061e+06 (6.22e+05 4.39e+05)
+              cpu = 0:00:49.7 real = 0:00:50.0 mem = 1590.2M
+Iteration 13: Total net bbox = 8.341e+05 (4.81e+05 3.53e+05)
+              Est.  stn bbox = 1.061e+06 (6.22e+05 4.39e+05)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1590.2M
+Iteration 14: Total net bbox = 8.341e+05 (4.81e+05 3.53e+05)
+              Est.  stn bbox = 1.061e+06 (6.22e+05 4.39e+05)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1590.2M
+*** cost = 8.341e+05 (4.81e+05 3.53e+05) (cpu for global=0:02:25) real=0:02:28***
+Info: 1 clock gating cells identified, 0 (on average) moved 0/5
+Solver runtime cpu: 0:01:43 real: 0:01:44
+Core Placement runtime cpu: 0:02:04 real: 0:02:05
+**WARN: (IMPSP-9025):	No scan chain specified/traced.
+Type 'man IMPSP-9025' for more detail.
+*** Starting refinePlace (0:03:34 mem=1606.2M) ***
+Total net bbox length = 8.341e+05 (4.809e+05 3.532e+05) (ext = 2.110e+04)
+Move report: Detail placement moves 20585 insts, mean move: 4.23 um, max move: 49.99 um
+	Max move on inst (top_in/pricing0/mc_core0/inv0/mult_385/FE_DBTC717_x0_r_6): (659.77, 342.70) --> (611.32, 341.16)
+	Runtime: CPU: 0:00:03.8 REAL: 0:00:04.0 MEM: 1606.2MB
+Summary Report:
+Instances move: 20585 (out of 20585 movable)
+Instances flipped: 0
+Mean displacement: 4.23 um
+Max displacement: 49.99 um (Instance: top_in/pricing0/mc_core0/inv0/mult_385/FE_DBTC717_x0_r_6) (659.773, 342.7) -> (611.32, 341.16)
+	Length: 2 sites, height: 1 rows, site name: core_5040, cell type: INV1S
+Total net bbox length = 7.726e+05 (4.198e+05 3.529e+05) (ext = 2.106e+04)
+Runtime: CPU: 0:00:03.9 REAL: 0:00:04.0 MEM: 1606.2MB
+*** Finished refinePlace (0:03:38 mem=1606.2M) ***
+*** End of Placement (cpu=0:02:42, real=0:02:44, mem=1606.2M) ***
+default core: bins with density > 0.750 = 68.13 % ( 233 / 342 )
+Density distribution unevenness ratio = 3.581%
+*** Free Virtual Timing Model ...(mem=1606.2M)
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+**INFO: Analyzing IO path groups for slack adjustment
+Effort level <high> specified for reg2reg_tmp.12103 path_group
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: CHIP
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (1 T). (MEM=1589.62)
+Total number of fetched objects 23726
+End delay calculation. (MEM=1612.4 CPU=0:00:06.3 REAL=0:00:06.0)
+End delay calculation (fullDC). (MEM=1612.4 CPU=0:00:07.4 REAL=0:00:07.0)
+**INFO: Disable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Info: Disable timing driven in postCTS congRepair.
+
+Starting congRepair ...
+Collecting buffer chain nets ...
+[NR-eGR] Track table information for default rule: 
+[NR-eGR] metal1 has no routable track
+[NR-eGR] metal2 has single uniform track structure
+[NR-eGR] metal3 has single uniform track structure
+[NR-eGR] metal4 has single uniform track structure
+[NR-eGR] metal5 has single uniform track structure
+[NR-eGR] metal6 has single uniform track structure
+[NR-eGR] Started Read PG Shapes ( Curr Mem: 1597.77 MB )
+[NR-eGR] Read 32960 PG shapes
+[NR-eGR] Finished Read PG Shapes ( CPU: 0.00 sec, Real: 0.00 sec, Curr Mem: 1597.77 MB )
+[NR-eGR] #Routing Blockages  : 0
+[NR-eGR] #Instance Blockages : 2061
+[NR-eGR] #PG Blockages       : 32960
+[NR-eGR] #Halo Blockages     : 0
+[NR-eGR] #Boundary Blockages : 0
+[NR-eGR] Num Prerouted Nets = 0  Num Prerouted Wires = 0
+[NR-eGR] Read numTotalNets=23709  numIgnoredNets=0
+[NR-eGR] There are 1 clock nets ( 0 with NDR ).
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id: 0  Nets: 23679 
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 23679 net(s) in layer range [2, 6]
+[NR-eGR] Early Global Route overflow of layer group 1: 0.05% H + 0.06% V. EstWL: 1.019562e+06um
+[NR-eGR] Congestion Analysis By layer: (blocked Gcells are excluded) 
+[NR-eGR]                        OverCon            
+[NR-eGR]                         #Gcell     %Gcell
+[NR-eGR]       Layer                (2)    OverCon 
+[NR-eGR] ----------------------------------------------
+[NR-eGR]  metal1  (1)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  metal2  (2)        39( 0.09%)   ( 0.09%) 
+[NR-eGR]  metal3  (3)         8( 0.02%)   ( 0.02%) 
+[NR-eGR]  metal4  (4)         4( 0.01%)   ( 0.01%) 
+[NR-eGR]  metal5  (5)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  metal6  (6)         0( 0.00%)   ( 0.00%) 
+[NR-eGR] ----------------------------------------------
+[NR-eGR] Total               51( 0.02%)   ( 0.02%) 
+[NR-eGR] 
+[NR-eGR] Overflow after Early Global Route (GR compatible) 0.00% H + 0.01% V
+[NR-eGR] Overflow after Early Global Route 0.00% H + 0.01% V
+Early Global Route congestion estimation runtime: 0.61 seconds, mem = 1605.8M
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+Skipped repairing congestion.
+[NR-eGR] Started Export DB wires ( Curr Mem: 1605.77 MB )
+[NR-eGR] Started Export all nets ( Curr Mem: 1605.77 MB )
+[NR-eGR] Finished Export all nets ( CPU: 0.15 sec, Real: 0.14 sec, Curr Mem: 1605.77 MB )
+[NR-eGR] Started Set wire vias ( Curr Mem: 1605.77 MB )
+[NR-eGR] Finished Set wire vias ( CPU: 0.02 sec, Real: 0.02 sec, Curr Mem: 1605.77 MB )
+[NR-eGR] Finished Export DB wires ( CPU: 0.18 sec, Real: 0.18 sec, Curr Mem: 1605.77 MB )
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] metal1  (1F) length: 0.000000e+00um, number of vias: 85051
+[NR-eGR] metal2  (2V) length: 3.457414e+05um, number of vias: 119236
+[NR-eGR] metal3  (3H) length: 4.493935e+05um, number of vias: 11829
+[NR-eGR] metal4  (4V) length: 1.633677e+05um, number of vias: 2883
+[NR-eGR] metal5  (5H) length: 9.920409e+04um, number of vias: 176
+[NR-eGR] metal6  (6V) length: 5.929840e+03um, number of vias: 0
+[NR-eGR] Total length: 1.063636e+06um, number of vias: 219175
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total eGR-routed clock nets wire length: 3.831093e+04um 
+[NR-eGR] --------------------------------------------------------------------------
+Early Global Route wiring runtime: 0.71 seconds, mem = 1445.8M
+Tdgp not successfully inited but do clear! skip clearing
+End of congRepair (cpu=0:00:01.4, real=0:00:01.0)
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 3:20, real = 0: 3:23, mem = 1440.8M **
+Tdgp not successfully inited but do clear! skip clearing
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPTS-141            4  Cell (%s) is marked as dont_touch, but i...
+WARNING   IMPDC-1629           2  The default delay limit was set to %d. T...
+WARNING   IMPESI-3086          2  The cell '%s' does not have characterize...
+WARNING   IMPSP-9025           1  No scan chain specified/traced.          
+WARNING   IMPSP-9042           1  Scan chains were not defined, -place_glo...
+*** Message Summary: 10 warning(s), 0 error(s)
+
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -preCTS -pathReports -drvReports -slackReports -numPaths 50 -prefix CHIP_preCTS -outDir timingReports
+Setting timing_disable_library_data_to_data_checks to 'true'.
+Setting timing_disable_user_data_to_data_checks to 'true'.
+Start to check current routing status for nets...
+**WARN: (IMPTR-2325):	There are 30 nets connecting a pad term to a fterm without geometry and these nets will not be routed. A pad term is a pin of a pad logically connected to a top level module port (fterm). 
+Type 'set trPrintIgnoredPadNets <limit>' prior to trialRoute to have it report each net up to <limit>. 
+Review the list of nets and verify they do not require a physical route between the pad pin and fterm. Top level fterms connecting to pad pins typically do not require a physical route because the pad pin will connect to signals external to the design.
+Type 'man IMPTR-2325' for more detail.
+All nets are already routed correctly.
+End to check current routing status for nets (mem=1446.7M)
+Extraction called for design 'CHIP' of instances=20888 and nets=24198 using extraction engine 'preRoute' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PreRoute RC Extraction called for design CHIP.
+RC Extraction called in multi-corner(2) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.00000 1.00000 
+Resistance Scaling Factor    : 1.00000 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 1.00000 
+Clock Res. Scaling Factor    : 1.00000 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.4  Real Time: 0:00:01.0  MEM: 1446.688M)
+Starting delay calculation for Setup views
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: CHIP
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in BcWc mode...
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (1 T). (MEM=1488.67)
+Total number of fetched objects 23726
+End delay calculation. (MEM=1521.99 CPU=0:00:09.4 REAL=0:00:10.0)
+End delay calculation (fullDC). (MEM=1521.99 CPU=0:00:11.7 REAL=0:00:12.0)
+*** Done Building Timing Graph (cpu=0:00:13.5 real=0:00:13.0 totSessionCpu=0:05:09 mem=1522.0M)
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
+Setup views included:
+ av_func_mode_max av_scan_mode_max 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| -18.970 | -18.970 | -0.253  |
+|           TNS (ns):|-26517.5 |-26517.5 | -0.253  |
+|    Violating Paths:|  3337   |  3337   |    1    |
+|          All Paths:|  7522   |  3761   |  3855   |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |     87 (87)      |  -34.078   |     88 (88)      |
+|   max_tran     |    85 (9103)     |  -16.829   |    85 (9103)     |
+|   max_fanout   |   1209 (1209)    |   -3755    |   1210 (1210)    |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 76.647%
+Routing Overflow: 0.00% H and 0.01% V
+------------------------------------------------------------
+Reported timing to dir timingReports
+Total CPU time: 19.54 sec
+Total Real time: 21.0 sec
+Total Memory Usage: 1503.25 Mbytes
+<CMD> setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+<CMD> setEndCapMode -reset
+<CMD> setEndCapMode -boundary_tap false
+<CMD> setUsefulSkewMode -maxSkew false -noBoundary false -useCells {BUF1 BUF12CK BUF1CK BUF1S BUF2 BUF2CK BUF3 BUF3CK BUF4 BUF4CK BUF6 BUF6CK BUF8 BUF8CK DELA DELB DELC INV1 INV12 INV12CK INV1CK INV1S INV2 INV2CK INV3 INV3CK INV4 INV4CK INV6 INV6CK INV8 INV8CK} -maxAllowedDelay 1
+<CMD> setOptMode -effort high -powerEffort none -leakageToDynamicRatio 1 -reclaimArea true -simplifyNetlist true -allEndPoints false -setupTargetSlack 0 -holdTargetSlack 0 -maxDensity 0.85 -drcMargin 0 -usefulSkew true
+<CMD> setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+<CMD> optDesign -preCTS
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 1223.1M, totSessionCpu=0:05:25 **
+Executing: place_opt_design -opt
+No user sequential activity specified, applying default sequential activity of "0.2" for Dynamic Power reporting.
+'set_default_switching_activity' finished successfully.
+*** Starting GigaPlace ***
+**INFO: User settings:
+setExtractRCMode -engine                            preRoute
+setUsefulSkewMode -maxAllowedDelay                  1
+setUsefulSkewMode -maxSkew                          false
+setUsefulSkewMode -noBoundary                       false
+setUsefulSkewMode -useCells                         {DELC DELB DELA BUF8CK BUF8 BUF6CK BUF6 BUF4CK BUF4 BUF3CK BUF3 BUF2CK BUF2 BUF1S BUF1CK BUF12CK BUF1 INV8CK INV8 INV6CK INV6 INV4CK INV4 INV3CK INV3 INV2CK INV2 INV1S INV1CK INV12CK INV12 INV1}
+setDelayCalMode -enable_high_fanout                 true
+setDelayCalMode -eng_copyNetPropToNewNet            true
+setDelayCalMode -engine                             aae
+setDelayCalMode -ignoreNetLoad                      false
+setOptMode -allEndPoints                            false
+setOptMode -drcMargin                               0
+setOptMode -effort                                  high
+setOptMode -fixCap                                  true
+setOptMode -fixFanoutLoad                           false
+setOptMode -fixTran                                 true
+setOptMode -holdTargetSlack                         0
+setOptMode -leakageToDynamicRatio                   1
+setOptMode -maxDensity                              0.85
+setOptMode -powerEffort                             none
+setOptMode -reclaimArea                             true
+setOptMode -setupTargetSlack                        0
+setOptMode -simplifyNetlist                         true
+setOptMode -usefulSkew                              true
+setPlaceMode -place_design_floorplan_mode           false
+setPlaceMode -place_detail_check_route              false
+setPlaceMode -place_detail_preserve_routing         true
+setPlaceMode -place_detail_remove_affected_routing  false
+setPlaceMode -place_detail_swap_eeq_cells           false
+setPlaceMode -place_global_clock_gate_aware         true
+setPlaceMode -place_global_cong_effort              auto
+setPlaceMode -place_global_ignore_scan              true
+setPlaceMode -place_global_ignore_spare             false
+setPlaceMode -place_global_max_density              0.85
+setPlaceMode -place_global_module_aware_spare       false
+setPlaceMode -place_global_place_io_pins            false
+setPlaceMode -place_global_reorder_scan             true
+setPlaceMode -powerDriven                           false
+setPlaceMode -timingDriven                          true
+setAnalysisMode -analysisType                       bcwc
+setAnalysisMode -checkType                          setup
+setAnalysisMode -clkSrcPath                         true
+setAnalysisMode -clockPropagation                   forcedIdeal
+setAnalysisMode -virtualIPO                         false
+setRouteMode -earlyGlobalHonorMsvRouteConstraint    false
+setRouteMode -earlyGlobalRoutePartitionPinGuide     true
+
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 1220.6M, totSessionCpu=0:05:26 **
+GigaOpt running with 1 threads.
+**WARN: (IMPOPT-6118):	The following cells have a dont_touch property but without being dont_use.
+To avoid such a configuration impacting timing closure, since otherwise such cells could be inserted but never optimized or removed, optDesign is treating the following cells as dont_use.
+			Cell ZMA2GSD is dont_touch but not dont_use
+			Cell ZMA2GSD is dont_touch but not dont_use
+			Cell ZMA2GSC is dont_touch but not dont_use
+			Cell ZMA2GSC is dont_touch but not dont_use
+			Cell YA2GSD is dont_touch but not dont_use
+			Cell YA2GSD is dont_touch but not dont_use
+			Cell YA2GSC is dont_touch but not dont_use
+			Cell YA2GSC is dont_touch but not dont_use
+			Cell XMD is dont_touch but not dont_use
+			Cell XMD is dont_touch but not dont_use
+			Cell XMC is dont_touch but not dont_use
+			Cell XMC is dont_touch but not dont_use
+			Cell PUI is dont_touch but not dont_use
+			Cell PUI is dont_touch but not dont_use
+			Cell PDIX is dont_touch but not dont_use
+			Cell PDIX is dont_touch but not dont_use
+			Cell PDI is dont_touch but not dont_use
+			Cell PDI is dont_touch but not dont_use
+			Cell BHD1 is dont_touch but not dont_use
+			Cell BHD1 is dont_touch but not dont_use
+	...
+	Reporting only the 20 first cells found...
+
+**optDesign ... cpu = 0:00:05, real = 0:00:05, mem = 1228.0M, totSessionCpu=0:05:31 **
+*** optDesign -preCTS ***
+DRC Margin: user margin 0.0; extra margin 0.2
+Setup Target Slack: user slack 0; extra slack 0.0
+Hold Target Slack: user slack 0
+Multi-VT timing optimization disabled based on library information.
+[NR-eGR] Started Early Global Route kernel ( Curr Mem: 1531.68 MB )
+[NR-eGR] Track table information for default rule: 
+[NR-eGR] metal1 has no routable track
+[NR-eGR] metal2 has single uniform track structure
+[NR-eGR] metal3 has single uniform track structure
+[NR-eGR] metal4 has single uniform track structure
+[NR-eGR] metal5 has single uniform track structure
+[NR-eGR] metal6 has single uniform track structure
+[NR-eGR] Started Read PG Shapes ( Curr Mem: 1544.55 MB )
+[NR-eGR] Read 32960 PG shapes
+[NR-eGR] Finished Read PG Shapes ( CPU: 0.01 sec, Real: 0.00 sec, Curr Mem: 1544.55 MB )
+[NR-eGR] #Routing Blockages  : 0
+[NR-eGR] #Instance Blockages : 2061
+[NR-eGR] #PG Blockages       : 32960
+[NR-eGR] #Halo Blockages     : 0
+[NR-eGR] #Boundary Blockages : 0
+[NR-eGR] Num Prerouted Nets = 0  Num Prerouted Wires = 0
+[NR-eGR] Read numTotalNets=23709  numIgnoredNets=0
+[NR-eGR] There are 1 clock nets ( 0 with NDR ).
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id: 0  Nets: 23679 
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 23679 net(s) in layer range [2, 6]
+[NR-eGR] Early Global Route overflow of layer group 1: 0.05% H + 0.05% V. EstWL: 1.034223e+06um
+[NR-eGR] Congestion Analysis By layer: (blocked Gcells are excluded) 
+[NR-eGR]                        OverCon           OverCon            
+[NR-eGR]                         #Gcell            #Gcell     %Gcell
+[NR-eGR]       Layer                (1)               (3)    OverCon 
+[NR-eGR] ---------------------------------------------------------------
+[NR-eGR]  metal1  (1)         0( 0.00%)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  metal2  (2)        50( 0.11%)         1( 0.00%)   ( 0.11%) 
+[NR-eGR]  metal3  (3)         8( 0.02%)         0( 0.00%)   ( 0.02%) 
+[NR-eGR]  metal4  (4)         7( 0.02%)         0( 0.00%)   ( 0.02%) 
+[NR-eGR]  metal5  (5)         0( 0.00%)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  metal6  (6)         0( 0.00%)         0( 0.00%)   ( 0.00%) 
+[NR-eGR] ---------------------------------------------------------------
+[NR-eGR] Total               65( 0.03%)         1( 0.00%)   ( 0.03%) 
+[NR-eGR] 
+[NR-eGR] Overflow after Early Global Route (GR compatible) 0.00% H + 0.00% V
+[NR-eGR] Overflow after Early Global Route 0.00% H + 0.00% V
+[NR-eGR] Started Export DB wires ( Curr Mem: 1552.69 MB )
+[NR-eGR] Started Export all nets ( Curr Mem: 1552.69 MB )
+[NR-eGR] Finished Export all nets ( CPU: 0.14 sec, Real: 0.14 sec, Curr Mem: 1552.69 MB )
+[NR-eGR] Started Set wire vias ( Curr Mem: 1552.69 MB )
+[NR-eGR] Finished Set wire vias ( CPU: 0.03 sec, Real: 0.02 sec, Curr Mem: 1552.69 MB )
+[NR-eGR] Finished Export DB wires ( CPU: 0.18 sec, Real: 0.18 sec, Curr Mem: 1552.69 MB )
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] metal1  (1F) length: 0.000000e+00um, number of vias: 85051
+[NR-eGR] metal2  (2V) length: 3.482561e+05um, number of vias: 119071
+[NR-eGR] metal3  (3H) length: 4.572046e+05um, number of vias: 12129
+[NR-eGR] metal4  (4V) length: 1.685869e+05um, number of vias: 3054
+[NR-eGR] metal5  (5H) length: 9.952630e+04um, number of vias: 191
+[NR-eGR] metal6  (6V) length: 5.597760e+03um, number of vias: 0
+[NR-eGR] Total length: 1.079172e+06um, number of vias: 219496
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total eGR-routed clock nets wire length: 4.056691e+04um 
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Finished Early Global Route kernel ( CPU: 1.65 sec, Real: 1.66 sec, Curr Mem: 1505.06 MB )
+Extraction called for design 'CHIP' of instances=20888 and nets=24198 using extraction engine 'preRoute' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PreRoute RC Extraction called for design CHIP.
+RC Extraction called in multi-corner(2) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.00000 1.00000 
+Resistance Scaling Factor    : 1.00000 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 1.00000 
+Clock Res. Scaling Factor    : 1.00000 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.4  Real Time: 0:00:00.0  MEM: 1497.059M)
+Starting delay calculation for Setup views
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: CHIP
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in BcWc mode...
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (1 T). (MEM=1510.26)
+Total number of fetched objects 23726
+End delay calculation. (MEM=1542.58 CPU=0:00:09.3 REAL=0:00:09.0)
+End delay calculation (fullDC). (MEM=1542.58 CPU=0:00:11.6 REAL=0:00:12.0)
+*** Done Building Timing Graph (cpu=0:00:15.0 real=0:00:14.0 totSessionCpu=0:05:53 mem=1542.6M)
+
+------------------------------------------------------------
+             Initial Summary                             
+------------------------------------------------------------
+
+Setup views included:
+ av_func_mode_max av_scan_mode_max 
+
++--------------------+---------+
+|     Setup mode     |   all   |
++--------------------+---------+
+|           WNS (ns):| -19.083 |
+|           TNS (ns):|-26963.3 |
+|    Violating Paths:|  3337   |
+|          All Paths:|  7522   |
++--------------------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |     89 (89)      |  -34.406   |     90 (90)      |
+|   max_tran     |    87 (9170)     |  -17.048   |    87 (9170)     |
+|   max_fanout   |   1209 (1209)    |   -3755    |   1210 (1210)    |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 76.647%
+------------------------------------------------------------
+**optDesign ... cpu = 0:00:28, real = 0:00:28, mem = 1237.9M, totSessionCpu=0:05:54 **
+** INFO : this run is activating medium effort placeOptDesign flow
+*** Starting optimizing excluded clock nets MEM= 1520.8M) ***
+*info: No excluded clock nets to be optimized.
+*** Finished optimizing excluded clock nets (CPU Time= 0:00:00.0  MEM= 1520.8M) ***
+The useful skew maximum allowed delay set by user is: 1
+
+Optimization is working on the following views:
+  Setup views: av_scan_mode_max 
+  Hold  views: av_func_mode_min av_scan_mode_min 
+Info: 14 top-level, potential tri-state nets excluded from IPO operation.
+Info: 30 io nets excluded
+Info: 2 clock nets excluded from IPO operation.
+*** AreaOpt [begin] : cpu/real = 0:00:00.0/0:00:00.0 (0.0), totSession cpu/real = 0:05:58.6/0:18:41.1 (0.3), mem = 1521.9M
+
+Footprint cell information for calculating maxBufDist
+*info: There are 14 candidate Buffer cells
+*info: There are 14 candidate Inverter cells
+
+
+Netlist preparation processing... 
+Removed 2905 instances
+*info: Marking 0 isolation instances dont touch
+*info: Marking 0 level shifter instances dont touch
+*** AreaOpt [finish] : cpu/real = 0:00:08.2/0:00:08.2 (1.0), totSession cpu/real = 0:06:06.7/0:18:49.2 (0.3), mem = 1642.7M
+Info: 14 top-level, potential tri-state nets excluded from IPO operation.
+Info: 30 io nets excluded
+Info: 2 clock nets excluded from IPO operation.
+Begin: Area Reclaim Optimization
+*** AreaOpt [begin] : cpu/real = 0:00:00.0/0:00:00.0 (0.0), totSession cpu/real = 0:06:10.4/0:18:52.9 (0.3), mem = 1612.8M
+Reclaim Optimization WNS Slack -17.881  TNS Slack -26066.731 Density 64.98
++----------+---------+--------+----------+------------+--------+
+| Density  | Commits |  WNS   |   TNS    |    Real    |  Mem   |
++----------+---------+--------+----------+------------+--------+
+|    64.98%|        -| -17.881|-26066.731|   0:00:00.0| 1612.8M|
+Info: 14 top-level, potential tri-state nets excluded from IPO operation.
+Info: 30 io nets excluded
+Info: 2 clock nets excluded from IPO operation.
+|    65.08%|       60| -16.798|-26054.771|   0:00:12.0| 1671.0M|
+|    65.07%|        8| -16.798|-26066.641|   0:00:02.0| 1671.0M|
+|    65.08%|        5| -16.798|-26077.436|   0:00:01.0| 1671.0M|
+|    65.08%|        4| -16.798|-26086.191|   0:00:01.0| 1672.0M|
+|    65.08%|        4| -16.798|-26094.430|   0:00:01.0| 1673.0M|
+|    65.07%|        9| -16.798|-26090.996|   0:00:01.0| 1673.0M|
+|    65.02%|       27| -16.764|-26087.182|   0:00:02.0| 1673.0M|
+|    65.02%|        0| -16.764|-26087.182|   0:00:01.0| 1673.0M|
++----------+---------+--------+----------+------------+--------+
+Reclaim Optimization End WNS Slack -16.764  TNS Slack -26087.182 Density 65.02
+Bottom Preferred Layer:
+    None
+Via Pillar Rule:
+    None
+End: Core Area Reclaim Optimization (cpu = 0:00:25.6) (real = 0:00:26.0) **
+*** AreaOpt [finish] : cpu/real = 0:00:22.5/0:00:22.6 (1.0), totSession cpu/real = 0:06:32.9/0:19:15.5 (0.3), mem = 1673.0M
+Executing incremental physical updates
+Executing incremental physical updates
+End: Area Reclaim Optimization (cpu=0:00:26, real=0:00:26, mem=1613.92M, totSessionCpu=0:06:33).
+Begin: GigaOpt high fanout net optimization
+Info: 14 top-level, potential tri-state nets excluded from IPO operation.
+Info: 30 io nets excluded
+Info: 2 clock nets excluded from IPO operation.
+*** DrvOpt [begin] : cpu/real = 0:00:00.0/0:00:00.0 (0.0), totSession cpu/real = 0:06:33.6/0:19:16.2 (0.3), mem = 1613.9M
++----------+---------+--------+----------+------------+--------+
+| Density  | Commits |  WNS   |   TNS    |    Real    |  Mem   |
++----------+---------+--------+----------+------------+--------+
+|    65.02%|        -| -16.764|-26087.182|   0:00:00.0| 1635.0M|
+|    65.25%|       69| -16.764|-26087.170|   0:00:03.0| 1691.2M|
++----------+---------+--------+----------+------------+--------+
+
+*** Finish pre-CTS High Fanout Net Fixing (cpu=0:00:03.0 real=0:00:03.0 mem=1691.2M) ***
+Bottom Preferred Layer:
+    None
+Via Pillar Rule:
+    None
+*** DrvOpt [finish] : cpu/real = 0:00:10.4/0:00:10.4 (1.0), totSession cpu/real = 0:06:44.0/0:19:26.5 (0.3), mem = 1672.1M
+End: GigaOpt high fanout net optimization
+Begin: GigaOpt DRV Optimization
+Info: 14 top-level, potential tri-state nets excluded from IPO operation.
+Info: 30 io nets excluded
+Info: 2 clock nets excluded from IPO operation.
+*** DrvOpt [begin] : cpu/real = 0:00:00.0/0:00:00.0 (0.0), totSession cpu/real = 0:06:44.0/0:19:26.6 (0.3), mem = 1672.1M
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+|        max-tran       |        max-cap        |  max-fanout |  max-length |       setup       |        |        |        |       |          |         |
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+| nets | terms|  wViol  | nets | terms|  wViol  | nets | terms| nets | terms|   WNS   |   TNS   |  #Buf  |  #Inv  | #Resize|Density|   Real   |   Mem   |
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+|  1372| 11790|   -17.66|   116|   116|    -2.02|  1144|  1144|     0|     0|   -16.76|-26087.17|       0|       0|       0|  65.25|          |         |
+|     0|     0|     0.00|     1|     1|    -0.11|  1246|  1246|     0|     0|   -15.57| -7361.91|      99|      24|      78|  65.50| 0:00:13.0|  1691.2M|
+|     0|     0|     0.00|     0|     0|     0.00|  1247|  1247|     0|     0|   -15.57| -7361.91|       1|       0|       0|  65.50| 0:00:00.0|  1691.2M|
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+Bottom Preferred Layer:
+    None
+Via Pillar Rule:
+    None
+
+*** Finish DRV Fixing (cpu=0:00:13.8 real=0:00:13.0 mem=1691.2M) ***
+
+*** DrvOpt [finish] : cpu/real = 0:00:17.8/0:00:17.8 (1.0), totSession cpu/real = 0:07:01.8/0:19:44.4 (0.4), mem = 1672.1M
+End: GigaOpt DRV Optimization
+**optDesign ... cpu = 0:01:36, real = 0:01:36, mem = 1322.3M, totSessionCpu=0:07:02 **
+
+Active setup views:
+ av_scan_mode_max
+  Dominating endpoints: 0
+  Dominating TNS: -0.000
+
+Begin: GigaOpt Global Optimization
+*info: use new DP (enabled)
+Info: 14 top-level, potential tri-state nets excluded from IPO operation.
+Info: 30 io nets excluded
+Info: 2 clock nets excluded from IPO operation.
+*** SetupOpt [begin] : cpu/real = 0:00:00.0/0:00:00.0 (0.0), totSession cpu/real = 0:07:02.2/0:19:44.8 (0.4), mem = 1624.1M
+*info: 30 io nets excluded
+Info: 14 top-level, potential tri-state nets excluded from IPO operation.
+*info: 2 clock nets excluded
+*info: 2 special nets excluded.
+*info: 4327 no-driver nets excluded.
+** GigaOpt Global Opt WNS Slack -15.572  TNS Slack -7361.912 
++--------+---------+----------+------------+--------+----------------+---------+----------------------------------------------------+
+|  WNS   |   TNS   | Density  |    Real    |  Mem   |   Worst View   |Pathgroup|                     End Point                      |
++--------+---------+----------+------------+--------+----------------+---------+----------------------------------------------------+
+| -15.572|-7361.912|    65.50%|   0:00:00.0| 1643.2M|av_scan_mode_max|  default| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -14.996| -552.832|    65.71%|   0:00:19.0| 1705.6M|av_scan_mode_max|  default| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -14.767| -516.348|    65.89%|   0:00:10.0| 1710.1M|av_scan_mode_max|  default| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -14.767| -516.348|    65.89%|   0:00:01.0| 1710.1M|av_scan_mode_max|  default| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -11.695| -324.750|    66.74%|   0:00:20.0| 1710.1M|av_scan_mode_max|  default| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -11.688| -319.777|    66.79%|   0:00:09.0| 1786.4M|av_scan_mode_max|  default| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -11.687| -319.171|    66.82%|   0:00:04.0| 1786.4M|av_scan_mode_max|  default| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -11.687| -319.171|    66.82%|   0:00:01.0| 1786.4M|av_scan_mode_max|  default| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -11.582| -264.557|    67.02%|   0:00:05.0| 1786.4M|av_scan_mode_max|  default| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -11.582| -260.694|    67.04%|   0:00:05.0| 1786.4M|av_scan_mode_max|  default| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -11.532| -258.459|    67.05%|   0:00:03.0| 1786.4M|av_scan_mode_max|  default| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -11.532| -258.459|    67.05%|   0:00:01.0| 1786.4M|av_scan_mode_max|  default| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -11.384| -255.949|    67.10%|   0:00:03.0| 1786.4M|av_scan_mode_max|  default| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -11.357| -254.573|    67.12%|   0:00:04.0| 1786.5M|av_scan_mode_max|  default| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -11.357| -254.354|    67.13%|   0:00:01.0| 1786.5M|av_scan_mode_max|  default| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -11.357| -254.354|    67.13%|   0:00:01.0| 1786.5M|av_scan_mode_max|  default| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -11.346| -254.171|    67.24%|   0:00:03.0| 1786.5M|av_scan_mode_max|  default| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -11.346| -254.141|    67.29%|   0:00:04.0| 1771.5M|av_scan_mode_max|  default| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -11.346| -254.072|    67.32%|   0:00:02.0| 1771.5M|av_scan_mode_max|  default| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -11.346| -254.072|    67.32%|   0:00:01.0| 1771.5M|av_scan_mode_max|  default| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -11.345| -253.681|    67.39%|   0:00:03.0| 1771.5M|av_scan_mode_max|  default| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -11.345| -253.557|    67.40%|   0:00:03.0| 1771.5M|av_scan_mode_max|  default| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -11.345| -253.249|    67.41%|   0:00:02.0| 1771.5M|av_scan_mode_max|  default| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -11.345| -253.249|    67.41%|   0:00:01.0| 1771.5M|av_scan_mode_max|  default| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -11.345| -253.247|    67.45%|   0:00:02.0| 1771.5M|av_scan_mode_max|  default| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -11.345| -253.247|    67.45%|   0:00:04.0| 1771.5M|av_scan_mode_max|  default| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
++--------+---------+----------+------------+--------+----------------+---------+----------------------------------------------------+
+
+*** Finish pre-CTS Global Setup Fixing (cpu=0:01:52 real=0:01:52 mem=1771.5M) ***
+
+*** Finish pre-CTS Setup Fixing (cpu=0:01:52 real=0:01:52 mem=1771.5M) ***
+Bottom Preferred Layer:
+    None
+Via Pillar Rule:
+    None
+** GigaOpt Global Opt End WNS Slack -11.345  TNS Slack -253.247 
+*** SetupOpt [finish] : cpu/real = 0:02:07.3/0:02:07.2 (1.0), totSession cpu/real = 0:09:09.5/0:21:51.9 (0.4), mem = 1752.4M
+End: GigaOpt Global Optimization
+*** Timing NOT met, worst failing slack is -11.345
+*** Check timing (0:00:00.0)
+Info: 14 top-level, potential tri-state nets excluded from IPO operation.
+Info: 30 io nets excluded
+Info: 2 clock nets excluded from IPO operation.
+Begin: Area Reclaim Optimization
+*** AreaOpt [begin] : cpu/real = 0:00:00.0/0:00:00.0 (0.0), totSession cpu/real = 0:09:13.0/0:21:55.4 (0.4), mem = 1675.5M
+Reclaim Optimization WNS Slack -11.345  TNS Slack -253.247 Density 67.45
++----------+---------+--------+--------+------------+--------+
+| Density  | Commits |  WNS   |  TNS   |    Real    |  Mem   |
++----------+---------+--------+--------+------------+--------+
+|    67.45%|        -| -11.345|-253.247|   0:00:00.0| 1675.5M|
+Info: 14 top-level, potential tri-state nets excluded from IPO operation.
+Info: 30 io nets excluded
+Info: 2 clock nets excluded from IPO operation.
+|    67.45%|        3| -11.345|-253.223|   0:00:07.0| 1716.7M|
+|    67.45%|        0| -11.345|-253.223|   0:00:00.0| 1716.7M|
+|    67.41%|       27| -11.345|-253.219|   0:00:02.0| 1716.7M|
+|    67.05%|      407| -11.333|-252.877|   0:00:21.0| 1721.7M|
+|    67.04%|       17| -11.333|-252.877|   0:00:04.0| 1721.7M|
+|    67.04%|        0| -11.333|-252.877|   0:00:00.0| 1721.7M|
+|    67.04%|        0| -11.333|-252.877|   0:00:01.0| 1721.7M|
++----------+---------+--------+--------+------------+--------+
+Reclaim Optimization End WNS Slack -11.332  TNS Slack -252.877 Density 67.04
+Bottom Preferred Layer:
+    None
+Via Pillar Rule:
+    None
+End: Core Area Reclaim Optimization (cpu = 0:00:39.1) (real = 0:00:40.0) **
+*** AreaOpt [finish] : cpu/real = 0:00:36.0/0:00:35.9 (1.0), totSession cpu/real = 0:09:48.9/0:22:31.4 (0.4), mem = 1721.7M
+Executing incremental physical updates
+Executing incremental physical updates
+End: Area Reclaim Optimization (cpu=0:00:39, real=0:00:40, mem=1656.62M, totSessionCpu=0:09:49).
+
+*** Start incrementalPlace ***
+Collecting buffer chain nets ...
+No Views given, use default active views for adaptive view pruning
+SKP will enable view:
+  av_scan_mode_max
+[NR-eGR] Track table information for default rule: 
+[NR-eGR] metal1 has no routable track
+[NR-eGR] metal2 has single uniform track structure
+[NR-eGR] metal3 has single uniform track structure
+[NR-eGR] metal4 has single uniform track structure
+[NR-eGR] metal5 has single uniform track structure
+[NR-eGR] metal6 has single uniform track structure
+[NR-eGR] Started Read PG Shapes ( Curr Mem: 1671.49 MB )
+[NR-eGR] Read 32960 PG shapes
+[NR-eGR] Finished Read PG Shapes ( CPU: 0.00 sec, Real: 0.01 sec, Curr Mem: 1671.49 MB )
+[NR-eGR] #Routing Blockages  : 0
+[NR-eGR] #Instance Blockages : 2061
+[NR-eGR] #PG Blockages       : 32960
+[NR-eGR] #Halo Blockages     : 0
+[NR-eGR] #Boundary Blockages : 0
+[NR-eGR] Num Prerouted Nets = 0  Num Prerouted Wires = 0
+[NR-eGR] Read numTotalNets=20269  numIgnoredNets=0
+[NR-eGR] There are 1 clock nets ( 0 with NDR ).
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id: 0  Nets: 20239 
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 20239 net(s) in layer range [2, 6]
+[NR-eGR] Early Global Route overflow of layer group 1: 0.04% H + 0.05% V. EstWL: 9.063936e+05um
+[NR-eGR] Congestion Analysis By layer: (blocked Gcells are excluded) 
+[NR-eGR]                        OverCon           OverCon           OverCon            
+[NR-eGR]                         #Gcell            #Gcell            #Gcell     %Gcell
+[NR-eGR]       Layer              (1-4)             (5-8)             (9-9)    OverCon 
+[NR-eGR] --------------------------------------------------------------------------------
+[NR-eGR]  metal1  (1)         0( 0.00%)         0( 0.00%)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  metal2  (2)        37( 0.08%)         2( 0.00%)         1( 0.00%)   ( 0.09%) 
+[NR-eGR]  metal3  (3)         9( 0.02%)         0( 0.00%)         0( 0.00%)   ( 0.02%) 
+[NR-eGR]  metal4  (4)         0( 0.00%)         0( 0.00%)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  metal5  (5)         0( 0.00%)         0( 0.00%)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  metal6  (6)         0( 0.00%)         0( 0.00%)         0( 0.00%)   ( 0.00%) 
+[NR-eGR] --------------------------------------------------------------------------------
+[NR-eGR] Total               46( 0.02%)         2( 0.00%)         1( 0.00%)   ( 0.02%) 
+[NR-eGR] 
+[NR-eGR] Overflow after Early Global Route (GR compatible) 0.00% H + 0.00% V
+[NR-eGR] Overflow after Early Global Route 0.00% H + 0.00% V
+Early Global Route congestion estimation runtime: 0.53 seconds, mem = 1678.9M
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+
+=== incrementalPlace Internal Loop 1 ===
+*** Finished SKP initialization (cpu=0:00:05.0, real=0:00:05.0)***
+Iteration  7: Total net bbox = 6.007e+05 (3.32e+05 2.69e+05)
+              Est.  stn bbox = 8.263e+05 (4.56e+05 3.71e+05)
+              cpu = 0:00:49.1 real = 0:00:49.0 mem = 1851.9M
+Iteration  8: Total net bbox = 6.306e+05 (3.49e+05 2.82e+05)
+              Est.  stn bbox = 8.638e+05 (4.76e+05 3.88e+05)
+              cpu = 0:00:52.0 real = 0:00:52.0 mem = 1832.9M
+Iteration  9: Total net bbox = 6.578e+05 (3.61e+05 2.97e+05)
+              Est.  stn bbox = 8.910e+05 (4.89e+05 4.02e+05)
+              cpu = 0:01:26 real = 0:01:26 mem = 1832.9M
+Iteration 10: Total net bbox = 7.012e+05 (3.81e+05 3.20e+05)
+              Est.  stn bbox = 9.300e+05 (5.06e+05 4.24e+05)
+              cpu = 0:01:25 real = 0:01:25 mem = 1834.7M
+Iteration 11: Total net bbox = 7.240e+05 (3.94e+05 3.30e+05)
+              Est.  stn bbox = 9.541e+05 (5.20e+05 4.34e+05)
+              cpu = 0:00:30.1 real = 0:00:30.0 mem = 1833.3M
+Move report: Timing Driven Placement moves 18148 insts, mean move: 80.26 um, max move: 610.09 um
+	Max move on inst (top_in/FE_OFC0_i_reset_n_i): (305.04, 819.96) --> (840.75, 745.58)
+
+Finished Incremental Placement (cpu=0:05:10, real=0:05:10, mem=1833.3M)
+**WARN: (IMPSP-9025):	No scan chain specified/traced.
+Type 'man IMPSP-9025' for more detail.
+*** Starting refinePlace (0:15:01 mem=1834.0M) ***
+Total net bbox length = 7.539e+05 (4.224e+05 3.315e+05) (ext = 2.249e+04)
+Move report: Detail placement moves 18148 insts, mean move: 2.41 um, max move: 42.30 um
+	Max move on inst (top_in/pricing0/mc_core0/U7303): (454.05, 559.05) --> (412.92, 557.88)
+	Runtime: CPU: 0:00:02.6 REAL: 0:00:03.0 MEM: 1834.0MB
+Summary Report:
+Instances move: 18148 (out of 18148 movable)
+Instances flipped: 0
+Mean displacement: 2.41 um
+Max displacement: 42.30 um (Instance: top_in/pricing0/mc_core0/U7303) (454.051, 559.052) -> (412.92, 557.88)
+	Length: 2 sites, height: 1 rows, site name: core_5040, cell type: INV1S
+Total net bbox length = 7.150e+05 (3.794e+05 3.357e+05) (ext = 2.244e+04)
+Runtime: CPU: 0:00:02.7 REAL: 0:00:03.0 MEM: 1834.0MB
+*** Finished refinePlace (0:15:03 mem=1834.0M) ***
+[NR-eGR] Track table information for default rule: 
+[NR-eGR] metal1 has no routable track
+[NR-eGR] metal2 has single uniform track structure
+[NR-eGR] metal3 has single uniform track structure
+[NR-eGR] metal4 has single uniform track structure
+[NR-eGR] metal5 has single uniform track structure
+[NR-eGR] metal6 has single uniform track structure
+[NR-eGR] Started Read PG Shapes ( Curr Mem: 1834.04 MB )
+[NR-eGR] Read 32960 PG shapes
+[NR-eGR] Finished Read PG Shapes ( CPU: 0.00 sec, Real: 0.00 sec, Curr Mem: 1834.04 MB )
+[NR-eGR] #Routing Blockages  : 0
+[NR-eGR] #Instance Blockages : 2061
+[NR-eGR] #PG Blockages       : 32960
+[NR-eGR] #Halo Blockages     : 0
+[NR-eGR] #Boundary Blockages : 0
+[NR-eGR] Num Prerouted Nets = 0  Num Prerouted Wires = 0
+[NR-eGR] Read numTotalNets=20269  numIgnoredNets=0
+[NR-eGR] There are 1 clock nets ( 0 with NDR ).
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id: 0  Nets: 20239 
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 20239 net(s) in layer range [2, 6]
+[NR-eGR] Early Global Route overflow of layer group 1: 0.05% H + 0.05% V. EstWL: 9.008042e+05um
+[NR-eGR] Congestion Analysis By layer: (blocked Gcells are excluded) 
+[NR-eGR]                        OverCon            
+[NR-eGR]                         #Gcell     %Gcell
+[NR-eGR]       Layer                (2)    OverCon 
+[NR-eGR] ----------------------------------------------
+[NR-eGR]  metal1  (1)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  metal2  (2)         4( 0.01%)   ( 0.01%) 
+[NR-eGR]  metal3  (3)         1( 0.00%)   ( 0.00%) 
+[NR-eGR]  metal4  (4)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  metal5  (5)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  metal6  (6)         0( 0.00%)   ( 0.00%) 
+[NR-eGR] ----------------------------------------------
+[NR-eGR] Total                5( 0.00%)   ( 0.00%) 
+[NR-eGR] 
+[NR-eGR] Overflow after Early Global Route (GR compatible) 0.00% H + 0.00% V
+[NR-eGR] Overflow after Early Global Route 0.00% H + 0.00% V
+Early Global Route congestion estimation runtime: 0.56 seconds, mem = 1834.0M
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+[NR-eGR] Started Export DB wires ( Curr Mem: 1834.04 MB )
+[NR-eGR] Started Export all nets ( Curr Mem: 1834.04 MB )
+[NR-eGR] Finished Export all nets ( CPU: 0.13 sec, Real: 0.13 sec, Curr Mem: 1834.04 MB )
+[NR-eGR] Started Set wire vias ( Curr Mem: 1834.04 MB )
+[NR-eGR] Finished Set wire vias ( CPU: 0.02 sec, Real: 0.02 sec, Curr Mem: 1834.04 MB )
+[NR-eGR] Finished Export DB wires ( CPU: 0.16 sec, Real: 0.17 sec, Curr Mem: 1834.04 MB )
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] metal1  (1F) length: 0.000000e+00um, number of vias: 74248
+[NR-eGR] metal2  (2V) length: 3.452324e+05um, number of vias: 107076
+[NR-eGR] metal3  (3H) length: 4.323410e+05um, number of vias: 6759
+[NR-eGR] metal4  (4V) length: 1.124374e+05um, number of vias: 1226
+[NR-eGR] metal5  (5H) length: 4.849411e+04um, number of vias: 27
+[NR-eGR] metal6  (6V) length: 6.619200e+02um, number of vias: 0
+[NR-eGR] Total length: 9.391668e+05um, number of vias: 189336
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total eGR-routed clock nets wire length: 3.739177e+04um 
+[NR-eGR] --------------------------------------------------------------------------
+Early Global Route wiring runtime: 0.69 seconds, mem = 1804.0M
+0 delay mode for cte disabled.
+
+*** Finished incrementalPlace (cpu=0:05:15, real=0:05:15)***
+Start to check current routing status for nets...
+All nets are already routed correctly.
+End to check current routing status for nets (mem=1788.0M)
+Extraction called for design 'CHIP' of instances=18451 and nets=24669 using extraction engine 'preRoute' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PreRoute RC Extraction called for design CHIP.
+RC Extraction called in multi-corner(2) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.00000 1.00000 
+Resistance Scaling Factor    : 1.00000 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 1.00000 
+Clock Res. Scaling Factor    : 1.00000 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.4  Real Time: 0:00:01.0  MEM: 1788.039M)
+Compute RC Scale Done ...
+**optDesign ... cpu = 0:09:40, real = 0:09:39, mem = 1299.4M, totSessionCpu=0:15:06 **
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: CHIP
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (1 T). (MEM=1697.87)
+Total number of fetched objects 20385
+End delay calculation. (MEM=1736.25 CPU=0:00:06.5 REAL=0:00:06.0)
+End delay calculation (fullDC). (MEM=1736.25 CPU=0:00:07.8 REAL=0:00:08.0)
+*** Timing NOT met, worst failing slack is -11.354
+*** Check timing (0:00:00.0)
+Begin: GigaOpt Optimization in WNS mode
+Info: 14 top-level, potential tri-state nets excluded from IPO operation.
+Info: 30 io nets excluded
+Info: 2 clock nets excluded from IPO operation.
+*** SetupOpt [begin] : cpu/real = 0:00:00.0/0:00:00.0 (0.0), totSession cpu/real = 0:15:18.5/0:28:00.6 (0.5), mem = 1752.3M
+*info: 30 io nets excluded
+Info: 14 top-level, potential tri-state nets excluded from IPO operation.
+*info: 2 clock nets excluded
+*info: 2 special nets excluded.
+*info: 4328 no-driver nets excluded.
+** GigaOpt Optimizer WNS Slack -11.354 TNS Slack -433.771 Density 67.04
+OptDebug: Start of Optimizer WNS Pass 0: default* WNS -0.005 TNS -0.005; reg2reg* WNS -11.354 TNS -433.766; HEPG WNS -11.354 TNS -433.766; all paths WNS -11.354 TNS -433.771
+Active Path Group: reg2reg  
++--------+---------+--------+---------+----------+------------+--------+----------------+---------+----------------------------------------------------+
+|  WNS   | All WNS |  TNS   | All TNS | Density  |    Real    |  Mem   |   Worst View   |Pathgroup|                     End Point                      |
++--------+---------+--------+---------+----------+------------+--------+----------------+---------+----------------------------------------------------+
+| -11.354|  -11.354|-433.766| -433.771|    67.04%|   0:00:00.0| 1787.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -11.284|  -11.284|-432.656| -432.660|    67.04%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -11.244|  -11.244|-432.016| -432.020|    67.04%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -11.202|  -11.202|-431.342| -431.347|    67.05%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -11.166|  -11.166|-430.766| -430.771|    67.05%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -11.123|  -11.123|-430.080| -430.084|    67.05%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -11.081|  -11.081|-429.398| -429.403|    67.05%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -11.026|  -11.026|-428.521| -428.526|    67.05%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -10.990|  -10.990|-427.953| -427.958|    67.05%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -10.955|  -10.955|-427.390| -427.395|    67.06%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -10.920|  -10.920|-426.822| -426.827|    67.06%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -10.854|  -10.854|-425.957| -425.962|    67.06%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -10.775|  -10.775|-424.686| -424.691|    67.06%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -10.740|  -10.740|-424.117| -424.121|    67.06%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -10.668|  -10.668|-422.970| -422.974|    67.07%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -10.581|  -10.581|-421.576| -421.581|    67.07%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+| -10.523|  -10.523|-420.505| -420.510|    67.07%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[23]/D    |
+| -10.485|  -10.485|-419.897| -419.902|    67.08%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[23]/D    |
+| -10.439|  -10.439|-419.166| -419.170|    67.08%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[23]/D    |
+| -10.368|  -10.368|-418.035| -418.039|    67.08%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[23]/D    |
+| -10.301|  -10.301|-416.959| -416.964|    67.08%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[23]/D    |
+| -10.229|  -10.229|-415.806| -415.810|    67.09%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[23]/D    |
+| -10.174|  -10.174|-414.926| -414.930|    67.09%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[23]/D    |
+| -10.094|  -10.094|-413.643| -413.647|    67.09%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[23]/D    |
+| -10.012|  -10.012|-412.334| -412.338|    67.09%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[23]/D    |
+|  -9.938|   -9.938|-411.148| -411.153|    67.10%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[23]/D    |
+|  -9.898|   -9.898|-410.503| -410.508|    67.10%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[23]/D    |
+|  -9.864|   -9.864|-409.963| -409.967|    67.10%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[23]/D    |
+|  -9.823|   -9.823|-409.313| -409.318|    67.10%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[23]/D    |
+|  -9.771|   -9.771|-408.481| -408.486|    67.12%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[23]/D    |
+|  -9.737|   -9.737|-407.927| -407.932|    67.13%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[23]/D    |
+|  -9.701|   -9.701|-407.353| -407.358|    67.13%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[23]/D    |
+|  -9.677|   -9.677|-406.966| -406.970|    67.14%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[23]/D    |
+|  -9.661|   -9.661|-406.711| -406.716|    67.15%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[23]/D    |
+|  -9.625|   -9.625|-406.456| -406.461|    67.15%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[23]/D    |
+|  -9.581|   -9.581|-405.823| -405.827|    67.15%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[23]/D    |
+|  -9.536|   -9.536|-405.093| -405.098|    67.15%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[23]/D    |
+|  -9.492|   -9.492|-404.743| -404.748|    67.16%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -9.469|   -9.469|-404.429| -404.434|    67.19%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -9.447|   -9.447|-404.073| -404.078|    67.21%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -9.420|   -9.420|-403.639| -403.644|    67.22%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -9.408|   -9.408|-403.457| -403.461|    67.23%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -9.401|   -9.401|-403.340| -403.345|    67.24%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -9.373|   -9.373|-402.889| -402.893|    67.24%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -9.319|   -9.319|-402.445| -402.449|    67.26%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -9.243|   -9.243|-401.212| -401.216|    67.28%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -9.188|   -9.188|-400.324| -400.328|    67.29%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -9.126|   -9.126|-399.404| -399.409|    67.30%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -9.072|   -9.072|-398.537| -398.542|    67.31%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -9.015|   -9.015|-397.619| -397.624|    67.32%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -8.957|   -8.957|-396.696| -396.701|    67.34%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -8.900|   -8.900|-395.781| -395.785|    67.35%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -8.863|   -8.863|-395.198| -395.203|    67.36%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -8.815|   -8.815|-394.424| -394.428|    67.37%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -8.786|   -8.786|-393.908| -393.912|    67.38%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -8.728|   -8.728|-392.970| -392.974|    67.39%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -8.686|   -8.686|-392.306| -392.310|    67.41%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -8.650|   -8.650|-391.722| -391.727|    67.42%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -8.608|   -8.608|-391.052| -391.056|    67.45%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -8.565|   -8.565|-390.365| -390.370|    67.47%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -8.528|   -8.528|-389.780| -389.784|    67.49%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -8.451|   -8.451|-388.533| -388.538|    67.51%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -8.395|   -8.395|-387.647| -387.651|    67.53%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -8.341|   -8.341|-386.783| -386.787|    67.55%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -8.298|   -8.298|-386.095| -386.099|    67.56%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -8.233|   -8.233|-385.043| -385.048|    67.58%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -8.191|   -8.191|-384.375| -384.379|    67.59%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -8.132|   -8.132|-383.440| -383.445|    67.60%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -8.122|   -8.122|-383.088| -383.093|    67.62%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -8.082|   -8.082|-382.452| -382.456|    67.64%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -8.077|   -8.077|-382.024| -382.029|    67.68%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[18]/D    |
+|  -8.034|   -8.034|-381.699| -381.704|    67.70%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[22]/D    |
+|  -7.956|   -7.956|-380.755| -380.760|    67.74%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[27]/D    |
+|  -7.892|   -7.892|-379.731| -379.736|    67.76%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[27]/D    |
+|  -7.833|   -7.833|-378.944| -378.949|    67.77%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[27]/D    |
+|  -7.776|   -7.776|-378.021| -378.025|    67.81%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[27]/D    |
+|  -7.770|   -7.770|-377.926| -377.931|    67.84%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[27]/D    |
+|  -7.727|   -7.727|-377.319| -377.323|    67.85%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -7.717|   -7.717|-377.254| -377.258|    67.86%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -7.687|   -7.687|-376.780| -376.785|    67.89%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -7.689|   -7.689|-376.761| -376.766|    67.90%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -7.655|   -7.655|-376.225| -376.230|    67.90%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -7.653|   -7.653|-376.195| -376.200|    67.94%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -7.626|   -7.626|-375.755| -375.760|    67.95%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -7.625|   -7.625|-375.742| -375.747|    67.99%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -7.607|   -7.607|-375.523| -375.527|    68.00%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -7.598|   -7.598|-375.374| -375.379|    68.07%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -7.597|   -7.597|-375.356| -375.361|    68.10%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -7.597|   -7.597|-375.353| -375.358|    68.10%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -7.563|   -7.563|-374.896| -374.901|    68.10%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -7.558|   -7.558|-374.674| -374.679|    68.15%|   0:00:02.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -7.531|   -7.531|-374.249| -374.253|    68.19%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -7.504|   -7.504|-373.807| -373.812|    68.21%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -7.489|   -7.489|-373.564| -373.569|    68.23%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -7.464|   -7.464|-373.162| -373.167|    68.26%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -7.445|   -7.445|-372.871| -372.876|    68.29%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -7.425|   -7.425|-372.546| -372.551|    68.30%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -7.399|   -7.399|-372.134| -372.138|    68.30%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -7.388|   -7.388|-371.954| -371.959|    68.33%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -7.358|   -7.358|-371.478| -371.482|    68.36%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -7.342|   -7.342|-371.221| -371.226|    68.39%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -7.336|   -7.336|-371.124| -371.129|    68.41%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -7.313|   -7.313|-370.751| -370.756|    68.41%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -7.282|   -7.282|-370.254| -370.258|    68.45%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -7.266|   -7.266|-369.999| -370.004|    68.46%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -7.265|   -7.265|-369.990| -369.994|    68.47%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -7.239|   -7.239|-369.572| -369.577|    68.47%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -7.239|   -7.239|-369.569| -369.573|    68.50%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -7.212|   -7.212|-369.137| -369.141|    68.51%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -7.162|   -7.162|-368.343| -368.348|    68.54%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -7.081|   -7.081|-367.122| -367.127|    68.54%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -7.016|   -7.016|-366.111| -366.116|    68.55%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -6.970|   -6.970|-365.376| -365.381|    68.55%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -6.932|   -6.932|-364.649| -364.654|    68.56%|   0:00:02.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[14]/D    |
+|  -6.875|   -6.875|-363.733| -363.738|    68.56%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[14]/D    |
+|  -6.855|   -6.855|-363.139| -363.143|    68.56%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[14]/D    |
+|  -6.846|   -6.846|-363.260| -363.265|    68.56%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[14]/D    |
+|  -6.794|   -6.794|-362.440| -362.444|    68.56%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[14]/D    |
+|  -6.756|   -6.756|-361.820| -361.825|    68.57%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[14]/D    |
+|  -6.714|   -6.714|-361.153| -361.158|    68.57%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[14]/D    |
+|  -6.673|   -6.673|-360.064| -360.068|    68.59%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/det_r_reg[41]/D      |
+|  -6.634|   -6.634|-359.661| -359.666|    68.59%|   0:00:02.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[14]/D    |
+|  -6.618|   -6.618|-359.338| -359.343|    68.60%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[14]/D    |
+|  -6.618|   -6.618|-359.154| -359.159|    68.63%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[14]/D    |
+|  -6.564|   -6.564|-359.046| -359.050|    68.65%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[26]/D    |
+|  -6.546|   -6.546|-358.339| -358.344|    68.68%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[18]/D    |
+|  -6.525|   -6.525|-357.893| -357.897|    68.72%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[18]/D    |
+|  -6.495|   -6.495|-356.556| -356.560|    68.83%|   0:00:03.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[17]/D    |
+|  -6.488|   -6.488|-356.432| -356.437|    68.83%|   0:00:00.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[26]/D    |
+|  -6.456|   -6.456|-356.130| -356.135|    68.84%|   0:00:01.0| 1795.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[17]/D    |
+|  -6.442|   -6.442|-351.787| -351.792|    68.94%|   0:00:37.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[19]/D    |
+|  -6.428|   -6.428|-351.284| -351.289|    68.95%|   0:00:01.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[19]/D    |
+|  -6.394|   -6.394|-350.666| -350.670|    68.99%|   0:00:03.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[21]/D    |
+|  -6.379|   -6.379|-350.431| -350.435|    69.00%|   0:00:00.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[21]/D    |
+|  -6.362|   -6.362|-350.151| -350.155|    69.01%|   0:00:01.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[21]/D    |
+|  -6.329|   -6.329|-349.621| -349.626|    69.01%|   0:00:00.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[21]/D    |
+|  -6.302|   -6.302|-349.025| -349.030|    69.05%|   0:00:02.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[18]/D    |
+|  -6.273|   -6.273|-348.561| -348.566|    69.05%|   0:00:02.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[18]/D    |
+|  -6.237|   -6.237|-347.921| -347.926|    69.09%|   0:00:03.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/det_r_reg[41]/D      |
+|  -6.217|   -6.217|-346.461| -346.465|    69.13%|   0:00:03.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/det_r_reg[41]/D      |
+|  -6.193|   -6.193|-345.814| -345.819|    69.14%|   0:00:03.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[18]/D    |
+|  -6.212|   -6.212|-345.292| -345.297|    69.18%|   0:00:04.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[18]/D    |
+|  -6.186|   -6.186|-345.351| -345.356|    69.18%|   0:00:01.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[18]/D    |
+|  -6.163|   -6.163|-344.815| -344.820|    69.19%|   0:00:04.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/det_r_reg[41]/D      |
+|  -6.172|   -6.172|-344.666| -344.671|    69.21%|   0:00:07.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/det_r_reg[41]/D      |
+|  -6.142|   -6.142|-344.104| -344.109|    69.28%|   0:00:05.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/det_r_reg[41]/D      |
+|  -6.127|   -6.127|-343.491| -343.496|    69.33%|   0:00:02.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/det_r_reg[41]/D      |
+|  -6.115|   -6.115|-343.545| -343.549|    69.37%|   0:00:03.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[18]/D    |
+|  -6.084|   -6.084|-342.590| -342.595|    69.43%|   0:00:02.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[18]/D    |
+|  -6.078|   -6.078|-341.722| -341.727|    69.49%|   0:00:02.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[18]/D    |
+|  -6.063|   -6.063|-341.483| -341.487|    69.51%|   0:00:01.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[18]/D    |
+|  -6.029|   -6.029|-340.923| -340.928|    69.57%|   0:00:01.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[18]/D    |
+|  -6.011|   -6.011|-339.336| -339.341|    69.62%|   0:00:02.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[18]/D    |
+|  -6.003|   -6.003|-339.112| -339.117|    69.64%|   0:00:00.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[18]/D    |
+|  -5.990|   -5.990|-339.000| -339.005|    69.72%|   0:00:02.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[18]/D    |
+|  -5.958|   -5.958|-338.491| -338.496|    69.73%|   0:00:01.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[18]/D    |
+|  -5.933|   -5.933|-336.003| -336.008|    69.76%|   0:00:03.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[18]/D    |
+|  -5.906|   -5.906|-335.571| -335.576|    69.78%|   0:00:04.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[18]/D    |
+|  -5.885|   -5.885|-335.208| -335.213|    69.79%|   0:00:01.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[18]/D    |
+|  -5.872|   -5.872|-335.019| -335.024|    69.80%|   0:00:03.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[18]/D    |
+|  -5.844|   -5.844|-334.568| -334.572|    69.82%|   0:00:01.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[18]/D    |
+|  -5.798|   -5.798|-333.480| -333.484|    69.84%|   0:00:02.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/det_r_reg[41]/D      |
+|  -5.780|   -5.780|-332.223| -332.228|    69.88%|   0:00:03.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[18]/D    |
+|  -5.744|   -5.744|-331.957| -331.961|    69.90%|   0:00:03.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -5.715|   -5.715|-331.439| -331.444|    69.92%|   0:00:08.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/det_r_reg[41]/D      |
+|  -5.698|   -5.698|-330.256| -330.260|    69.93%|   0:00:05.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/det_r_reg[41]/D      |
+|  -5.661|   -5.661|-330.218| -330.223|    69.94%|   0:00:01.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/det_r_reg[41]/D      |
+|  -5.648|   -5.648|-328.737| -328.742|    69.96%|   0:00:03.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -5.620|   -5.620|-327.555| -327.559|    69.97%|   0:00:07.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/det_r_reg[41]/D      |
+|  -5.591|   -5.591|-327.863| -327.867|    69.98%|   0:00:01.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -5.562|   -5.562|-327.665| -327.669|    69.98%|   0:00:00.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -5.536|   -5.536|-327.086| -327.090|    70.02%|   0:00:11.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -5.488|   -5.488|-325.698| -325.702|    70.08%|   0:00:05.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/det_r_reg[40]/D      |
+|  -5.457|   -5.457|-324.983| -324.988|    70.10%|   0:00:00.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -5.444|   -5.444|-324.386| -324.390|    70.12%|   0:00:03.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -5.425|   -5.425|-324.032| -324.036|    70.15%|   0:00:01.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -5.395|   -5.395|-322.977| -322.981|    70.17%|   0:00:03.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -5.374|   -5.374|-322.659| -322.664|    70.18%|   0:00:03.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -5.344|   -5.344|-322.176| -322.181|    70.19%|   0:00:01.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -5.324|   -5.324|-321.458| -321.463|    70.22%|   0:00:01.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -5.327|   -5.327|-321.163| -321.168|    70.25%|   0:00:08.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -5.293|   -5.293|-320.980| -320.984|    70.26%|   0:00:01.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -5.239|   -5.239|-319.928| -319.933|    70.28%|   0:00:07.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -5.210|   -5.210|-318.692| -318.697|    70.29%|   0:00:01.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -5.180|   -5.180|-318.033| -318.037|    70.30%|   0:00:07.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/det_r_reg[41]/D      |
+|  -5.161|   -5.161|-317.271| -317.275|    70.32%|   0:00:01.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -5.132|   -5.132|-316.807| -316.812|    70.34%|   0:00:03.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -5.110|   -5.110|-316.300| -316.305|    70.36%|   0:00:02.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -5.077|   -5.077|-315.397| -315.401|    70.39%|   0:00:05.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/det_r_reg[40]/D      |
+|  -5.054|   -5.054|-314.810| -314.815|    70.39%|   0:00:00.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -5.054|   -5.054|-314.321| -314.325|    70.43%|   0:00:05.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -5.038|   -5.038|-314.250| -314.255|    70.43%|   0:00:01.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -5.036|   -5.036|-314.376| -314.381|    70.43%|   0:00:00.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -5.038|   -5.038|-314.340| -314.344|    70.44%|   0:00:01.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -5.016|   -5.016|-313.850| -313.855|    70.43%|   0:00:03.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -5.013|   -5.013|-312.929| -312.934|    70.44%|   0:00:02.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.985|   -4.985|-312.639| -312.644|    70.44%|   0:00:00.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.963|   -4.963|-311.768| -311.773|    70.46%|   0:00:06.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.959|   -4.959|-311.269| -311.274|    70.47%|   0:00:00.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.944|   -4.944|-311.344| -311.348|    70.48%|   0:00:01.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.940|   -4.940|-311.293| -311.298|    70.48%|   0:00:01.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.924|   -4.924|-311.069| -311.074|    70.50%|   0:00:03.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.902|   -4.902|-309.898| -309.902|    70.51%|   0:00:03.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.890|   -4.890|-309.670| -309.675|    70.52%|   0:00:02.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.863|   -4.863|-308.879| -308.883|    70.52%|   0:00:05.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.840|   -4.840|-308.411| -308.416|    70.53%|   0:00:01.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[27]/D    |
+|  -4.831|   -4.831|-307.655| -307.659|    70.53%|   0:00:05.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[27]/D    |
+|  -4.813|   -4.813|-307.381| -307.385|    70.55%|   0:00:07.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.803|   -4.803|-307.271| -307.276|    70.57%|   0:00:04.0| 1804.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.780|   -4.780|-306.743| -306.748|    70.58%|   0:00:09.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.765|   -4.765|-305.838| -305.842|    70.64%|   0:00:13.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.748|   -4.748|-305.541| -305.546|    70.65%|   0:00:15.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.748|   -4.748|-305.182| -305.186|    70.68%|   0:00:11.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.741|   -4.741|-305.052| -305.057|    70.70%|   0:00:05.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.738|   -4.738|-305.026| -305.031|    70.71%|   0:00:02.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.733|   -4.733|-305.030| -305.035|    70.72%|   0:00:02.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.721|   -4.721|-304.756| -304.760|    70.73%|   0:00:04.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.716|   -4.716|-304.617| -304.621|    70.75%|   0:00:05.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.715|   -4.715|-304.430| -304.435|    70.76%|   0:00:09.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.709|   -4.709|-304.411| -304.416|    70.76%|   0:00:01.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.693|   -4.693|-304.190| -304.194|    70.78%|   0:00:04.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.687|   -4.687|-302.014| -302.018|    70.89%|   0:00:15.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.688|   -4.688|-301.956| -301.960|    71.03%|   0:00:35.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.678|   -4.678|-301.738| -301.742|    71.09%|   0:00:06.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.673|   -4.673|-301.651| -301.656|    71.09%|   0:00:01.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.673|   -4.673|-301.276| -301.281|    71.12%|   0:00:01.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.674|   -4.674|-301.047| -301.052|    71.23%|   0:00:06.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.644|   -4.644|-300.569| -300.574|    71.23%|   0:00:01.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/det_r_reg[41]/D      |
+|  -4.623|   -4.623|-299.738| -299.742|    71.27%|   0:00:02.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.615|   -4.615|-299.655| -299.659|    71.33%|   0:00:02.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.603|   -4.603|-299.470| -299.474|    71.34%|   0:00:07.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.585|   -4.585|-299.188| -299.193|    71.34%|   0:00:04.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.577|   -4.577|-299.062| -299.066|    71.34%|   0:00:01.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.565|   -4.565|-298.863| -298.868|    71.35%|   0:00:03.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.549|   -4.549|-298.609| -298.614|    71.36%|   0:00:01.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.549|   -4.549|-298.609| -298.614|    71.37%|   0:00:00.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.522|   -4.522|-298.062| -298.067|    71.37%|   0:00:01.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.511|   -4.511|-298.006| -298.010|    71.38%|   0:00:02.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.481|   -4.481|-297.466| -297.470|    71.40%|   0:00:01.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.481|   -4.481|-296.980| -296.985|    71.40%|   0:00:03.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.477|   -4.477|-296.977| -296.981|    71.41%|   0:00:00.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.460|   -4.460|-296.560| -296.565|    71.41%|   0:00:04.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.449|   -4.449|-296.533| -296.538|    71.44%|   0:00:02.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.445|   -4.445|-296.457| -296.461|    71.44%|   0:00:01.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.444|   -4.444|-296.450| -296.455|    71.45%|   0:00:01.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.436|   -4.436|-296.217| -296.222|    71.48%|   0:00:05.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.431|   -4.431|-295.845| -295.850|    71.48%|   0:00:03.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.428|   -4.428|-295.842| -295.846|    71.49%|   0:00:01.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.420|   -4.420|-295.712| -295.717|    71.49%|   0:00:05.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.419|   -4.419|-295.655| -295.659|    71.54%|   0:00:04.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.419|   -4.419|-295.620| -295.625|    71.55%|   0:00:01.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.417|   -4.417|-295.606| -295.611|    71.58%|   0:00:03.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.413|   -4.413|-295.602| -295.606|    71.62%|   0:00:02.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.413|   -4.413|-295.602| -295.606|    71.65%|   0:00:04.0| 1824.0M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
++--------+---------+--------+---------+----------+------------+--------+----------------+---------+----------------------------------------------------+
+
+*** Finish Core Optimize Step (cpu=0:08:51 real=0:08:51 mem=1824.0M) ***
+Active Path Group: default 
++--------+---------+--------+---------+----------+------------+--------+----------------+---------+----------------------------------------------------+
+|  WNS   | All WNS |  TNS   | All TNS | Density  |    Real    |  Mem   |   Worst View   |Pathgroup|                     End Point                      |
++--------+---------+--------+---------+----------+------------+--------+----------------+---------+----------------------------------------------------+
+|  -0.005|   -4.413|  -0.005| -295.606|    71.65%|   0:00:00.0| 1824.0M|av_scan_mode_max|  default| top_in/pricing0/mc_core0/expected_profit_r_reg[11] |
+|        |         |        |         |          |            |        |                |         | /D                                                 |
+|   0.080|   -4.413|   0.000| -295.602|    71.65%|   0:00:00.0| 1824.0M|              NA|       NA| NA                                                 |
+|   0.080|   -4.413|   0.000| -295.602|    71.65%|   0:00:00.0| 1824.0M|av_scan_mode_max|       NA| NA                                                 |
++--------+---------+--------+---------+----------+------------+--------+----------------+---------+----------------------------------------------------+
+
+*** Finish Core Optimize Step (cpu=0:00:00.2 real=0:00:00.0 mem=1824.0M) ***
+
+*** Finished Optimize Step Cumulative (cpu=0:08:51 real=0:08:51 mem=1824.0M) ***
+OptDebug: End of Optimizer WNS Pass 0: default* WNS 0.107 TNS 0.000; reg2reg* WNS -4.413 TNS -295.602; HEPG WNS -4.413 TNS -295.602; all paths WNS -4.413 TNS -295.602
+** GigaOpt Optimizer WNS Slack -4.413 TNS Slack -295.602 Density 71.65
+Begin: Area Reclaim Optimization
+*** AreaOpt [begin] : cpu/real = 0:00:00.0/0:00:00.0 (0.0), totSession cpu/real = 0:24:28.4/0:37:10.1 (0.7), mem = 1824.0M
+Reclaim Optimization WNS Slack -4.413  TNS Slack -295.602 Density 71.65
++----------+---------+--------+--------+------------+--------+
+| Density  | Commits |  WNS   |  TNS   |    Real    |  Mem   |
++----------+---------+--------+--------+------------+--------+
+|    71.65%|        -|  -4.413|-295.602|   0:00:00.0| 1824.0M|
+|    71.56%|       32|  -4.413|-295.602|   0:00:02.0| 1824.0M|
+|    71.02%|      518|  -4.385|-293.037|   0:00:13.0| 1824.0M|
+|    71.02%|        1|  -4.385|-293.045|   0:00:00.0| 1824.0M|
+|    71.02%|        0|  -4.385|-293.045|   0:00:00.0| 1824.0M|
++----------+---------+--------+--------+------------+--------+
+Reclaim Optimization End WNS Slack -4.385  TNS Slack -293.045 Density 71.02
+Bottom Preferred Layer:
+    None
+Via Pillar Rule:
+    None
+End: Core Area Reclaim Optimization (cpu = 0:00:16.8) (real = 0:00:17.0) **
+*** AreaOpt [finish] : cpu/real = 0:00:16.8/0:00:16.8 (1.0), totSession cpu/real = 0:24:45.2/0:37:27.0 (0.7), mem = 1824.0M
+End: Area Reclaim Optimization (cpu=0:00:17, real=0:00:17, mem=1803.95M, totSessionCpu=0:24:45).
+*** Starting refinePlace (0:24:45 mem=1804.0M) ***
+Total net bbox length = 7.529e+05 (4.010e+05 3.519e+05) (ext = 2.244e+04)
+Move report: Timing Driven Placement moves 5596 insts, mean move: 23.38 um, max move: 210.88 um
+	Max move on inst (top_in/pricing0/mc_core0/inv0/mult_362_2/FE_RC_1552_0): (807.86, 341.16) --> (1013.70, 346.20)
+	Runtime: CPU: 0:00:06.1 REAL: 0:00:07.0 MEM: 1823.7MB
+Move report: Detail placement moves 3130 insts, mean move: 1.61 um, max move: 14.88 um
+	Max move on inst (top_in/pricing0/mc_core0/inv0/mult_291/U135): (671.46, 522.60) --> (656.58, 522.60)
+	Runtime: CPU: 0:00:00.4 REAL: 0:00:00.0 MEM: 1823.7MB
+Summary Report:
+Instances move: 5797 (out of 20199 movable)
+Instances flipped: 12
+Mean displacement: 22.76 um
+Max displacement: 209.64 um (Instance: top_in/pricing0/mc_core0/inv0/mult_362_2/FE_RC_1552_0) (807.86, 341.16) -> (1012.46, 346.2)
+	Length: 2 sites, height: 1 rows, site name: core_5040, cell type: INV1S
+Total net bbox length = 7.427e+05 (3.976e+05 3.451e+05) (ext = 2.262e+04)
+Runtime: CPU: 0:00:06.6 REAL: 0:00:07.0 MEM: 1823.7MB
+*** Finished refinePlace (0:24:52 mem=1823.7M) ***
+*** maximum move = 209.64 um ***
+*** Finished re-routing un-routed nets (1823.7M) ***
+
+*** Finish Physical Update (cpu=0:00:09.0 real=0:00:09.0 mem=1823.7M) ***
+** GigaOpt Optimizer WNS Slack -4.365 TNS Slack -292.278 Density 71.05
+OptDebug: Start of Optimizer WNS Pass 1: default* WNS 0.107 TNS 0.000; reg2reg* WNS -4.365 TNS -292.278; HEPG WNS -4.365 TNS -292.278; all paths WNS -4.365 TNS -292.278
+Active Path Group: reg2reg  
++--------+---------+--------+---------+----------+------------+--------+----------------+---------+----------------------------------------------------+
+|  WNS   | All WNS |  TNS   | All TNS | Density  |    Real    |  Mem   |   Worst View   |Pathgroup|                     End Point                      |
++--------+---------+--------+---------+----------+------------+--------+----------------+---------+----------------------------------------------------+
+|  -4.365|   -4.365|-292.278| -292.278|    71.05%|   0:00:00.0| 1823.7M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/det_r_reg[40]/D      |
+|  -4.316|   -4.316|-291.663| -291.663|    71.06%|   0:00:02.0| 1823.7M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.288|   -4.288|-291.172| -291.172|    71.08%|   0:00:02.0| 1823.7M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.255|   -4.255|-290.115| -290.115|    71.09%|   0:00:01.0| 1823.7M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[18]/D    |
+|  -4.231|   -4.231|-289.703| -289.703|    71.11%|   0:00:01.0| 1823.7M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[18]/D    |
+|  -4.214|   -4.214|-288.810| -288.810|    71.18%|   0:00:01.0| 1842.7M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[27]/D    |
+|  -4.193|   -4.193|-288.235| -288.235|    71.19%|   0:00:02.0| 1842.7M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[27]/D    |
+|  -4.182|   -4.182|-287.913| -287.913|    71.23%|   0:00:02.0| 1842.7M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[27]/D    |
+|  -4.168|   -4.168|-287.351| -287.351|    71.26%|   0:00:02.0| 1842.7M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.145|   -4.145|-286.861| -286.861|    71.27%|   0:00:02.0| 1842.7M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.118|   -4.118|-286.310| -286.310|    71.36%|   0:00:03.0| 1842.7M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -4.121|   -4.121|-284.872| -284.872|    71.39%|   0:00:01.0| 1852.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -4.088|   -4.088|-284.062| -284.062|    71.43%|   0:00:02.0| 1852.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -4.082|   -4.082|-283.725| -283.725|    71.53%|   0:00:03.0| 1852.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -4.053|   -4.053|-283.298| -283.298|    71.57%|   0:00:01.0| 1852.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/det_r_reg[40]/D      |
+|  -4.053|   -4.053|-282.727| -282.727|    71.64%|   0:00:04.0| 1852.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -4.032|   -4.032|-282.494| -282.494|    71.65%|   0:00:02.0| 1852.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -4.021|   -4.021|-282.110| -282.110|    71.68%|   0:00:07.0| 1852.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -4.020|   -4.020|-282.232| -282.232|    71.71%|   0:00:04.0| 1852.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[14]/D    |
+|  -4.032|   -4.032|-282.198| -282.198|    71.72%|   0:00:00.0| 1852.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -4.015|   -4.015|-281.941| -281.941|    71.73%|   0:00:02.0| 1852.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -4.013|   -4.013|-281.915| -281.915|    71.78%|   0:00:03.0| 1852.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -4.006|   -4.006|-281.845| -281.845|    71.80%|   0:00:01.0| 1852.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -4.005|   -4.005|-280.652| -280.652|    71.86%|   0:00:02.0| 1852.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -3.979|   -3.979|-280.369| -280.369|    71.87%|   0:00:01.0| 1852.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -3.974|   -3.974|-279.501| -279.501|    71.94%|   0:00:07.0| 1852.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -3.959|   -3.959|-279.284| -279.284|    71.99%|   0:00:11.0| 1852.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -3.911|   -3.911|-278.854| -278.854|    72.03%|   0:00:08.0| 1852.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -3.899|   -3.899|-278.513| -278.513|    72.10%|   0:00:18.0| 1852.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -3.869|   -3.869|-278.109| -278.109|    72.13%|   0:00:11.0| 1852.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -3.858|   -3.858|-276.817| -276.817|    72.19%|   0:00:15.0| 1852.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[12]/D    |
+|  -3.843|   -3.843|-275.856| -275.856|    72.20%|   0:00:07.0| 1852.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -3.837|   -3.837|-275.790| -275.790|    72.21%|   0:00:17.0| 1852.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[21]/D    |
+|  -3.835|   -3.835|-275.680| -275.680|    72.22%|   0:00:06.0| 1852.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[21]/D    |
+|  -3.834|   -3.834|-275.599| -275.599|    72.22%|   0:00:03.0| 1852.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[21]/D    |
+|  -3.833|   -3.833|-275.571| -275.571|    72.22%|   0:00:02.0| 1852.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[21]/D    |
+|  -3.833|   -3.833|-275.501| -275.501|    72.35%|   0:00:09.0| 1852.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[21]/D    |
+|  -3.834|   -3.834|-275.471| -275.471|    72.39%|   0:00:03.0| 1852.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[21]/D    |
+|  -3.834|   -3.834|-275.443| -275.443|    72.47%|   0:00:04.0| 1852.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[21]/D    |
+|  -3.834|   -3.834|-275.402| -275.402|    72.50%|   0:00:01.0| 1852.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[21]/D    |
+|  -3.834|   -3.834|-275.402| -275.402|    72.50%|   0:00:00.0| 1852.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[21]/D    |
++--------+---------+--------+---------+----------+------------+--------+----------------+---------+----------------------------------------------------+
+
+*** Finish Core Optimize Step (cpu=0:02:53 real=0:02:53 mem=1852.3M) ***
+
+*** Finished Optimize Step Cumulative (cpu=0:02:53 real=0:02:53 mem=1852.3M) ***
+OptDebug: End of Optimizer WNS Pass 1: default* WNS 0.107 TNS 0.000; reg2reg* WNS -3.834 TNS -275.402; HEPG WNS -3.834 TNS -275.402; all paths WNS -3.834 TNS -275.402
+** GigaOpt Optimizer WNS Slack -3.834 TNS Slack -275.402 Density 72.50
+Begin: Area Reclaim Optimization
+*** AreaOpt [begin] : cpu/real = 0:00:00.0/0:00:00.0 (0.0), totSession cpu/real = 0:27:48.3/0:40:30.0 (0.7), mem = 1852.3M
+Reclaim Optimization WNS Slack -3.834  TNS Slack -275.402 Density 72.50
++----------+---------+--------+--------+------------+--------+
+| Density  | Commits |  WNS   |  TNS   |    Real    |  Mem   |
++----------+---------+--------+--------+------------+--------+
+|    72.50%|        -|  -3.834|-275.402|   0:00:00.0| 1852.3M|
+|    72.47%|       20|  -3.834|-275.343|   0:00:02.0| 1852.3M|
+|    72.11%|      540|  -3.773|-273.317|   0:00:14.0| 1852.3M|
+|    72.11%|        3|  -3.773|-273.119|   0:00:01.0| 1852.3M|
+|    72.11%|        0|  -3.773|-273.119|   0:00:00.0| 1852.3M|
++----------+---------+--------+--------+------------+--------+
+Reclaim Optimization End WNS Slack -3.773  TNS Slack -273.119 Density 72.11
+Bottom Preferred Layer:
+    None
+Via Pillar Rule:
+    None
+End: Core Area Reclaim Optimization (cpu = 0:00:18.9) (real = 0:00:19.0) **
+*** AreaOpt [finish] : cpu/real = 0:00:18.9/0:00:18.9 (1.0), totSession cpu/real = 0:28:07.2/0:40:48.9 (0.7), mem = 1852.3M
+End: Area Reclaim Optimization (cpu=0:00:19, real=0:00:19, mem=1815.28M, totSessionCpu=0:28:07).
+*** Starting refinePlace (0:28:07 mem=1815.3M) ***
+Total net bbox length = 7.566e+05 (4.055e+05 3.511e+05) (ext = 2.262e+04)
+Move report: Timing Driven Placement moves 7063 insts, mean move: 21.24 um, max move: 264.34 um
+	Max move on inst (top_in/pricing0/mc_core0/inv0/mult_362_2/FE_RC_3415_0): (932.48, 447.00) --> (1065.78, 315.96)
+	Runtime: CPU: 0:00:08.8 REAL: 0:00:09.0 MEM: 1837.6MB
+Move report: Detail placement moves 3527 insts, mean move: 1.38 um, max move: 9.38 um
+	Max move on inst (top_in/pricing0/mc_core0/inv0/mult_291/U181): (687.58, 401.64) --> (683.24, 396.60)
+	Runtime: CPU: 0:00:00.4 REAL: 0:00:01.0 MEM: 1837.6MB
+Summary Report:
+Instances move: 7145 (out of 20753 movable)
+Instances flipped: 1
+Mean displacement: 21.10 um
+Max displacement: 264.34 um (Instance: top_in/pricing0/mc_core0/inv0/mult_362_2/FE_RC_3415_0) (932.48, 447) -> (1065.78, 315.96)
+	Length: 4 sites, height: 1 rows, site name: core_5040, cell type: INV2CK
+Total net bbox length = 7.503e+05 (4.018e+05 3.485e+05) (ext = 2.269e+04)
+Runtime: CPU: 0:00:09.3 REAL: 0:00:10.0 MEM: 1837.6MB
+*** Finished refinePlace (0:28:17 mem=1837.6M) ***
+*** maximum move = 264.34 um ***
+*** Finished re-routing un-routed nets (1837.6M) ***
+
+*** Finish Physical Update (cpu=0:00:12.8 real=0:00:13.0 mem=1837.6M) ***
+** GigaOpt Optimizer WNS Slack -3.791 TNS Slack -274.306 Density 72.11
+OptDebug: Start of Optimizer WNS Pass 2: default* WNS 0.107 TNS 0.000; reg2reg* WNS -3.791 TNS -274.306; HEPG WNS -3.791 TNS -274.306; all paths WNS -3.791 TNS -274.306
+Active Path Group: reg2reg  
++--------+---------+--------+---------+----------+------------+--------+----------------+---------+----------------------------------------------------+
+|  WNS   | All WNS |  TNS   | All TNS | Density  |    Real    |  Mem   |   Worst View   |Pathgroup|                     End Point                      |
++--------+---------+--------+---------+----------+------------+--------+----------------+---------+----------------------------------------------------+
+|  -3.791|   -3.791|-274.306| -274.306|    72.11%|   0:00:00.0| 1837.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[21]/D    |
+|  -3.769|   -3.769|-273.861| -273.861|    72.15%|   0:00:04.0| 1837.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[23]/D    |
+|  -3.728|   -3.728|-273.092| -273.092|    72.18%|   0:00:02.0| 1837.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[19]/D    |
+|  -3.699|   -3.699|-272.644| -272.644|    72.24%|   0:00:04.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[12]/D    |
+|  -3.692|   -3.692|-271.885| -271.885|    72.28%|   0:00:01.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[12]/D    |
+|  -3.656|   -3.656|-271.778| -271.778|    72.30%|   0:00:01.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[21]/D    |
+|  -3.657|   -3.657|-271.195| -271.195|    72.33%|   0:00:03.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[26]/D    |
+|  -3.630|   -3.630|-270.701| -270.701|    72.34%|   0:00:00.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[26]/D    |
+|  -3.611|   -3.611|-270.538| -270.538|    72.39%|   0:00:03.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[14]/D    |
+|  -3.608|   -3.608|-270.332| -270.332|    72.40%|   0:00:07.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[21]/D    |
+|  -3.600|   -3.600|-270.272| -270.272|    72.41%|   0:00:00.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[21]/D    |
+|  -3.588|   -3.588|-269.992| -269.992|    72.49%|   0:00:06.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[20]/D    |
+|  -3.582|   -3.582|-269.069| -269.069|    72.53%|   0:00:05.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[23]/D    |
+|  -3.560|   -3.560|-268.705| -268.705|    72.54%|   0:00:00.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[12]/D    |
+|  -3.550|   -3.550|-268.565| -268.565|    72.56%|   0:00:03.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[12]/D    |
+|  -3.533|   -3.533|-268.035| -268.035|    72.58%|   0:00:04.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[12]/D    |
+|  -3.496|   -3.496|-267.606| -267.606|    72.63%|   0:00:13.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/det_r_reg[41]/D      |
+|  -3.489|   -3.489|-266.474| -266.474|    72.69%|   0:00:04.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[23]/D    |
+|  -3.480|   -3.480|-266.311| -266.311|    72.73%|   0:00:07.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[23]/D    |
+|  -3.451|   -3.451|-265.897| -265.897|    72.74%|   0:00:04.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[12]/D    |
+|  -3.429|   -3.429|-265.507| -265.507|    72.77%|   0:00:05.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[25]/D    |
+|  -3.437|   -3.437|-264.772| -264.772|    72.81%|   0:00:05.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[21]/D    |
+|  -3.425|   -3.425|-264.551| -264.551|    72.81%|   0:00:01.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[21]/D    |
+|  -3.408|   -3.408|-264.430| -264.430|    72.84%|   0:00:01.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[21]/D    |
+|  -3.391|   -3.391|-264.420| -264.420|    72.84%|   0:00:03.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[16]/D    |
+|  -3.392|   -3.392|-264.243| -264.243|    72.86%|   0:00:04.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -3.388|   -3.388|-264.124| -264.124|    72.87%|   0:00:01.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -3.391|   -3.391|-263.976| -263.976|    72.93%|   0:00:13.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -3.371|   -3.371|-263.688| -263.688|    73.02%|   0:00:04.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[23]/D    |
+|  -3.353|   -3.353|-263.394| -263.394|    73.03%|   0:00:02.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -3.338|   -3.338|-263.238| -263.238|    73.05%|   0:00:01.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -3.320|   -3.320|-263.090| -263.090|    73.08%|   0:00:05.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -3.289|   -3.289|-262.791| -262.791|    73.08%|   0:00:15.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[19]/D    |
+|  -3.273|   -3.273|-262.233| -262.233|    73.10%|   0:00:09.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[26]/D    |
+|  -3.259|   -3.259|-260.789| -260.789|    73.15%|   0:00:04.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -3.254|   -3.254|-260.659| -260.659|    73.19%|   0:00:07.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -3.249|   -3.249|-260.592| -260.592|    73.19%|   0:00:04.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -3.247|   -3.247|-260.557| -260.557|    73.19%|   0:00:04.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[12]/D    |
+|  -3.241|   -3.241|-260.474| -260.474|    73.21%|   0:00:08.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -3.237|   -3.237|-260.271| -260.271|    73.21%|   0:00:06.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -3.229|   -3.229|-260.150| -260.150|    73.22%|   0:00:04.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -3.221|   -3.221|-260.056| -260.056|    73.28%|   0:00:04.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -3.218|   -3.218|-259.851| -259.851|    73.30%|   0:00:06.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -3.207|   -3.207|-259.811| -259.811|    73.31%|   0:00:02.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -3.206|   -3.206|-259.792| -259.792|    73.37%|   0:00:07.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -3.207|   -3.207|-259.780| -259.780|    73.38%|   0:00:07.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -3.203|   -3.203|-259.731| -259.731|    73.39%|   0:00:01.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -3.201|   -3.201|-259.705| -259.705|    73.40%|   0:00:05.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[16]/D    |
+|  -3.201|   -3.201|-259.676| -259.676|    73.40%|   0:00:02.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[16]/D    |
+|  -3.198|   -3.198|-259.609| -259.609|    73.48%|   0:00:18.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[16]/D    |
+|  -3.198|   -3.198|-259.598| -259.598|    73.52%|   0:00:08.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[16]/D    |
+|  -3.198|   -3.198|-259.599| -259.599|    73.56%|   0:00:05.0| 1856.6M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[16]/D    |
++--------+---------+--------+---------+----------+------------+--------+----------------+---------+----------------------------------------------------+
+
+*** Finish Core Optimize Step (cpu=0:04:03 real=0:04:02 mem=1856.6M) ***
+
+*** Finished Optimize Step Cumulative (cpu=0:04:03 real=0:04:02 mem=1856.6M) ***
+OptDebug: End of Optimizer WNS Pass 2: default* WNS 0.107 TNS 0.000; reg2reg* WNS -3.198 TNS -259.599; HEPG WNS -3.198 TNS -259.599; all paths WNS -3.198 TNS -259.599
+** GigaOpt Optimizer WNS Slack -3.198 TNS Slack -259.599 Density 73.56
+Begin: Area Reclaim Optimization
+*** AreaOpt [begin] : cpu/real = 0:00:00.0/0:00:00.0 (0.0), totSession cpu/real = 0:32:23.5/0:45:05.1 (0.7), mem = 1856.6M
+Reclaim Optimization WNS Slack -3.198  TNS Slack -259.599 Density 73.56
++----------+---------+--------+--------+------------+--------+
+| Density  | Commits |  WNS   |  TNS   |    Real    |  Mem   |
++----------+---------+--------+--------+------------+--------+
+|    73.56%|        -|  -3.198|-259.599|   0:00:00.0| 1856.6M|
+|    73.53%|       23|  -3.201|-259.633|   0:00:02.0| 1856.6M|
+|    73.19%|      539|  -3.150|-257.951|   0:00:18.0| 1856.6M|
+|    73.18%|        4|  -3.150|-257.951|   0:00:00.0| 1856.6M|
+|    73.18%|        0|  -3.150|-257.951|   0:00:00.0| 1856.6M|
++----------+---------+--------+--------+------------+--------+
+Reclaim Optimization End WNS Slack -3.150  TNS Slack -257.951 Density 73.18
+Bottom Preferred Layer:
+    None
+Via Pillar Rule:
+    None
+End: Core Area Reclaim Optimization (cpu = 0:00:21.6) (real = 0:00:22.0) **
+*** AreaOpt [finish] : cpu/real = 0:00:21.6/0:00:21.7 (1.0), totSession cpu/real = 0:32:45.1/0:45:26.9 (0.7), mem = 1856.6M
+End: Area Reclaim Optimization (cpu=0:00:22, real=0:00:22, mem=1817.65M, totSessionCpu=0:32:45).
+*** Starting refinePlace (0:32:45 mem=1817.6M) ***
+Total net bbox length = 7.635e+05 (4.102e+05 3.533e+05) (ext = 2.269e+04)
+Move report: Timing Driven Placement moves 8291 insts, mean move: 17.09 um, max move: 330.22 um
+	Max move on inst (top_in/pricing0/mc_core0/inv0/mult_362_2/FE_RC_4008_0): (872.34, 416.76) --> (1061.44, 275.64)
+	Runtime: CPU: 0:00:08.7 REAL: 0:00:09.0 MEM: 1840.9MB
+Move report: Detail placement moves 4099 insts, mean move: 1.45 um, max move: 11.86 um
+	Max move on inst (top_in/pricing0/mc_core0/inv0/mult_362_2/FE_RC_1351_0): (923.80, 371.40) --> (930.62, 366.36)
+	Runtime: CPU: 0:00:00.4 REAL: 0:00:00.0 MEM: 1840.9MB
+Summary Report:
+Instances move: 8344 (out of 21202 movable)
+Instances flipped: 3
+Mean displacement: 17.06 um
+Max displacement: 329.60 um (Instance: top_in/pricing0/mc_core0/inv0/mult_362_2/FE_RC_4008_0) (872.34, 416.76) -> (1060.82, 275.64)
+	Length: 2 sites, height: 1 rows, site name: core_5040, cell type: INV1S
+Total net bbox length = 7.569e+05 (4.042e+05 3.527e+05) (ext = 2.288e+04)
+Runtime: CPU: 0:00:09.1 REAL: 0:00:09.0 MEM: 1840.9MB
+*** Finished refinePlace (0:32:54 mem=1840.9M) ***
+*** maximum move = 329.60 um ***
+*** Finished re-routing un-routed nets (1840.9M) ***
+
+*** Finish Physical Update (cpu=0:00:12.3 real=0:00:12.0 mem=1840.9M) ***
+** GigaOpt Optimizer WNS Slack -3.162 TNS Slack -257.329 Density 73.19
+OptDebug: Start of Optimizer WNS Pass 3: default* WNS 0.107 TNS 0.000; reg2reg* WNS -3.162 TNS -257.329; HEPG WNS -3.162 TNS -257.329; all paths WNS -3.162 TNS -257.329
+Active Path Group: reg2reg  
++--------+---------+--------+---------+----------+------------+--------+----------------+---------+----------------------------------------------------+
+|  WNS   | All WNS |  TNS   | All TNS | Density  |    Real    |  Mem   |   Worst View   |Pathgroup|                     End Point                      |
++--------+---------+--------+---------+----------+------------+--------+----------------+---------+----------------------------------------------------+
+|  -3.162|   -3.162|-257.329| -257.329|    73.19%|   0:00:00.0| 1840.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[16]/D    |
+|  -3.140|   -3.140|-256.821| -256.821|    73.27%|   0:00:25.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[12]/D    |
+|  -3.106|   -3.106|-256.305| -256.305|    73.31%|   0:00:06.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[14]/D    |
+|  -3.091|   -3.091|-256.092| -256.092|    73.33%|   0:00:17.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[14]/D    |
+|  -3.076|   -3.076|-255.942| -255.942|    73.37%|   0:00:31.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[12]/D    |
+|  -3.069|   -3.069|-255.833| -255.833|    73.39%|   0:00:10.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -3.061|   -3.061|-255.710| -255.710|    73.42%|   0:00:06.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -3.063|   -3.063|-255.678| -255.678|    73.42%|   0:00:02.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -3.059|   -3.059|-255.648| -255.648|    73.43%|   0:00:01.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -3.053|   -3.053|-255.610| -255.610|    73.43%|   0:00:03.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -3.048|   -3.048|-255.409| -255.409|    73.43%|   0:00:04.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[21]/D    |
+|  -3.044|   -3.044|-255.265| -255.265|    73.45%|   0:00:05.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -3.046|   -3.046|-255.208| -255.208|    73.45%|   0:00:02.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -3.036|   -3.036|-255.152| -255.152|    73.46%|   0:00:01.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[14]/D    |
+|  -3.030|   -3.030|-254.603| -254.603|    73.49%|   0:00:04.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[17]/D    |
+|  -3.030|   -3.030|-254.594| -254.594|    73.49%|   0:00:03.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[17]/D    |
+|  -3.030|   -3.030|-254.415| -254.415|    73.65%|   0:00:14.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[17]/D    |
+|  -3.031|   -3.031|-254.313| -254.313|    73.83%|   0:00:12.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[17]/D    |
+|  -3.031|   -3.031|-254.266| -254.266|    73.85%|   0:00:02.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[17]/D    |
+|  -3.031|   -3.031|-254.266| -254.266|    73.85%|   0:00:00.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[17]/D    |
++--------+---------+--------+---------+----------+------------+--------+----------------+---------+----------------------------------------------------+
+
+*** Finish Core Optimize Step (cpu=0:02:28 real=0:02:28 mem=1859.9M) ***
+
+*** Finished Optimize Step Cumulative (cpu=0:02:28 real=0:02:28 mem=1859.9M) ***
+OptDebug: End of Optimizer WNS Pass 3: default* WNS 0.107 TNS 0.000; reg2reg* WNS -3.031 TNS -254.266; HEPG WNS -3.031 TNS -254.266; all paths WNS -3.031 TNS -254.266
+** GigaOpt Optimizer WNS Slack -3.031 TNS Slack -254.266 Density 73.85
+Begin: Area Reclaim Optimization
+*** AreaOpt [begin] : cpu/real = 0:00:00.0/0:00:00.0 (0.0), totSession cpu/real = 0:35:26.2/0:48:07.9 (0.7), mem = 1859.9M
+Reclaim Optimization WNS Slack -3.031  TNS Slack -254.266 Density 73.85
++----------+---------+--------+--------+------------+--------+
+| Density  | Commits |  WNS   |  TNS   |    Real    |  Mem   |
++----------+---------+--------+--------+------------+--------+
+|    73.85%|        -|  -3.031|-254.266|   0:00:00.0| 1859.9M|
+|    73.82%|       20|  -3.024|-254.163|   0:00:02.0| 1859.9M|
+|    73.58%|      416|  -2.990|-253.413|   0:00:16.0| 1859.9M|
+|    73.58%|        1|  -2.990|-253.413|   0:00:01.0| 1859.9M|
+|    73.58%|        0|  -2.990|-253.413|   0:00:00.0| 1859.9M|
++----------+---------+--------+--------+------------+--------+
+Reclaim Optimization End WNS Slack -2.990  TNS Slack -253.413 Density 73.58
+Bottom Preferred Layer:
+    None
+Via Pillar Rule:
+    None
+End: Core Area Reclaim Optimization (cpu = 0:00:20.6) (real = 0:00:21.0) **
+*** AreaOpt [finish] : cpu/real = 0:00:20.6/0:00:20.7 (1.0), totSession cpu/real = 0:35:46.8/0:48:28.6 (0.7), mem = 1859.9M
+End: Area Reclaim Optimization (cpu=0:00:21, real=0:00:21, mem=1819.93M, totSessionCpu=0:35:47).
+*** Starting refinePlace (0:35:47 mem=1819.9M) ***
+Total net bbox length = 7.640e+05 (4.090e+05 3.549e+05) (ext = 2.288e+04)
+Move report: Timing Driven Placement moves 6989 insts, mean move: 10.33 um, max move: 251.04 um
+	Max move on inst (top_in/pricing0/mc_core0/inv0/mult_362_2/FE_RC_5060_0): (823.36, 421.80) --> (1039.12, 457.08)
+	Runtime: CPU: 0:00:07.1 REAL: 0:00:07.0 MEM: 1840.8MB
+Move report: Detail placement moves 4009 insts, mean move: 1.55 um, max move: 12.48 um
+	Max move on inst (top_in/pricing0/mc_core0/inv0/mult_360/U699): (714.86, 280.68) --> (722.30, 275.64)
+	Runtime: CPU: 0:00:00.4 REAL: 0:00:01.0 MEM: 1840.8MB
+Summary Report:
+Instances move: 7281 (out of 21383 movable)
+Instances flipped: 5
+Mean displacement: 10.14 um
+Max displacement: 252.90 um (Instance: top_in/pricing0/mc_core0/inv0/mult_362_2/FE_RC_5060_0) (823.36, 421.8) -> (1040.98, 457.08)
+	Length: 2 sites, height: 1 rows, site name: core_5040, cell type: INV1S
+Total net bbox length = 7.582e+05 (4.048e+05 3.534e+05) (ext = 2.292e+04)
+Runtime: CPU: 0:00:07.6 REAL: 0:00:08.0 MEM: 1840.8MB
+*** Finished refinePlace (0:35:55 mem=1840.8M) ***
+*** maximum move = 252.90 um ***
+*** Finished re-routing un-routed nets (1840.8M) ***
+
+*** Finish Physical Update (cpu=0:00:09.7 real=0:00:10.0 mem=1840.8M) ***
+** GigaOpt Optimizer WNS Slack -3.008 TNS Slack -253.883 Density 73.58
+OptDebug: Start of Optimizer WNS Pass 4: default* WNS 0.107 TNS 0.000; reg2reg* WNS -3.008 TNS -253.883; HEPG WNS -3.008 TNS -253.883; all paths WNS -3.008 TNS -253.883
+Active Path Group: reg2reg  
++--------+---------+--------+---------+----------+------------+--------+----------------+---------+----------------------------------------------------+
+|  WNS   | All WNS |  TNS   | All TNS | Density  |    Real    |  Mem   |   Worst View   |Pathgroup|                     End Point                      |
++--------+---------+--------+---------+----------+------------+--------+----------------+---------+----------------------------------------------------+
+|  -3.008|   -3.008|-253.883| -253.883|    73.58%|   0:00:01.0| 1840.8M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[15]/D    |
+|  -2.994|   -2.994|-253.623| -253.623|    73.64%|   0:00:07.0| 1840.8M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[17]/D    |
+|  -2.981|   -2.981|-253.551| -253.551|    73.67%|   0:00:12.0| 1859.8M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[19]/D    |
+|  -2.975|   -2.975|-253.391| -253.391|    73.69%|   0:00:48.0| 1859.8M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[24]/D    |
+|  -2.980|   -2.980|-253.373| -253.373|    73.75%|   0:00:16.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.973|   -2.973|-253.310| -253.310|    73.84%|   0:00:15.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+Analyzing useful skew in preCTS mode ...
+The view delay ratios are: (av_func_mode_max 1) (av_scan_mode_max 1) (av_func_mode_min 0.412845) (av_scan_mode_min 0.412845)
+|  -2.837|   -2.837|-249.499| -249.499|    74.07%|   0:00:48.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.805|   -2.805|-248.956| -248.956|    74.07%|   0:00:01.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.775|   -2.775|-248.361| -248.361|    74.07%|   0:00:00.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/det_r_reg[41]/D      |
+|  -2.746|   -2.746|-247.426| -247.426|    74.09%|   0:00:01.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.734|   -2.734|-247.237| -247.237|    74.11%|   0:00:00.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.707|   -2.707|-246.288| -246.288|    74.12%|   0:00:01.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/det_r_reg[41]/D      |
+|  -2.675|   -2.675|-245.806| -245.806|    74.13%|   0:00:00.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.659|   -2.659|-245.545| -245.545|    74.14%|   0:00:01.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.638|   -2.638|-245.205| -245.205|    74.14%|   0:00:00.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.635|   -2.635|-244.336| -244.336|    74.16%|   0:00:01.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.635|   -2.635|-244.333| -244.333|    74.16%|   0:00:00.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.604|   -2.604|-243.842| -243.842|    74.16%|   0:00:00.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.604|   -2.604|-243.837| -243.837|    74.17%|   0:00:01.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.594|   -2.594|-243.679| -243.679|    74.18%|   0:00:01.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.565|   -2.565|-243.085| -243.085|    74.19%|   0:00:00.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.549|   -2.549|-243.444| -243.444|    74.23%|   0:00:04.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.543|   -2.543|-242.857| -242.857|    74.26%|   0:00:01.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.527|   -2.527|-242.989| -242.989|    74.28%|   0:00:01.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.515|   -2.515|-242.813| -242.813|    74.29%|   0:00:00.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.511|   -2.511|-242.739| -242.739|    74.31%|   0:00:01.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.517|   -2.517|-242.649| -242.649|    74.31%|   0:00:01.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.507|   -2.507|-242.497| -242.497|    74.31%|   0:00:00.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.500|   -2.500|-242.387| -242.387|    74.32%|   0:00:02.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.491|   -2.491|-242.232| -242.232|    74.32%|   0:00:00.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.483|   -2.483|-242.086| -242.086|    74.33%|   0:00:01.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.466|   -2.466|-241.664| -241.664|    74.34%|   0:00:01.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.459|   -2.459|-241.350| -241.350|    74.38%|   0:00:02.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.454|   -2.454|-241.249| -241.249|    74.40%|   0:00:04.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.452|   -2.452|-241.217| -241.217|    74.43%|   0:00:04.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.437|   -2.437|-240.986| -240.986|    74.43%|   0:00:00.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.437|   -2.437|-240.563| -240.563|    74.46%|   0:00:02.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.437|   -2.437|-240.549| -240.549|    74.46%|   0:00:01.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+Analyzing useful skew in preCTS mode ...
+|  -2.312|   -2.312|-236.019| -236.019|    74.69%|   0:00:10.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.267|   -2.267|-235.292| -235.292|    74.69%|   0:00:01.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.262|   -2.262|-235.262| -235.262|    74.71%|   0:00:01.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.258|   -2.258|-235.200| -235.200|    74.71%|   0:00:00.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.230|   -2.230|-234.448| -234.448|    74.73%|   0:00:01.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.208|   -2.208|-233.816| -233.816|    74.75%|   0:00:01.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.195|   -2.195|-233.503| -233.503|    74.78%|   0:00:02.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.177|   -2.177|-232.959| -232.959|    74.78%|   0:00:01.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.168|   -2.168|-232.809| -232.809|    74.79%|   0:00:02.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.140|   -2.140|-232.374| -232.374|    74.80%|   0:00:01.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.132|   -2.132|-232.113| -232.113|    74.82%|   0:00:01.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.131|   -2.131|-232.087| -232.087|    74.82%|   0:00:01.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.122|   -2.122|-231.955| -231.955|    74.86%|   0:00:00.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.119|   -2.119|-231.897| -231.897|    74.87%|   0:00:01.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.116|   -2.116|-231.855| -231.855|    74.87%|   0:00:02.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.085|   -2.085|-231.358| -231.358|    74.88%|   0:00:00.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.075|   -2.075|-231.363| -231.363|    74.93%|   0:00:02.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.038|   -2.038|-230.761| -230.761|    74.94%|   0:00:01.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/det_r_reg[41]/D      |
+|  -2.038|   -2.038|-230.603| -230.603|    74.97%|   0:00:01.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.016|   -2.016|-230.269| -230.269|    74.98%|   0:00:00.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.013|   -2.013|-230.133| -230.133|    75.00%|   0:00:05.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.009|   -2.009|-230.066| -230.066|    75.00%|   0:00:01.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -2.005|   -2.005|-229.994| -229.994|    75.00%|   0:00:00.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -1.995|   -1.995|-229.829| -229.829|    75.00%|   0:00:01.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -1.969|   -1.969|-229.391| -229.391|    75.07%|   0:00:02.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -1.952|   -1.952|-229.211| -229.211|    75.10%|   0:00:02.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -1.951|   -1.951|-228.986| -228.986|    75.14%|   0:00:04.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+Analyzing useful skew in preCTS mode ...
+|  -1.951|   -1.951|-227.788| -227.788|    75.31%|   0:00:09.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -1.951|   -1.951|-227.792| -227.792|    75.36%|   0:00:04.0| 1859.9M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
++--------+---------+--------+---------+----------+------------+--------+----------------+---------+----------------------------------------------------+
+
+*** Finish Core Optimize Step (cpu=0:03:56 real=0:03:56 mem=1859.9M) ***
+
+*** Finished Optimize Step Cumulative (cpu=0:03:56 real=0:03:56 mem=1859.9M) ***
+OptDebug: End of Optimizer WNS Pass 4: default* WNS 0.107 TNS 0.000; reg2reg* WNS -1.951 TNS -227.792; HEPG WNS -1.951 TNS -227.792; all paths WNS -1.951 TNS -227.792
+** GigaOpt Optimizer WNS Slack -1.951 TNS Slack -227.792 Density 75.36
+Begin: Area Reclaim Optimization
+*** AreaOpt [begin] : cpu/real = 0:00:00.0/0:00:00.0 (0.0), totSession cpu/real = 0:39:53.6/0:52:35.3 (0.8), mem = 1859.9M
+Reclaim Optimization WNS Slack -1.951  TNS Slack -227.792 Density 75.36
++----------+---------+--------+--------+------------+--------+
+| Density  | Commits |  WNS   |  TNS   |    Real    |  Mem   |
++----------+---------+--------+--------+------------+--------+
+|    75.36%|        -|  -1.951|-227.792|   0:00:00.0| 1859.9M|
+|    75.27%|       59|  -1.950|-227.273|   0:00:03.0| 1859.9M|
+|    74.90%|      591|  -1.890|-225.908|   0:00:17.0| 1859.9M|
+|    74.90%|        6|  -1.890|-225.908|   0:00:00.0| 1859.9M|
+|    74.90%|        0|  -1.890|-225.908|   0:00:00.0| 1859.9M|
++----------+---------+--------+--------+------------+--------+
+Reclaim Optimization End WNS Slack -1.890  TNS Slack -225.908 Density 74.90
+Bottom Preferred Layer:
+    None
+Via Pillar Rule:
+    None
+End: Core Area Reclaim Optimization (cpu = 0:00:21.8) (real = 0:00:22.0) **
+*** AreaOpt [finish] : cpu/real = 0:00:21.8/0:00:21.9 (1.0), totSession cpu/real = 0:40:15.4/0:52:57.1 (0.8), mem = 1859.9M
+End: Area Reclaim Optimization (cpu=0:00:22, real=0:00:22, mem=1819.90M, totSessionCpu=0:40:15).
+*** Starting refinePlace (0:40:16 mem=1819.9M) ***
+Total net bbox length = 7.690e+05 (4.111e+05 3.579e+05) (ext = 2.292e+04)
+Move report: Timing Driven Placement moves 9213 insts, mean move: 17.96 um, max move: 229.80 um
+	Max move on inst (top_in/pricing0/mc_core0/inv0/mult_362_2/FE_RC_5706_0): (785.54, 346.20) --> (990.14, 321.00)
+	Runtime: CPU: 0:00:10.9 REAL: 0:00:11.0 MEM: 1856.2MB
+Move report: Detail placement moves 5049 insts, mean move: 1.56 um, max move: 18.76 um
+	Max move on inst (top_in/pricing0/mc_core0/inv0/mult_362_2/FE_RC_3447_0): (996.96, 341.16) --> (1005.64, 351.24)
+	Runtime: CPU: 0:00:00.4 REAL: 0:00:00.0 MEM: 1856.2MB
+Summary Report:
+Instances move: 9300 (out of 21938 movable)
+Instances flipped: 4
+Mean displacement: 17.93 um
+Max displacement: 229.80 um (Instance: top_in/pricing0/mc_core0/inv0/mult_362_2/FE_RC_5706_0) (785.54, 346.2) -> (990.14, 321)
+	Length: 5 sites, height: 1 rows, site name: core_5040, cell type: INV3CK
+Total net bbox length = 7.662e+05 (4.105e+05 3.556e+05) (ext = 2.295e+04)
+Runtime: CPU: 0:00:11.4 REAL: 0:00:12.0 MEM: 1856.2MB
+*** Finished refinePlace (0:40:27 mem=1856.2M) ***
+*** maximum move = 229.80 um ***
+*** Finished re-routing un-routed nets (1856.2M) ***
+
+*** Finish Physical Update (cpu=0:00:15.2 real=0:00:16.0 mem=1856.2M) ***
+** GigaOpt Optimizer WNS Slack -1.894 TNS Slack -212.284 Density 74.90
+OptDebug: Start of Optimizer WNS Pass 5: default* WNS 0.107 TNS 0.000; reg2reg* WNS -1.894 TNS -212.284; HEPG WNS -1.894 TNS -212.284; all paths WNS -1.894 TNS -212.284
+Active Path Group: reg2reg  
++--------+---------+--------+---------+----------+------------+--------+----------------+---------+----------------------------------------------------+
+|  WNS   | All WNS |  TNS   | All TNS | Density  |    Real    |  Mem   |   Worst View   |Pathgroup|                     End Point                      |
++--------+---------+--------+---------+----------+------------+--------+----------------+---------+----------------------------------------------------+
+|  -1.894|   -1.894|-212.284| -212.284|    74.90%|   0:00:00.0| 1856.2M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -1.869|   -1.869|-211.947| -211.947|    74.98%|   0:01:02.0| 1875.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -1.870|   -1.870|-211.929| -211.929|    74.99%|   0:00:14.0| 1875.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -1.870|   -1.870|-211.919| -211.919|    74.99%|   0:00:00.0| 1875.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -1.871|   -1.871|-211.914| -211.914|    75.08%|   0:00:23.0| 1875.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -1.872|   -1.872|-211.898| -211.898|    75.13%|   0:00:11.0| 1875.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+Analyzing useful skew in preCTS mode ...
+|  -1.872|   -1.872|-210.919| -210.919|    75.13%|   0:00:04.0| 1875.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -1.872|   -1.872|-210.913| -210.913|    75.15%|   0:00:05.0| 1875.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -1.872|   -1.872|-211.062| -211.062|    75.18%|   0:00:04.0| 1875.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
++--------+---------+--------+---------+----------+------------+--------+----------------+---------+----------------------------------------------------+
+
+*** Finish Core Optimize Step (cpu=0:02:04 real=0:02:03 mem=1875.3M) ***
+
+*** Finished Optimize Step Cumulative (cpu=0:02:04 real=0:02:03 mem=1875.3M) ***
+OptDebug: End of Optimizer WNS Pass 5: default* WNS 0.107 TNS 0.000; reg2reg* WNS -1.872 TNS -211.062; HEPG WNS -1.872 TNS -211.062; all paths WNS -1.872 TNS -211.062
+** GigaOpt Optimizer WNS Slack -1.872 TNS Slack -211.062 Density 75.18
+Begin: Area Reclaim Optimization
+*** AreaOpt [begin] : cpu/real = 0:00:00.0/0:00:00.0 (0.0), totSession cpu/real = 0:42:35.4/0:55:17.2 (0.8), mem = 1875.3M
+Reclaim Optimization WNS Slack -1.872  TNS Slack -211.062 Density 75.18
++----------+---------+--------+--------+------------+--------+
+| Density  | Commits |  WNS   |  TNS   |    Real    |  Mem   |
++----------+---------+--------+--------+------------+--------+
+|    75.18%|        -|  -1.872|-211.062|   0:00:00.0| 1875.3M|
+|    75.15%|       18|  -1.872|-210.974|   0:00:03.0| 1875.3M|
+|    74.97%|      348|  -1.865|-211.211|   0:00:12.0| 1875.3M|
+|    74.97%|        5|  -1.864|-211.197|   0:00:01.0| 1875.3M|
+|    74.97%|        0|  -1.864|-211.197|   0:00:00.0| 1875.3M|
++----------+---------+--------+--------+------------+--------+
+Reclaim Optimization End WNS Slack -1.864  TNS Slack -211.197 Density 74.97
+Bottom Preferred Layer:
+    None
+Via Pillar Rule:
+    None
+End: Core Area Reclaim Optimization (cpu = 0:00:17.3) (real = 0:00:18.0) **
+*** AreaOpt [finish] : cpu/real = 0:00:17.3/0:00:17.3 (1.0), totSession cpu/real = 0:42:52.7/0:55:34.5 (0.8), mem = 1875.3M
+End: Area Reclaim Optimization (cpu=0:00:17, real=0:00:18, mem=1823.29M, totSessionCpu=0:42:53).
+*** Starting refinePlace (0:42:53 mem=1823.3M) ***
+Total net bbox length = 7.679e+05 (4.116e+05 3.563e+05) (ext = 2.295e+04)
+Move report: Detail placement moves 1992 insts, mean move: 1.92 um, max move: 12.56 um
+	Max move on inst (top_in/pricing0/mc_core0/inv0/mult_362_2/FE_RC_2600_0): (1004.40, 447.00) --> (1006.88, 457.08)
+	Runtime: CPU: 0:00:00.4 REAL: 0:00:00.0 MEM: 1826.3MB
+Summary Report:
+Instances move: 1992 (out of 21945 movable)
+Instances flipped: 0
+Mean displacement: 1.92 um
+Max displacement: 12.56 um (Instance: top_in/pricing0/mc_core0/inv0/mult_362_2/FE_RC_2600_0) (1004.4, 447) -> (1006.88, 457.08)
+	Length: 8 sites, height: 1 rows, site name: core_5040, cell type: ND2T
+Total net bbox length = 7.694e+05 (4.126e+05 3.568e+05) (ext = 2.295e+04)
+Runtime: CPU: 0:00:00.5 REAL: 0:00:00.0 MEM: 1826.3MB
+*** Finished refinePlace (0:42:53 mem=1826.3M) ***
+*** maximum move = 12.56 um ***
+*** Finished re-routing un-routed nets (1826.3M) ***
+
+*** Finish Physical Update (cpu=0:00:01.3 real=0:00:01.0 mem=1826.3M) ***
+** GigaOpt Optimizer WNS Slack -1.864 TNS Slack -211.196 Density 74.97
+OptDebug: Start of Optimizer WNS Pass 6: default* WNS 0.107 TNS 0.000; reg2reg* WNS -1.864 TNS -211.196; HEPG WNS -1.864 TNS -211.196; all paths WNS -1.864 TNS -211.196
+Active Path Group: reg2reg  
++--------+---------+--------+---------+----------+------------+--------+----------------+---------+----------------------------------------------------+
+|  WNS   | All WNS |  TNS   | All TNS | Density  |    Real    |  Mem   |   Worst View   |Pathgroup|                     End Point                      |
++--------+---------+--------+---------+----------+------------+--------+----------------+---------+----------------------------------------------------+
+|  -1.864|   -1.864|-211.196| -211.196|    74.97%|   0:00:00.0| 1826.3M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[16]/D    |
+|  -1.857|   -1.857|-211.010| -211.010|    75.12%|   0:00:58.0| 1845.4M|av_scan_mode_max|  default| top_in/pricing0/mc_core0/inv0/x0_r_reg[2]/Q        |
+|  -1.851|   -1.851|-210.923| -210.923|    75.14%|   0:00:04.0| 1845.4M|av_scan_mode_max|  default| top_in/pricing0/mc_core0/inv0/x0_r_reg[0]/Q        |
+|  -1.849|   -1.849|-210.912| -210.912|    75.16%|   0:00:02.0| 1845.4M|av_scan_mode_max|  default| top_in/pricing0/mc_core0/inv0/x0_r_reg[1]/Q        |
+|  -1.847|   -1.847|-210.863| -210.863|    75.18%|   0:00:03.0| 1845.4M|av_scan_mode_max|  default| top_in/pricing0/mc_core0/inv0/x0_r_reg[0]/Q        |
+|  -1.845|   -1.845|-210.823| -210.823|    75.18%|   0:00:01.0| 1845.4M|av_scan_mode_max|  default| top_in/pricing0/mc_core0/inv0/x0_r_reg[0]/Q        |
+Analyzing useful skew in preCTS mode ...
+|  -1.839|   -1.839|-210.648| -210.648|    75.20%|   0:00:32.0| 1845.4M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -1.840|   -1.840|-210.642| -210.642|    75.28%|   0:00:29.0| 1845.4M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -1.840|   -1.840|-210.617| -210.617|    75.35%|   0:00:08.0| 1845.4M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -1.840|   -1.840|-210.593| -210.593|    75.36%|   0:00:03.0| 1845.4M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+Analyzing useful skew in preCTS mode ...
+|  -1.839|   -1.839|-210.586| -210.586|    75.41%|   0:00:05.0| 1845.4M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -1.839|   -1.839|-210.581| -210.581|    75.44%|   0:00:06.0| 1845.4M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
+|  -1.839|   -1.839|-210.581| -210.581|    75.44%|   0:00:00.0| 1845.4M|av_scan_mode_max|  reg2reg| top_in/pricing0/mc_core0/inv0/temp2_r_reg[13]/D    |
++--------+---------+--------+---------+----------+------------+--------+----------------+---------+----------------------------------------------------+
+
+*** Finish Core Optimize Step (cpu=0:02:31 real=0:02:31 mem=1845.4M) ***
+
+*** Finished Optimize Step Cumulative (cpu=0:02:31 real=0:02:31 mem=1845.4M) ***
+OptDebug: End of Optimizer WNS Pass 6: default* WNS 0.107 TNS 0.000; reg2reg* WNS -1.839 TNS -210.581; HEPG WNS -1.839 TNS -210.581; all paths WNS -1.839 TNS -210.581
+** GigaOpt Optimizer WNS Slack -1.839 TNS Slack -210.581 Density 75.44
+Begin: Area Reclaim Optimization
+*** AreaOpt [begin] : cpu/real = 0:00:00.0/0:00:00.0 (0.0), totSession cpu/real = 0:45:25.9/0:58:07.6 (0.8), mem = 1845.4M
+Reclaim Optimization WNS Slack -1.839  TNS Slack -210.581 Density 75.44
++----------+---------+--------+--------+------------+--------+
+| Density  | Commits |  WNS   |  TNS   |    Real    |  Mem   |
++----------+---------+--------+--------+------------+--------+
+|    75.44%|        -|  -1.839|-210.581|   0:00:00.0| 1845.4M|
+|    75.43%|       11|  -1.839|-210.581|   0:00:03.0| 1845.4M|
+|    75.23%|      363|  -1.784|-209.874|   0:00:13.0| 1845.4M|
+|    75.23%|        2|  -1.784|-209.874|   0:00:00.0| 1845.4M|
+|    75.23%|        0|  -1.784|-209.874|   0:00:00.0| 1845.4M|
++----------+---------+--------+--------+------------+--------+
+Reclaim Optimization End WNS Slack -1.784  TNS Slack -209.874 Density 75.23
+Bottom Preferred Layer:
+    None
+Via Pillar Rule:
+    None
+End: Core Area Reclaim Optimization (cpu = 0:00:17.3) (real = 0:00:17.0) **
+*** AreaOpt [finish] : cpu/real = 0:00:17.3/0:00:17.2 (1.0), totSession cpu/real = 0:45:43.2/0:58:24.8 (0.8), mem = 1845.4M
+End: Area Reclaim Optimization (cpu=0:00:17, real=0:00:17, mem=1823.38M, totSessionCpu=0:45:43).
+*** Starting refinePlace (0:45:43 mem=1823.4M) ***
+Total net bbox length = 7.730e+05 (4.145e+05 3.585e+05) (ext = 2.295e+04)
+Move report: Timing Driven Placement moves 7293 insts, mean move: 11.09 um, max move: 320.98 um
+	Max move on inst (top_in/pricing0/mc_core0/inv0/mult_362_2/FE_RC_5943_0): (848.16, 416.76) --> (1063.30, 310.92)
+	Runtime: CPU: 0:00:06.9 REAL: 0:00:07.0 MEM: 1855.0MB
+Move report: Detail placement moves 6149 insts, mean move: 2.94 um, max move: 23.56 um
+	Max move on inst (top_in/pricing0/mc_core0/FE_OFC31_i_reset_n_i): (534.44, 542.76) --> (558.00, 542.76)
+	Runtime: CPU: 0:00:02.4 REAL: 0:00:02.0 MEM: 1865.3MB
+Summary Report:
+Instances move: 8770 (out of 22031 movable)
+Instances flipped: 1624
+Mean displacement: 10.30 um
+Max displacement: 319.12 um (Instance: top_in/pricing0/mc_core0/inv0/mult_362_2/FE_RC_5943_0) (848.16, 416.76) -> (1061.44, 310.92)
+	Length: 2 sites, height: 1 rows, site name: core_5040, cell type: INV1S
+Total net bbox length = 7.490e+05 (3.910e+05 3.579e+05) (ext = 2.289e+04)
+Runtime: CPU: 0:00:09.3 REAL: 0:00:09.0 MEM: 1865.3MB
+*** Finished refinePlace (0:45:53 mem=1865.3M) ***
+*** maximum move = 319.12 um ***
+*** Finished re-routing un-routed nets (1865.3M) ***
+
+*** Finish Physical Update (cpu=0:00:11.8 real=0:00:12.0 mem=1865.3M) ***
+** GigaOpt Optimizer WNS Slack -1.792 TNS Slack -209.465 Density 75.23
+Bottom Preferred Layer:
+    None
+Via Pillar Rule:
+    None
+
+*** Finish pre-CTS Setup Fixing (cpu=0:30:22 real=0:30:21 mem=1865.3M) ***
+
+*** SetupOpt [finish] : cpu/real = 0:30:37.3/0:30:36.8 (1.0), totSession cpu/real = 0:45:55.7/0:58:37.4 (0.8), mem = 1846.2M
+End: GigaOpt Optimization in WNS mode
+**Info: Dumped 38 clock latencies for ever disabled views: av_func_mode_max
+*** Timing NOT met, worst failing slack is -1.792
+*** Check timing (0:00:01.5)
+GigaOpt: Skipping TNS opt. setOptMode -allEndPoints and -criticalRange not set
+Info: 14 top-level, potential tri-state nets excluded from IPO operation.
+Info: 30 io nets excluded
+Info: 2 clock nets excluded from IPO operation.
+Begin: Area Reclaim Optimization
+*** AreaOpt [begin] : cpu/real = 0:00:00.0/0:00:00.0 (0.0), totSession cpu/real = 0:46:02.0/0:58:43.7 (0.8), mem = 1787.3M
+Reclaim Optimization WNS Slack -1.792  TNS Slack -209.465 Density 75.23
++----------+---------+--------+--------+------------+--------+
+| Density  | Commits |  WNS   |  TNS   |    Real    |  Mem   |
++----------+---------+--------+--------+------------+--------+
+|    75.23%|        -|  -1.792|-209.465|   0:00:00.0| 1787.3M|
+|    75.23%|        0|  -1.792|-209.465|   0:00:01.0| 1787.3M|
+|    75.21%|       15|  -1.792|-209.434|   0:00:02.0| 1825.5M|
+|    75.16%|      251|  -1.767|-209.358|   0:00:16.0| 1825.5M|
+|    75.15%|        4|  -1.767|-209.358|   0:00:01.0| 1825.5M|
+|    75.15%|        0|  -1.767|-209.358|   0:00:00.0| 1825.5M|
+|    75.15%|        0|  -1.767|-209.358|   0:00:00.0| 1825.5M|
++----------+---------+--------+--------+------------+--------+
+Reclaim Optimization End WNS Slack -1.767  TNS Slack -209.358 Density 75.15
+Bottom Preferred Layer:
+    None
+Via Pillar Rule:
+    None
+End: Core Area Reclaim Optimization (cpu = 0:00:24.1) (real = 0:00:24.0) **
+*** Starting refinePlace (0:46:23 mem=1825.5M) ***
+Total net bbox length = 7.490e+05 (3.911e+05 3.579e+05) (ext = 2.289e+04)
+Move report: Detail placement moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+	Runtime: CPU: 0:00:00.5 REAL: 0:00:01.0 MEM: 1825.5MB
+Summary Report:
+Instances move: 0 (out of 22015 movable)
+Instances flipped: 0
+Mean displacement: 0.00 um
+Max displacement: 0.00 um 
+Total net bbox length = 7.490e+05 (3.911e+05 3.579e+05) (ext = 2.289e+04)
+Runtime: CPU: 0:00:00.6 REAL: 0:00:01.0 MEM: 1825.5MB
+*** Finished refinePlace (0:46:24 mem=1825.5M) ***
+*** maximum move = 0.00 um ***
+*** Finished re-routing un-routed nets (1825.5M) ***
+
+*** Finish Physical Update (cpu=0:00:01.2 real=0:00:01.0 mem=1825.5M) ***
+*** AreaOpt [finish] : cpu/real = 0:00:22.2/0:00:22.2 (1.0), totSession cpu/real = 0:46:24.2/0:59:05.9 (0.8), mem = 1825.5M
+End: Area Reclaim Optimization (cpu=0:00:25, real=0:00:25, mem=1768.41M, totSessionCpu=0:46:24).
+Begin: GigaOpt postEco DRV Optimization
+Info: 14 top-level, potential tri-state nets excluded from IPO operation.
+Info: 30 io nets excluded
+Info: 2 clock nets excluded from IPO operation.
+*** DrvOpt [begin] : cpu/real = 0:00:00.0/0:00:00.0 (0.0), totSession cpu/real = 0:46:24.9/0:59:06.5 (0.8), mem = 1768.4M
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+|        max-tran       |        max-cap        |  max-fanout |  max-length |       setup       |        |        |        |       |          |         |
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+| nets | terms|  wViol  | nets | terms|  wViol  | nets | terms| nets | terms|   WNS   |   TNS   |  #Buf  |  #Inv  | #Resize|Density|   Real   |   Mem   |
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+|     1|    21|    -0.06|     1|     1|    -0.00|  1324|  1324|     0|     0|    -1.77|  -209.36|       0|       0|       0|  75.15|          |         |
+|     0|     0|     0.00|     0|     0|     0.00|  1324|  1324|     0|     0|    -1.77|  -209.36|       0|       0|       1|  75.15| 0:00:01.0|  1825.6M|
+|     0|     0|     0.00|     0|     0|     0.00|  1324|  1324|     0|     0|    -1.77|  -209.36|       0|       0|       0|  75.15| 0:00:00.0|  1825.6M|
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+Bottom Preferred Layer:
+    None
+Via Pillar Rule:
+    None
+
+*** Finish DRV Fixing (cpu=0:00:01.0 real=0:00:01.0 mem=1825.6M) ***
+
+*** Starting refinePlace (0:46:30 mem=1825.6M) ***
+Total net bbox length = 7.490e+05 (3.911e+05 3.579e+05) (ext = 2.289e+04)
+Move report: Detail placement moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+	Runtime: CPU: 0:00:00.5 REAL: 0:00:00.0 MEM: 1825.6MB
+Summary Report:
+Instances move: 0 (out of 22015 movable)
+Instances flipped: 0
+Mean displacement: 0.00 um
+Max displacement: 0.00 um 
+Total net bbox length = 7.490e+05 (3.911e+05 3.579e+05) (ext = 2.289e+04)
+Runtime: CPU: 0:00:00.6 REAL: 0:00:00.0 MEM: 1825.6MB
+*** Finished refinePlace (0:46:30 mem=1825.6M) ***
+*** maximum move = 0.00 um ***
+*** Finished re-routing un-routed nets (1825.6M) ***
+
+*** Finish Physical Update (cpu=0:00:01.2 real=0:00:01.0 mem=1825.6M) ***
+*** DrvOpt [finish] : cpu/real = 0:00:06.2/0:00:06.2 (1.0), totSession cpu/real = 0:46:31.0/0:59:12.7 (0.8), mem = 1806.6M
+End: GigaOpt postEco DRV Optimization
+
+Active setup views:
+ av_scan_mode_max
+  Dominating endpoints: 0
+  Dominating TNS: -0.000
+
+*** Enable all active views. ***
+Extraction called for design 'CHIP' of instances=22318 and nets=28174 using extraction engine 'preRoute' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PreRoute RC Extraction called for design CHIP.
+RC Extraction called in multi-corner(2) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.00000 1.00000 
+Resistance Scaling Factor    : 1.00000 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 1.00000 
+Clock Res. Scaling Factor    : 1.00000 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Skipped RC grid update for preRoute extraction.
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.4  Real Time: 0:00:01.0  MEM: 1735.805M)
+Skewing Data Summary (End_of_FINAL)
+--------------------------------------------------
+ Total skewed count:38   (Analysis view: av_scan_mode_max)
+ Advancing count:38, Max:-1000.0(ps) Min:-1000.0(ps) Total:-38000.0(ps)
+ Delaying  count:0
+      --------------
+ Total skewed count:38   (Analysis view: av_func_mode_max)
+ Advancing count:38, Max:-1000.0(ps) Min:-1000.0(ps) Total:-38000.0(ps)
+ Delaying  count:0
+--------------------------------------------------
+[NR-eGR] Track table information for default rule: 
+[NR-eGR] metal1 has no routable track
+[NR-eGR] metal2 has single uniform track structure
+[NR-eGR] metal3 has single uniform track structure
+[NR-eGR] metal4 has single uniform track structure
+[NR-eGR] metal5 has single uniform track structure
+[NR-eGR] metal6 has single uniform track structure
+[NR-eGR] Started Read PG Shapes ( Curr Mem: 1758.72 MB )
+[NR-eGR] Read 32960 PG shapes
+[NR-eGR] Finished Read PG Shapes ( CPU: 0.01 sec, Real: 0.00 sec, Curr Mem: 1758.72 MB )
+[NR-eGR] #Routing Blockages  : 0
+[NR-eGR] #Instance Blockages : 2061
+[NR-eGR] #PG Blockages       : 32960
+[NR-eGR] #Halo Blockages     : 0
+[NR-eGR] #Boundary Blockages : 0
+[NR-eGR] Num Prerouted Nets = 0  Num Prerouted Wires = 0
+[NR-eGR] Read numTotalNets=23773  numIgnoredNets=0
+[NR-eGR] There are 1 clock nets ( 0 with NDR ).
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id: 0  Nets: 23743 
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 23743 net(s) in layer range [2, 6]
+[NR-eGR] Early Global Route overflow of layer group 1: 0.05% H + 0.05% V. EstWL: 9.315785e+05um
+[NR-eGR] Congestion Analysis By layer: (blocked Gcells are excluded) 
+[NR-eGR]                        OverCon            
+[NR-eGR]                         #Gcell     %Gcell
+[NR-eGR]       Layer                (2)    OverCon 
+[NR-eGR] ----------------------------------------------
+[NR-eGR]  metal1  (1)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  metal2  (2)         7( 0.02%)   ( 0.02%) 
+[NR-eGR]  metal3  (3)         1( 0.00%)   ( 0.00%) 
+[NR-eGR]  metal4  (4)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  metal5  (5)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  metal6  (6)         0( 0.00%)   ( 0.00%) 
+[NR-eGR] ----------------------------------------------
+[NR-eGR] Total                8( 0.00%)   ( 0.00%) 
+[NR-eGR] 
+[NR-eGR] Overflow after Early Global Route (GR compatible) 0.00% H + 0.00% V
+[NR-eGR] Overflow after Early Global Route 0.00% H + 0.00% V
+[NR-eGR] Finished Early Global Route kernel ( CPU: 0.60 sec, Real: 0.60 sec, Curr Mem: 1766.87 MB )
+[hotspot] +------------+---------------+---------------+
+[hotspot] |            |   max hotspot | total hotspot |
+[hotspot] +------------+---------------+---------------+
+[hotspot] | normalized |          0.00 |          0.00 |
+[hotspot] +------------+---------------+---------------+
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+Starting delay calculation for Setup views
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: CHIP
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in BcWc mode...
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (1 T). (MEM=1756.87)
+Total number of fetched objects 23889
+End delay calculation. (MEM=1789.32 CPU=0:00:08.8 REAL=0:00:09.0)
+End delay calculation (fullDC). (MEM=1789.32 CPU=0:00:10.9 REAL=0:00:11.0)
+*** Done Building Timing Graph (cpu=0:00:13.7 real=0:00:14.0 totSessionCpu=0:46:48 mem=1789.3M)
+Reported timing to dir ./timingReports
+**optDesign ... cpu = 0:41:23, real = 0:41:21, mem = 1423.4M, totSessionCpu=0:46:48 **
+
+------------------------------------------------------------
+     optDesign Final Summary                             
+------------------------------------------------------------
+
+Setup views included:
+ av_func_mode_max av_scan_mode_max 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| -1.764  | -1.764  |  0.134  |
+|           TNS (ns):|-208.841 |-208.841 |  0.000  |
+|    Violating Paths:|  1626   |  1626   |    0    |
+|          All Paths:|  7264   |  3632   |  3726   |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      1 (1)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |   1324 (1324)    |    -69     |   1325 (1325)    |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 75.153%
+Routing Overflow: 0.00% H and 0.00% V
+------------------------------------------------------------
+**optDesign ... cpu = 0:41:26, real = 0:41:26, mem = 1424.9M, totSessionCpu=0:46:51 **
+*** Finished optDesign ***
+ *** Writing scheduling file: 'scheduling_file.cts.12103' ***
+**place_opt_design ... cpu = 0:41:26, real = 0:41:27, mem = 1691.6M **
+*** Finished GigaPlace ***
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPEXT-3530          3  The process node is not set. Use the com...
+WARNING   IMPSP-9025           1  No scan chain specified/traced.          
+WARNING   IMPOPT-6118          1  The following cells have a dont_touch pr...
+*** Message Summary: 5 warning(s), 0 error(s)
+
+
+*** Memory Usage v#1 (Current mem = 1697.613M, initial mem = 268.250M) ***
+*** Message Summary: 1214 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:59:16, real=2:59:58, mem=1697.6M) ---
