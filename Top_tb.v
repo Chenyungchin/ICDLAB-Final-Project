@@ -6,11 +6,12 @@
 // `define CMD        "./cmd.dat"           // Modify your test cmd file
 // `define EXPECT     "./out_golden.dat"    // Modify your output golden file
 
-module MC_CORE_tb;
+module TOP_tb;
 
 parameter DATA_LENGTH   = 256;
-parameter TOTAL_LENGTH  = 2048;
-parameter DAY           = 8;
+parameter TOTAL_LENGTH  = 16384;
+parameter DAY           = 64;
+// parameter CYCLE         = 8;
 
 reg           clk;
 reg           reset;
@@ -28,7 +29,7 @@ reg   [11:0]   path_mem  [0:TOTAL_LENGTH-1];
 reg   [15:0]  out_temp;
 
 reg           stop;
-integer       i, out_f, err, pattern_num;
+integer       i, out_f, err, pattern_num, count;
 reg           over;
 integer       day;
 reg           res;
@@ -55,10 +56,11 @@ initial begin
     clk         = 1'b1;
     reset       = 1'b1;
     state       = 2'b0;
-    K           = 12'b001100000000;  
-    w           = 12'b010101010101;
-    q           = 12'b010110110001;
-    S           = 12'b000111101011;
+    // K           = 12'b00110000_0000;  
+    K           = 12'b00000010_0000;  
+    w           = 12'b00000001_0101;
+    q           = 12'b00000001_0001;
+    S           = 12'b00000010_1011;
     in          = 12'b000000000000;
     over        = 1'b0;
     pattern_num = 0;
@@ -66,17 +68,18 @@ initial begin
     i           = 0;   
     day         = 0;
     res         = 1'b0; // 0 when begin a new day; 1 when resend after regression
+    count       = 0;
     #2.5 reset=1'b0;                            // system reset
     #2.5 reset=1'b1;
-    #2.5 start=1'b1;
-    #2.5 start=1'b0;
+    // #2.5 start=1'b1;
+    // #2.5 start=1'b0;
 
 end
 
 always begin #(`CYCLE/2) clk = ~clk; end
 
 initial begin
-	$fsdbDumpfile("mc_core.fsdb");
+	$fsdbDumpfile("Top.fsdb");
 	$fsdbDumpvars(0, "+mda");
 
    out_f = $fopen("out.dat");
@@ -88,22 +91,57 @@ end
 
 
 always @(negedge clk)begin
-	if(i < DATA_LENGTH*(day+1) + 2 && i > DATA_LENGTH*day+1)begin
-          path  = path_mem[i-2];
-	end
-		//  out_temp = out_mem[i];
-	i = i+1;      
-    if (resend && ~res) begin
-        path = path_mem[DATA_LENGTH*day];
-        i = DATA_LENGTH*day + 3;
-        res = 1'b1;
+    count = count + 1;
+
+    if (count == 10) begin 
+        state = 2'd1;
     end
-    else if (resend && res) begin
-        day = day + 1;
-        path = path_mem[DATA_LENGTH * day];
-        i = DATA_LENGTH * day;
-        res = 1'b0;
+    // Go to S_PARAM
+    else if (count == 11) begin
+        in = w;
     end
+    else if (count == 12) begin
+        in = q;
+    end
+    else if (count == 13) begin
+        in = S;
+    end
+    else if (count == 14) begin
+        in = K;
+    end
+    else if (count == 20) begin
+        state = 2'd2;
+    end
+    // Go to S_SOBOL
+    // after 2000 cycles, sobol generator should start operating
+    // Go to S_ICDF
+    // there should be output paths
+    else if (count == 3000) begin
+        state = 2'd3;
+    end
+    // Go to S_PRICING
+    else if (count > 3000) begin
+        if(i < DATA_LENGTH*(day+1) + 2 && i > DATA_LENGTH*day+1)begin
+            in  = path_mem[i-2];
+        end
+            //  out_temp = out_mem[i];
+        i = i+1;      
+        if (resend && ~res) begin
+            in = path_mem[DATA_LENGTH * day];
+            i = DATA_LENGTH * day + 3;
+            res = 1'b1;
+        end
+        else if (resend && res) begin
+            day = day + 1;
+            in = path_mem[DATA_LENGTH * day];
+            i = DATA_LENGTH * day;
+            res = 1'b0;
+        end
+    end
+
+
+
+
     // else                                       
     //    stop = 1 ;      
 end

@@ -1,0 +1,4 @@
+tb/MC_CORE_tb.v
+src/MC_CORE.v
+src/mat_mul.v
+

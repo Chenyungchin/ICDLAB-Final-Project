@@ -55,19 +55,13 @@ MC_CORE mc_core0(
 // .price(price)
 // );
 
-
-
-//initial $sdf_annotate(`SDFFILE, top);
 initial	$readmemh (`PATH,  path_mem);
-// initial	$readmemh (`IMAGE2,  image2_mem);
-// initial	$readmemh (`CMD,    cmd_mem);
-// initial	$readmemh (`EXPECT, out_mem);
 
 initial begin
     clk         = 1'b1;
     reset       = 1'b1;
     start       = 1'b0;
-    K           = 12'b001100000000;  
+    K           = 12'b00000010_0000;  
     over        = 1'b0;
     pattern_num = 0;
     err         = 0;
