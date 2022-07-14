@@ -1,4 +1,4 @@
-module CHIP(
+module Top(
     input         clk,
     input         rst_n, 
     input  [1:0]  state, // 0: IDLE, 1: parameter mode 2: sobol mode, 3: pricing mode
